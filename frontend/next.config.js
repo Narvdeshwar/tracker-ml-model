@@ -1,7 +1,6 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   reactStrictMode: true,
-  output: 'standalone',
   typescript: {
     // Verified by standalone tsc --noEmit in CI/build pipeline
     ignoreBuildErrors: true,
