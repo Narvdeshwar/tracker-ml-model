@@ -1,0 +1,7 @@
+segment,cohort,total_eligible_ipos,positive_open_count,positive_open_pct,severe_loss_count,severe_loss_pct,mean_return_pct,median_return_pct
+Mainboard,Train_2020_2024,254,191,75.2,13,5.12,27.38,14.21
+Mainboard,Validation_2025,99,69,69.7,4,4.04,9.66,5.96
+Mainboard,Test_2026,92,60,65.22,8,8.7,14.23,8.29
+SME,Train_2020_2024,368,307,83.42,18,4.89,48.72,24.57
+SME,Validation_2025,116,73,62.93,16,13.79,14.37,5.5
+SME,Test_2026,58,34,58.62,12,20.69,13.21,2.33

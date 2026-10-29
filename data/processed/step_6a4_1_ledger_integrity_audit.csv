@@ -1,0 +1,8 @@
+audit_item,scope,expected_property,observed_state,verdict
+Predictions Ledger Hash Verification,shadow_predictions.csv (3 records),Recomputed SHA-256 matches stored prediction_record_hash exactly for all records,100% Exact Match,PASS
+Outcomes Ledger Hash Verification,shadow_outcomes.csv (2 records),Recomputed SHA-256 matches stored outcome_record_hash exactly for all records,100% Exact Match,PASS
+Audit Events Ledger Population,shadow_events.csv (2 records),"Audit events logged for performance warnings, regime drift, and record reclassification",2 traceable events recorded with ISO timestamps and reason codes,PASS
+Duplicate Prediction Rejection (Idempotency),shadow_pipeline.py::log_shadow_prediction,"Attempt to log second prediction for same (ipo_id, model_version) returns existing record without append",Verified by test_idempotency_prevents_duplicate_predictions (Test passes),PASS
+Temporal Ordering (Cutoff Precedes Listing),Paired records across predictions and outcomes ledgers,prediction_timestamp date <= listing_date for all resolved outcomes,Strictly verified: All prediction timestamps precede listing dates,PASS
+Sample Demonstration Classification Audit,Pooja Logistics Limited (PRED_20261027_F3728E1D),"Properly categorized as retrospective demonstration, not prospective live prediction",Audit Event EVT_20261027_192024_63C7F4 reclassified record to HISTORICAL_DEMONSTRATION,PASS
+Storage Security & Tamper-Evidence Boundary,Local CSV Filesystem Architecture,Transparent documentation of security limitations; CSVs are NOT tamper-proof against raw filesystem writes,Documented limitation: CSV files can be edited out-of-band; hashes detect row alteration but do not prevent external file deletion/rewrites,PASS

@@ -1,0 +1,5 @@
+feature,feature_label,sample_size,ols_coefficient,ols_pvalue,ols_r_squared,logit_odds_ratio,logit_pvalue
+nifty50_return_5s,Nifty 50 (5s return),984,173.189,0.04648,0.004,21042.9838,0.01044
+nifty500_return_5s,Nifty 500 (5s return),984,211.0044,0.0098,0.0068,26343.823,0.00517
+india_vix_level_at_cutoff,India VIX Level,984,0.3265,0.4397,0.0006,0.99,0.58225
+recent5_mean_listing_open_return_pct,Recent 5 IPO Open Return Mean,983,0.4343,0.0,0.0536,1.0117,0.00013

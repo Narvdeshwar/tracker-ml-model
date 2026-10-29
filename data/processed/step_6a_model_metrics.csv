@@ -1,0 +1,29 @@
+model_id,target,segment,cohort,roc_auc,pr_auc,brier_score,log_loss,precision,recall,f1,operating_threshold,notes,mae,rmse,mean_prediction_error
+Model_6A_BaseRate,Target_A_Positive_Open,Mainboard,Validation_2025,0.5,0.697,0.2142,0.6212,0.0,0.0,0.0,0.5,Predicts constant training base-rate: 0.752,,,
+Model_6A_BaseRate,Target_A_Positive_Open,Mainboard,Test_2026,0.5,0.6522,0.2368,0.6708,0.0,0.0,0.0,0.5,Predicts constant training base-rate: 0.752,,,
+Model_6B_Logistic_PositiveOpen,Target_A_Positive_Open,Mainboard,Validation_2025,0.4855,0.7255,0.2184,0.633,0.697,1.0,0.8214,0.3,Threshold 0.30 chosen on Validation 2025,,,
+Model_6B_Logistic_PositiveOpen,Target_A_Positive_Open,Mainboard,Test_2026,0.4893,0.6629,0.2386,0.6763,0.6522,1.0,0.7895,0.3,Threshold 0.30 chosen on Validation 2025,,,
+Model_6A_BaseRate,Target_B_Severe_Loss,Mainboard,Validation_2025,0.5,0.0404,0.0389,0.1705,0.0,0.0,0.0,0.051181102362204724,Base rate: 0.051 (Training severe loss count: 13),,,
+Model_6A_BaseRate,Target_B_Severe_Loss,Mainboard,Test_2026,0.5,0.087,0.0807,0.3064,0.0,0.0,0.0,0.051181102362204724,Base rate: 0.051 (Training severe loss count: 13),,,
+Model_6C_SevereLoss_Classifier,Target_B_Severe_Loss,Mainboard,Validation_2025,0.4697,0.0461,0.1543,0.4951,0.0476,1.0,0.0909,0.3,Threshold 0.30 tuned on Val 2025; Train events=13,,,
+Model_6C_SevereLoss_Classifier,Target_B_Severe_Loss,Mainboard,Test_2026,0.349,0.0746,0.2002,0.5913,0.0879,1.0,0.1616,0.3,Threshold 0.30 tuned on Val 2025; Train events=13,,,
+Model_6A_BaseRate_Mean,Target_C_Return,Mainboard,Validation_2025,,,,,,,,,Predicts constant train mean: 27.38%,21.66,24.68,17.72
+Model_6A_BaseRate_Median,Target_C_Return,Mainboard,Validation_2025,,,,,,,,,Predicts constant train median: 14.21%,13.87,17.77,4.55
+Model_6A_BaseRate_Mean,Target_C_Return,Mainboard,Test_2026,,,,,,,,,Predicts constant train mean: 27.38%,23.85,28.09,13.15
+Model_6A_BaseRate_Median,Target_C_Return,Mainboard,Test_2026,,,,,,,,,Predicts constant train median: 14.21%,18.4,24.83,-0.02
+Model_6D_Ridge_Return,Target_C_Return,Mainboard,Validation_2025,,,,,,,,,Ridge regression (alpha=10.0),24.19,27.31,21.04
+Model_6D_Ridge_Return,Target_C_Return,Mainboard,Test_2026,,,,,,,,,Ridge regression (alpha=10.0),25.08,29.41,15.57
+Model_6A_BaseRate,Target_A_Positive_Open,SME,Validation_2025,0.5,0.6293,0.2753,0.7803,0.0,0.0,0.0,0.5,Predicts constant training base-rate: 0.834,,,
+Model_6A_BaseRate,Target_A_Positive_Open,SME,Test_2026,0.5,0.5862,0.3041,0.8499,0.0,0.0,0.0,0.5,Predicts constant training base-rate: 0.834,,,
+Model_6B_Logistic_PositiveOpen,Target_A_Positive_Open,SME,Validation_2025,0.5037,0.6308,0.2695,0.7634,0.6293,1.0,0.7725,0.3,Threshold 0.30 chosen on Validation 2025,,,
+Model_6B_Logistic_PositiveOpen,Target_A_Positive_Open,SME,Test_2026,0.6103,0.7093,0.2894,0.8021,0.5862,1.0,0.7391,0.3,Threshold 0.30 chosen on Validation 2025,,,
+Model_6A_BaseRate,Target_B_Severe_Loss,SME,Validation_2025,0.5,0.1379,0.1268,0.4595,0.0,0.0,0.0,0.04891304347826087,Base rate: 0.049 (Training severe loss count: 18),,,
+Model_6A_BaseRate,Target_B_Severe_Loss,SME,Test_2026,0.5,0.2069,0.189,0.6641,0.0,0.0,0.0,0.04891304347826087,Base rate: 0.049 (Training severe loss count: 18),,,
+Model_6C_SevereLoss_Classifier,Target_B_Severe_Loss,SME,Validation_2025,0.4884,0.155,0.2595,0.7123,0.1379,1.0,0.2424,0.2,Threshold 0.20 tuned on Val 2025; Train events=18,,,
+Model_6C_SevereLoss_Classifier,Target_B_Severe_Loss,SME,Test_2026,0.3514,0.1663,0.2494,0.6915,0.2069,1.0,0.3429,0.2,Threshold 0.20 tuned on Val 2025; Train events=18,,,
+Model_6A_BaseRate_Mean,Target_C_Return,SME,Validation_2025,,,,,,,,,Predicts constant train mean: 48.72%,42.57,45.65,34.35
+Model_6A_BaseRate_Median,Target_C_Return,SME,Validation_2025,,,,,,,,,Predicts constant train median: 24.57%,26.09,31.74,10.2
+Model_6A_BaseRate_Mean,Target_C_Return,SME,Test_2026,,,,,,,,,Predicts constant train mean: 48.72%,45.8,48.25,35.51
+Model_6A_BaseRate_Median,Target_C_Return,SME,Test_2026,,,,,,,,,Predicts constant train median: 24.57%,30.23,34.58,11.36
+Model_6D_Ridge_Return,Target_C_Return,SME,Validation_2025,,,,,,,,,Ridge regression (alpha=10.0),32.52,36.79,20.62
+Model_6D_Ridge_Return,Target_C_Return,SME,Test_2026,,,,,,,,,Ridge regression (alpha=10.0),37.3,40.6,22.5

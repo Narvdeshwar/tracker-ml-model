@@ -1,0 +1,7 @@
+feature,label,unit,sample_size,positive_class_count,logistic_beta,std_error,p_value,raw_odds_ratio,interpretable_increment,interpretable_odds_ratio,interpretable_ci_low,interpretable_ci_high,convergence_status,separation_detected
+nifty50_return_5s,Nifty 50 5s (Decimal),Decimal (1.0 = +100%),987,749,9.9881,3.8904,0.01025,21766.4679,+1% move (0.01),1.105,1.0239,1.1926,Converged (Clean),False
+nifty50_return_5s_pct,Nifty 50 5s (Percentage),Percentage point (1.0 = +1%),987,749,0.0999,0.0389,0.01025,1.105,+1% move (1.0),1.105,1.0239,1.1926,Converged (Clean),False
+nifty500_return_5s,Nifty 500 5s (Decimal),Decimal (1.0 = +100%),987,749,10.2247,3.643,0.00501,27576.1652,+1% move (0.01),1.1077,1.0313,1.1896,Converged (Clean),False
+nifty500_return_5s_pct,Nifty 500 5s (Percentage),Percentage point (1.0 = +1%),987,749,0.1022,0.0364,0.00501,1.1077,+1% move (1.0),1.1077,1.0313,1.1896,Converged (Clean),False
+india_vix_level_at_cutoff,India VIX Level,Index points,984,746,-0.0101,0.0183,0.58225,0.99,+1 pt change,0.99,0.9551,1.0261,Converged (Clean),False
+recent5_mean_listing_open_return_pct,Recent 5 Sentiment,Percentage point return,986,748,0.0116,0.003,0.00013,1.0117,+5% sentiment shift,1.0598,1.0287,1.0919,Converged (Clean),False

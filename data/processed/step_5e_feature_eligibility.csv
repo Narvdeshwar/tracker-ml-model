@@ -1,0 +1,7 @@
+feature_name,units,provenance,observation_timestamp,cutoff_alignment,missingness_pct,eligible_experiment_a,eligible_experiment_b,leakage_risk
+nifty50_return_5s,Ratio (session t vs t-5),Official Nifty 50 historical daily close,Issue Close Date 17:00 IST (T-3 to T-4 before listing),Strictly backward-only (<= cutoff),34.85,True,True,None (guaranteed by test_anti_leakage_backward_only)
+nifty500_return_5s,Ratio (session t vs t-5),Official Nifty 500 historical daily close,Issue Close Date 17:00 IST,Strictly backward-only (<= cutoff),34.85,True,True,None
+india_vix_level_at_cutoff,Index level points,NSE India VIX closing level,Issue Close Date 17:00 IST,Strictly backward-only (<= cutoff),35.05,True,True,None
+recent5_mean_listing_open_return_pct,Percentage points,Preceding 5 IPOs with listing_date < cutoff_date,Pre-close (all candidate listings completed prior),Strictly prior listing outcomes,34.92,True,True,None (test_sentiment_chronological_anti_leakage verified)
+total_subscription_multiple,Times subscribed (ratio),Exchange bidding platform,Post-close (Basis of allotment finalization),Available post-close only,100.0,False,False,High if used at Issue Close; Excluded until verified archive is ingested
+gmp_amount_inr,INR per share,Unofficial market observations,Variable timestamps,Unverified intra-day timestamps,100.0,False,False,High; Excluded from baseline models

@@ -1,0 +1,61 @@
+ipo_id,company_name,board_type,listing_year,issue_open_date,issue_close_date_clean,listing_date,issue_price_inr,nse_symbol,bse_code
+sbi-cards-payment-services-af4cc1,SBI Cards And Payment Services Limited,Mainboard,2020,02-MAR-2020,2020-03-05,2020-03-16,755,SBICARD,543066
+rossari-biotech-de0cf2,Rossari Biotech Limited,Mainboard,2020,13-JUL-2020,2020-07-15,2020-07-23,425,ROSSARI,543213
+happiest-minds-technologies-38d21b,Happiest Minds Technologies Limited,Mainboard,2020,07-SEP-2020,2020-09-09,2020-09-17,166,HAPPSTMNDS,543227
+antony-waste-handling-cell-862431,Antony Waste Handling Cell Limited,Mainboard,2021,04-MAR-2020,2020-03-16,2021-01-01,315,AWHCL,543254
+indigo-paints-01a072,Indigo Paints Limited,Mainboard,2021,20-JAN-2021,2021-01-22,2021-02-02,1490,INDIGOPNTS,543258
+home-first-finance-india-c024a0,Home First Finance Company India Limited,Mainboard,2021,21-JAN-2021,2021-01-25,2021-02-03,518,HOMEFIRST,543259
+stove-kraft-480e16,Stove Kraft Limited,Mainboard,2021,25-JAN-2021,2021-01-28,2021-02-05,385,STOVEKRAFT,543260
+nureca-a56c4b,Nureca Limited,Mainboard,2021,15-FEB-2021,2021-02-17,2021-02-25,400,NURECA,543264
+ags-transact-technologies-50bdf5,Ags Transact Technologies Limited,Mainboard,2022,19-JAN-2022,2022-01-21,2022-01-31,175,AGSTRA,543451
+adani-wilmar-9faced,Adani Wilmar Limited,Mainboard,2022,27-JAN-2022,2022-01-31,2022-02-08,230,AWL,543458
+vedant-fashions-349529,Vedant Fashions Limited,Mainboard,2022,04-FEB-2022,2022-02-08,2022-02-16,866,MANYAVAR,543463
+uma-exports-af841e,Uma Exports Limited,Mainboard,2022,28-MAR-2022,2022-03-30,2022-04-07,68,UMAEXPORTS,543513
+radiant-cash-management-services-445bb3,Radiant Cash Management Services Limited,Mainboard,2023,23-DEC-2022,2022-12-27,2023-01-04,94,RADIANTCMS,543732
+sah-polymers-50a05a,Sah Polymers Limited,Mainboard,2023,30-DEC-2022,2023-01-04,2023-01-12,65,SAH,543743
+divgi-torqtransfer-systems-ac5eef,Divgi Torqtransfer Systems Limited,Mainboard,2023,01-MAR-2023,2023-03-03,2023-03-14,590,DIVGIITTS,543812
+global-surfaces-40d91b,Global Surfaces Limited,Mainboard,2023,13-MAR-2023,2023-03-15,2023-03-23,140,GSLSU,543829
+udayshivakumar-infra-4ddf69,Udayshivakumar infra Limited,Mainboard,2023,20-MAR-2023,2023-03-23,2023-04-03,35,USK,543861
+jyoti-cnc-automation-594051,Jyoti CNC Automation Limited,Mainboard,2024,09-JAN-2024,2024-01-11,2024-01-16,331,JYOTICNC,544081
+medi-assist-healthcare-services-f3a108,Medi Assist Healthcare Services Limited,Mainboard,2024,15-JAN-2024,2024-01-17,2024-01-23,418,MEDIASSIST,544088
+epack-durable-482bdd,EPACK Durable Limited,Mainboard,2024,19-JAN-2024,2024-01-24,2024-01-30,230,EPACK,544095
+nova-agritech-5bb841,Nova Agritech Limited,Mainboard,2024,23-JAN-2024,2024-01-25,2024-01-31,41,NOVAAGRI,544100
+bls-e-services-3eda13,BLS E-Services Limited,Mainboard,2024,30-JAN-2024,2024-02-01,2024-02-06,135,BLSE,544107
+indo-farm-equipment-a88664,Indo Farm Equipment Limited,Mainboard,2025,31-DEC-2024,2025-01-02,2025-01-07,215,INDOFARM,INDOFARM
+standard-glass-lining-technology-7de754,Standard Glass Lining Technology Limited,Mainboard,2025,06-JAN-2025,2025-01-08,2025-01-13,140,SGLTL,SGLTL
+quadrant-future-tek-0d0c0d,Quadrant Future Tek Limited,Mainboard,2025,07-JAN-2025,2025-01-09,2025-01-14,290,QUADFUTURE,QUADFUTURE
+laxmi-dental-61673f,Laxmi Dental Limited,Mainboard,2025,13-JAN-2025,2025-01-15,2025-01-20,428,LAXMIDENTL,LAXMIDENTL
+bharat-coking-coal-7060de,Bharat Coking Coal Limited,Mainboard,2026,09-JAN-2026,2026-01-13,2026-01-19,23,BHARATCOAL,BHARATCOAL
+amagi-media-labs-88941f,Amagi Media Labs Limited,Mainboard,2026,13-JAN-2026,2026-01-16,2026-01-21,361,AMAGI,AMAGI
+shadowfax-technologies-79b8d7,Shadowfax Technologies Limited,Mainboard,2026,20-JAN-2026,2026-01-22,2026-01-28,124,SHADOWFAX,SHADOWFAX
+aye-finance-603dea,Aye Finance Limited,Mainboard,2026,09-FEB-2026,2026-02-11,2026-02-16,129,AYE,AYE
+hindprakash-42a950,Hindprakash Industries Limited,SME,2020,15-JAN-2020,2020-01-17,2020-01-27,40,HPIL,
+laxmi-goldorna-house-04bf48,Laxmi Goldorna House Limited,SME,2020,20-MAR-2020,2020-04-03,2020-04-16,15,LGHL,
+pavna-d0f009,Pavna Industries Limited,SME,2021,24-FEB-2021,2021-03-01,2021-03-09,165,PAVNAIND,
+siddhika-coatings-824bf7,Siddhika Coatings Limited,SME,2021,24-MAR-2021,2021-03-26,2021-04-07,57,SIDDHIKA,
+v-marc-2d1a62,V-Marc,SME,2021,25-MAR-2021,2021-03-31,2021-04-09,39,VMARCIND,
+abhishek-integrations-c8aae5,Abhishek Integrations Limited,SME,2021,08-JUN-2021,2021-06-11,2021-06-21,50,AILIMITED,
+ab-cotspin-bc47d1,AB Cotspin,SME,2022,30-DEC-2021,2022-01-03,2022-01-11,35,ABCOTS,
+timescan-logistics-cfe97d,Timescan Logistics,SME,2022,31-DEC-2021,2022-01-04,2022-01-12,51,TIMESCAN,
+precision-metaliks-b68416,Precision Metaliks Limited,SME,2022,19-JAN-2022,2022-01-24,2022-02-01,51,PRECISION,
+richa-info-systems-de5ff7,Richa Info Systems Limited,SME,2022,09-FEB-2022,2022-02-11,2022-02-21,125,RICHA,
+homesfy-realty-7ae67c,Homesfy Realty Limited,SME,2023,21-DEC-2022,2022-12-23,2023-01-02,197,HOMESFY,
+rbm-infracon-06d36c,RBM Infracon Limited,SME,2023,23-DEC-2022,2022-12-27,2023-01-04,36,RBMINFRA,
+anlon-technology-solutions-ddf323,Anlon Technology Solutions Limited,SME,2023,29-DEC-2022,2023-01-02,2023-01-10,100,ANLON,
+chaman-metallics-c42fe2,Chaman Metallics Limited,SME,2023,,2023-01-06,2023-01-16,38,CMNL,
+ducol-organics-colours-55e941,Ducol Organics And Colours Limited,SME,2023,09-JAN-2023,2023-01-11,2023-01-19,78,DUCOL,
+sameera-agro-infra-a1d2b5,Sameera Agro and Infra Limited,SME,2024,21-DEC-2023,2023-12-27,2024-01-01,180,SAIFL,
+akanksha-power-infrastructure-a1a57e,Akanksha Power and Infrastructure Limited,SME,2024,,2023-12-29,2024-01-03,55,,
+hrh-next-services-ba85cf,HRH Next Services Limited,SME,2024,27-DEC-2023,2023-12-29,2024-01-03,36,HRHNEXT,
+kay-cee-energy-infra-22e83a,Kay Cee Energy & Infra Limited,SME,2024,28-DEC-2023,2024-01-02,2024-01-05,54,KCEIL,
+kaushalya-logistics-a9aef1,Kaushalya Logistics Limited,SME,2024,29-DEC-2023,2024-01-03,2024-01-08,75,KLL,
+ibl-finance-9c8e33,IBL Finance Limited,SME,2024,09-JAN-2024,2024-01-11,2024-01-16,51,IBLFL,
+anya-polytech-fertilizers-448984,Anya Polytech & Fertilizers Limited,SME,2025,26-DEC-2024,2024-12-30,2025-01-02,14,ANYA,
+delta-autocorp-b50fe2,Delta Autocorp Limited,SME,2025,07-JAN-2025,2025-01-09,2025-01-14,130,DELTIC,
+sat-kartar-shopping-57ecf6,Sat Kartar Shopping Limited,SME,2025,10-JAN-2025,2025-01-14,2025-01-17,81,SATKARTAR,
+barflex-polyfilms-041332,Barflex Polyfilms Limited,SME,2025,10-JAN-2025,2025-01-15,2025-01-20,60,BARFLEX,
+kabra-jewels-e97616,Kabra Jewels Limited,SME,2025,15-JAN-2025,2025-01-17,2025-01-22,128,KKJEWELS,
+e-to-e-transportation-infrastructure-9a4645,E TO E Transportation Infrastructure Limited,SME,2026,26-DEC-2025,2025-12-30,2026-01-02,174,E2ERAIL,
+victory-electric-vehicles-international-aa616d,Victory Electric Vehicles International Limited,SME,2026,07-JAN-2026,2026-01-09,2026-01-14,41,VICTORYEV,
+avana-electrosystems-1a6ff0,Avana Electrosystems Limited,SME,2026,12-JAN-2026,2026-01-14,2026-01-20,59,AVANA,
+armour-security-india-bb0bba,Armour Security (India). Ltd,SME,2026,14-JAN-2026,2026-01-19,2026-01-22,57,ARMOUR,

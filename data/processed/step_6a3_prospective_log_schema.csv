@@ -1,0 +1,19 @@
+field_name,data_type,description,timing
+prediction_id,string,Unique identifier (e.g. PRED_2026_001),At prediction cutoff
+ipo_id,string,Normalized IPO slug identifier,At prediction cutoff
+company_name,string,Official company name,At prediction cutoff
+board_type,string,Mainboard or SME,At prediction cutoff
+issue_price_inr,float,Final issue price from price band / circular,At prediction cutoff
+prediction_timestamp_ist,timestamp,Exact timestamp when prediction is generated (Issue Close 17:00 IST),At prediction cutoff
+model_version,string,Frozen model identifier (e.g. Model_6B_SME_v1.0),At prediction cutoff
+feat_nifty50_ret5s_pct,float,Nifty 50 5-session return as of cutoff date,At prediction cutoff
+feat_india_vix,float,India VIX closing level as of cutoff date,At prediction cutoff
+feat_recent5_sentiment,float,Mean open return of 5 prior completed IPO listings,At prediction cutoff
+predicted_positive_open_prob,float,Raw logistic regression probability,At prediction cutoff
+predicted_rank_tier,string,"Assigned tier (Tier_1_Low, Tier_2_Mid, Tier_3_High)",At prediction cutoff
+actual_listing_date,date,Official listing date on exchange,Post-listing settlement
+actual_listing_open_inr,float,Official morning opening price from Bhavcopy,Post-listing settlement
+actual_listing_open_return_pct,float,100 * (open / issue - 1),Post-listing settlement
+actual_positive_open,integer,1 if open return > 0 else 0,Post-listing settlement
+prediction_error_brier,float,(predicted_prob - actual_positive)^2,Post-listing settlement
+status,string,LOGGED_PRE_LISTING or OUTCOME_RECORDED,Lifecycle flag

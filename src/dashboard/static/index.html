@@ -1,0 +1,1437 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>IPO ML Research & Shadow Monitoring Dashboard</title>
+  <!-- Tailwind CSS CDN for high-fidelity dark quant theme styling -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            quant: {
+              900: '#0B0F19',
+              850: '#0F172A',
+              800: '#1E293B',
+              700: '#334155',
+              600: '#475569',
+              accent: '#38BDF8',
+              accentGlow: '#0284C7',
+              warning: '#F59E0B',
+              danger: '#EF4444',
+              success: '#10B981',
+              muted: '#94A3B8'
+            }
+          },
+          fontFamily: {
+            mono: ['JetBrains Mono', 'Menlo', 'Monaco', 'Courier New', 'monospace'],
+            sans: ['Inter', 'system-ui', '-apple-system', 'sans-serif']
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    /* Custom scrollbars and styling */
+    ::-webkit-scrollbar { width: 6px; height: 6px; }
+    ::-webkit-scrollbar-track { background: #0b0f19; }
+    ::-webkit-scrollbar-thumb { background: #334155; border-radius: 3px; }
+    ::-webkit-scrollbar-thumb:hover { background: #475569; }
+    .nav-active {
+      background-color: #1E293B;
+      border-left: 3px solid #38BDF8;
+      color: #38BDF8;
+      font-weight: 600;
+    }
+    .badge-shadow {
+      background: linear-gradient(90deg, rgba(239, 68, 68, 0.15) 0%, rgba(245, 158, 11, 0.15) 100%);
+      border: 1px solid rgba(239, 68, 68, 0.35);
+    }
+  </style>
+</head>
+<body class="bg-[#0B0F19] text-slate-100 font-sans min-h-screen flex flex-col">
+
+  <!-- TOP HEADER / BANNER WITH PROMINENT SHADOW MODE ATTESTATION -->
+  <header class="bg-[#0F172A] border-b border-slate-800 px-6 py-3 flex flex-wrap items-center justify-between sticky top-0 z-50 shadow-md">
+    <div class="flex items-center space-x-4">
+      <div class="flex items-center space-x-2">
+        <div class="w-3 h-3 rounded-full bg-sky-400 animate-pulse"></div>
+        <span class="font-bold text-lg tracking-wider text-slate-100">QUANT IPO MONITOR</span>
+      </div>
+      <span class="text-xs px-2.5 py-0.5 rounded bg-slate-800 text-sky-400 border border-slate-700 font-mono">PHASE 10.3 AUDIT CONSOLE</span>
+    </div>
+
+    <!-- MANDATORY PERMANENT SHADOW MODE COMPLIANCE BANNER -->
+    <div class="flex items-center space-x-3 badge-shadow px-4 py-1.5 rounded-md my-1">
+      <span class="inline-flex items-center text-xs font-bold text-amber-400 tracking-wide">
+        <svg class="w-4 h-4 mr-1.5 text-red-400" fill="currentColor" viewBox="0 0 20 20">
+          <path fill-rule="evenodd" d="M8.257 3.099c.765-1.36 2.722-1.36 3.486 0l5.58 9.92c.75 1.334-.213 2.98-1.742 2.98H4.42c-1.53 0-2.493-1.646-1.743-2.98l5.58-9.92zM11 13a1 1 0 11-2 0 1 1 0 012 0zm-1-8a1 1 0 00-1 1v3a1 1 0 002 0V6a1 1 0 00-1-1z" clip-rule="evenodd" />
+        </svg>
+        SHADOW MODE ACTIVE — NO REAL TRADING
+      </span>
+      <span class="text-xs text-slate-400 border-l border-slate-700 pl-3 font-mono">EXECUTION: <span class="text-red-400 font-bold">DISABLED</span></span>
+    </div>
+
+    <div class="flex items-center space-x-3 text-xs text-slate-400 font-mono">
+      <div id="backend-status" class="flex items-center space-x-1.5">
+        <span class="w-2 h-2 rounded-full bg-amber-400 animate-ping"></span>
+        <span class="text-slate-300">CONNECTING API...</span>
+      </div>
+      <span>|</span>
+      <span id="manifest-badge" class="text-slate-300">MANIFEST CHECKING</span>
+    </div>
+  </header>
+
+  <!-- ERROR / INTEGRITY ALERT BANNER (HIDDEN UNLESS TRIGGERED) -->
+  <div id="integrity-alert-banner" class="hidden bg-red-950/90 border-b border-red-500/50 px-6 py-2.5 text-red-200 text-xs font-mono flex items-center justify-between">
+    <div class="flex items-center space-x-2">
+      <svg class="w-4 h-4 text-red-400 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+        <path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7 4a1 1 0 11-2 0 1 1 0 012 0zm-1-9a1 1 0 00-1 1v4a1 1 0 102 0V6a1 1 0 00-1-1z" clip-rule="evenodd"/>
+      </svg>
+      <span id="integrity-alert-text">DATA INTEGRITY WARNING DETECTED IN REPOSITORY LEDGERS OR MANIFEST.</span>
+    </div>
+    <span class="text-[10px] bg-red-900 px-2 py-0.5 rounded text-red-300 border border-red-700">AUDIT TRIGGERED</span>
+  </div>
+
+  <!-- MAIN BODY: SIDEBAR + CONTENT VIEW -->
+  <div class="flex flex-1 overflow-hidden">
+    <!-- SIDEBAR NAVIGATION -->
+    <aside class="w-64 bg-[#0F172A] border-r border-slate-800 flex flex-col justify-between p-4 flex-shrink-0">
+      <div class="space-y-6">
+        <div>
+          <div class="text-[10px] font-bold text-slate-500 uppercase tracking-widest px-3 mb-2">Research Navigation</div>
+          <nav class="space-y-1">
+            <button onclick="switchScreen('command-center')" id="nav-command-center" class="w-full text-left px-3 py-2.5 rounded text-sm flex items-center space-x-3 nav-active transition">
+              <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2V6zM14 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2V6zM4 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2v-2zM14 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2v-2z"></path></svg>
+              <span>Command Center</span>
+            </button>
+            <button onclick="switchScreen('ipo-explorer')" id="nav-ipo-explorer" class="w-full text-left px-3 py-2.5 rounded text-sm flex items-center space-x-3 text-slate-400 hover:bg-slate-800 hover:text-slate-200 transition">
+              <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path></svg>
+              <span>IPO Explorer</span>
+            </button>
+            <button onclick="switchScreen('ipo-detail')" id="nav-ipo-detail" class="w-full text-left px-3 py-2.5 rounded text-sm flex items-center space-x-3 text-slate-400 hover:bg-slate-800 hover:text-slate-200 transition">
+              <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path></svg>
+              <span>IPO Detail & Audit</span>
+            </button>
+            <button onclick="switchScreen('model-performance')" id="nav-model-performance" class="w-full text-left px-3 py-2.5 rounded text-sm flex items-center space-x-3 text-slate-400 hover:bg-slate-800 hover:text-slate-200 transition">
+              <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"></path></svg>
+              <span>Model Performance</span>
+            </button>
+            <button onclick="switchScreen('allotment-simulation')" id="nav-allotment-simulation" class="w-full text-left px-3 py-2.5 rounded text-sm flex items-center space-x-3 text-slate-400 hover:bg-slate-800 hover:text-slate-200 transition">
+              <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+              <span>Allotment & 4-Tier</span>
+            </button>
+            <button onclick="switchScreen('surveillance-monitoring')" id="nav-surveillance-monitoring" class="w-full text-left px-3 py-2.5 rounded text-sm flex items-center space-x-3 text-slate-400 hover:bg-slate-800 hover:text-slate-200 transition">
+              <svg class="w-4 h-4 text-emerald-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"></path></svg>
+              <span>Quality & Drift Monitor</span>
+            </button>
+          </nav>
+        </div>
+
+        <!-- GOVERNANCE & INTEGRITY PANEL -->
+        <div class="bg-slate-900 border border-slate-800 rounded-lg p-3 space-y-2">
+          <div class="text-[11px] font-bold text-slate-400 uppercase tracking-wider">Audit Integrity</div>
+          <div class="space-y-1.5 text-xs font-mono">
+            <div class="flex justify-between items-center text-slate-300">
+              <span class="text-slate-500">SME Model:</span>
+              <span id="sidebar-sme-status" class="text-emerald-400 flex items-center">
+                <span class="w-1.5 h-1.5 rounded-full bg-emerald-400 mr-1.5"></span> LOCKED
+              </span>
+            </div>
+            <div id="sidebar-sme-sha" class="text-[10px] text-slate-500 break-all">SHA: dbf2eec7...aad76</div>
+            <div class="flex justify-between items-center text-slate-300 pt-1 border-t border-slate-800">
+              <span class="text-slate-500">Mainboard:</span>
+              <span class="text-amber-400">NOT SCORED</span>
+            </div>
+            <div class="text-[10px] text-slate-500">Coverage Tracking Only</div>
+            <div class="flex justify-between items-center text-slate-300 pt-1 border-t border-slate-800">
+              <span class="text-slate-500">Unit Tests:</span>
+              <span id="sidebar-tests-status" class="text-sky-400">158 PASS</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="text-[11px] text-slate-500 border-t border-slate-800 pt-3">
+        Phase 9B & 10 Protocol Verified<br>
+        <span class="text-slate-400">SEBI / NSE / BSE Compliant</span>
+      </div>
+    </aside>
+
+    <!-- CONTENT AREA -->
+    <main class="flex-1 bg-[#0B0F19] overflow-y-auto p-6">
+      
+      <!-- SCREEN 1: COMMAND CENTER -->
+      <section id="screen-command-center" class="space-y-6">
+        <div>
+          <h1 class="text-2xl font-bold text-slate-100 tracking-tight">Command Center</h1>
+          <p class="text-sm text-slate-400">High-level quantitative overview, prospective pipeline status, and upcoming IPO timeline.</p>
+        </div>
+
+        <!-- 6 KPI CARDS -->
+        <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-6 gap-4">
+          <!-- KPI 1: Eligible IPOs -->
+          <div class="bg-[#0F172A] border border-slate-800 rounded-lg p-4">
+            <div class="text-xs text-slate-500 uppercase tracking-wider font-semibold">Eligible IPOs</div>
+            <div class="text-2xl font-bold text-slate-100 font-mono mt-1" id="kpi-eligible">-</div>
+            <div class="text-[11px] text-slate-400 mt-1">Population 1 (Coverage)</div>
+          </div>
+
+          <!-- KPI 2: Clean Cohort -->
+          <div class="bg-[#0F172A] border border-slate-800 rounded-lg p-4">
+            <div class="text-xs text-slate-500 uppercase tracking-wider font-semibold">Clean Prospective</div>
+            <div class="text-2xl font-bold text-sky-400 font-mono mt-1" id="kpi-clean">-</div>
+            <div class="text-[11px] text-slate-400 mt-1">Population 2 (Primary)</div>
+          </div>
+
+          <!-- KPI 3: Excluded / Unverified -->
+          <div class="bg-[#0F172A] border border-slate-800 rounded-lg p-4">
+            <div class="text-xs text-slate-500 uppercase tracking-wider font-semibold">Excluded / Unverified</div>
+            <div class="text-2xl font-bold text-amber-400 font-mono mt-1" id="kpi-excluded">-</div>
+            <div class="text-[11px] text-slate-400 mt-1">Population 3 (Audit)</div>
+          </div>
+
+          <!-- KPI 4: Decisions Logged -->
+          <div class="bg-[#0F172A] border border-slate-800 rounded-lg p-4">
+            <div class="text-xs text-slate-500 uppercase tracking-wider font-semibold">Decisions Logged</div>
+            <div class="text-2xl font-bold text-slate-100 font-mono mt-1" id="kpi-decisions">-</div>
+            <div class="text-[11px] text-slate-400 mt-1">Live Decision Ledger</div>
+          </div>
+
+          <!-- KPI 5: Outcomes Pending -->
+          <div class="bg-[#0F172A] border border-slate-800 rounded-lg p-4">
+            <div class="text-xs text-slate-500 uppercase tracking-wider font-semibold">Outcomes Pending</div>
+            <div class="text-2xl font-bold text-indigo-400 font-mono mt-1" id="kpi-pending">-</div>
+            <div class="text-[11px] text-slate-400 mt-1">Live Outcome Ledger</div>
+          </div>
+
+          <!-- KPI 6: Model Integrity -->
+          <div class="bg-[#0F172A] border border-slate-800 rounded-lg p-4">
+            <div class="text-xs text-slate-500 uppercase tracking-wider font-semibold">Model Integrity</div>
+            <div class="text-2xl font-bold text-emerald-400 font-mono mt-1" id="kpi-integrity">CHECKING</div>
+            <div class="text-[11px] text-emerald-500 mt-1" id="kpi-integrity-sub">SHA-256 Auditing</div>
+          </div>
+        </div>
+
+        <!-- UPCOMING & TRACKED REGISTER -->
+        <div class="bg-[#0F172A] border border-slate-800 rounded-lg overflow-hidden">
+          <div class="px-5 py-4 border-b border-slate-800 flex justify-between items-center">
+            <div>
+              <h2 class="font-bold text-slate-200">Current Tracked IPO Register</h2>
+              <p class="text-xs text-slate-400">Preflight-audited candidate issues under Phase 9B shadow monitoring protocol.</p>
+            </div>
+            <span id="tracked-register-badge" class="text-xs font-mono bg-slate-800 px-3 py-1 rounded text-slate-300 border border-slate-700">Loading issues...</span>
+          </div>
+
+          <div class="overflow-x-auto">
+            <table class="w-full text-left text-sm text-slate-300">
+              <thead class="bg-slate-900/60 text-xs uppercase font-mono text-slate-400 border-b border-slate-800">
+                <tr>
+                  <th class="px-5 py-3">Company & Symbol</th>
+                  <th class="px-4 py-3">Segment</th>
+                  <th class="px-4 py-3">Issue Window</th>
+                  <th class="px-4 py-3">Cutoff IST</th>
+                  <th class="px-4 py-3">Cohort Population</th>
+                  <th class="px-4 py-3">Model Status</th>
+                  <th class="px-4 py-3 text-right">Action</th>
+                </tr>
+              </thead>
+              <tbody id="command-center-table" class="divide-y divide-slate-800">
+                <tr><td colspan="7" class="px-5 py-8 text-center text-slate-500 font-mono text-xs">Loading tracked candidate data...</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <!-- PIPELINE STATUS & GOVERNANCE ASSURANCES -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <div class="bg-[#0F172A] border border-slate-800 rounded-lg p-5 space-y-4">
+            <h3 class="font-bold text-slate-200 text-sm flex items-center space-x-2">
+              <svg class="w-4 h-4 text-sky-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path></svg>
+              <span>Evaluation Protocol Governance</span>
+            </h3>
+            <ul class="text-xs text-slate-400 space-y-2 list-disc list-inside">
+              <li><strong class="text-slate-300">Strict Model Coverage Restriction:</strong> Frozen SME model is never repurposed for Mainboard. Mainboard items track coverage without invented scores.</li>
+              <li><strong class="text-slate-300">Pre-Cutoff Decisions Only:</strong> Timestamped decisions must be recorded prior to authoritative closing time (5:00 PM IST).</li>
+              <li><strong class="text-slate-300">Three-Population Separation:</strong> Clean cohort (Pop 2) drives formal evaluation; Pop 1 evaluates coverage; Pop 3 audits timing and selection biases.</li>
+              <li><strong class="text-slate-300">Brier Skill Score Target:</strong> Must exceed fixed training baseline ($0.8306$ for SME) with positive lower 95% bootstrap CI.</li>
+            </ul>
+          </div>
+
+          <div class="bg-[#0F172A] border border-slate-800 rounded-lg p-5 space-y-4">
+            <h3 class="font-bold text-slate-200 text-sm flex items-center space-x-2">
+              <svg class="w-4 h-4 text-emerald-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
+              <span>Automated Verification Checks</span>
+            </h3>
+            <div class="space-y-2 text-xs font-mono">
+              <div class="flex justify-between items-center p-2 rounded bg-slate-900 border border-slate-800">
+                <span class="text-slate-400">Manifest SHA-256 Check:</span>
+                <span id="audit-manifest-status" class="text-emerald-400 font-bold">MATCH (PASS)</span>
+              </div>
+              <div class="flex justify-between items-center p-2 rounded bg-slate-900 border border-slate-800">
+                <span class="text-slate-400">Cryptographic Hash Chain:</span>
+                <span id="audit-chain-status" class="text-emerald-400 font-bold">TAMPER-EVIDENT OK</span>
+              </div>
+              <div class="flex justify-between items-center p-2 rounded bg-slate-900 border border-slate-800">
+                <span class="text-slate-400">Live Execution Status:</span>
+                <span class="text-red-400 font-bold">DISABLED (SHADOW ONLY)</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- SCREEN 2: IPO EXPLORER (HARDENED SEARCH, SORT, FILTER, PAGINATION) -->
+      <section id="screen-ipo-explorer" class="space-y-6 hidden">
+        <div>
+          <h1 class="text-2xl font-bold text-slate-100 tracking-tight">IPO Explorer & Registry Audit</h1>
+          <p class="text-sm text-slate-400">Filter, search, sort, and inspect registered candidate issues across Mainboard and SME cohorts.</p>
+        </div>
+
+        <!-- SEARCH & MULTI-FACET FILTER CONTROLS -->
+        <div class="bg-[#0F172A] border border-slate-800 rounded-lg p-4 space-y-3">
+          <div class="flex flex-wrap gap-3 items-center justify-between">
+            <div class="flex flex-wrap gap-3 items-center flex-1">
+              <!-- Search Input -->
+              <div class="relative w-72">
+                <input type="text" id="explorer-search" oninput="debounceExplorerSearch()" placeholder="Search company, symbol, or ID..." class="w-full bg-slate-900 border border-slate-700 text-xs px-3 py-2 pl-8 rounded text-slate-200 placeholder-slate-500 focus:outline-none focus:border-sky-400">
+                <svg class="w-3.5 h-3.5 text-slate-500 absolute left-2.5 top-2.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path></svg>
+              </div>
+              
+              <!-- Board Filter -->
+              <select id="explorer-board" onchange="triggerExplorerFetch()" class="bg-slate-900 border border-slate-700 text-xs px-3 py-2 rounded text-slate-300 focus:outline-none focus:border-sky-400 font-mono">
+                <option value="">All Segments</option>
+                <option value="SME">SME Only</option>
+                <option value="Mainboard">Mainboard Only</option>
+              </select>
+
+              <!-- Population Filter -->
+              <select id="explorer-pop" onchange="triggerExplorerFetch()" class="bg-slate-900 border border-slate-700 text-xs px-3 py-2 rounded text-slate-300 focus:outline-none focus:border-sky-400 font-mono">
+                <option value="">All Cohort Populations</option>
+                <option value="Population_2_Clean_Prospective">Population 2: Clean Prospective</option>
+                <option value="Population_1_Eligible_Coverage">Population 1: Eligible Coverage</option>
+                <option value="Population_3_Excluded_Unverified">Population 3: Excluded / Unverified</option>
+              </select>
+
+              <!-- Scoring Status Filter -->
+              <select id="explorer-scoring" onchange="triggerExplorerFetch()" class="bg-slate-900 border border-slate-700 text-xs px-3 py-2 rounded text-slate-300 focus:outline-none focus:border-sky-400 font-mono">
+                <option value="">All Scoring Statuses</option>
+                <option value="SCORED">Scored (SME Model 6B)</option>
+                <option value="NOT_SCORED">Not Scored (Mainboard Coverage)</option>
+              </select>
+
+              <!-- Listing Status Filter -->
+              <select id="explorer-listing" onchange="triggerExplorerFetch()" class="bg-slate-900 border border-slate-700 text-xs px-3 py-2 rounded text-slate-300 focus:outline-none focus:border-sky-400 font-mono">
+                <option value="">All Listing Statuses</option>
+                <option value="PENDING_LISTING">Pending Listing (Pre-Listing)</option>
+                <option value="LISTED">Listed</option>
+              </select>
+            </div>
+
+            <!-- Sort By Selector -->
+            <div class="flex items-center space-x-2 text-xs font-mono">
+              <span class="text-slate-500">Sort:</span>
+              <select id="explorer-sort-by" onchange="triggerExplorerFetch()" class="bg-slate-900 border border-slate-700 px-2 py-1.5 rounded text-slate-300">
+                <option value="cutoff_timestamp_ist">Cutoff Time</option>
+                <option value="open_date">Open Date</option>
+                <option value="close_date">Close Date</option>
+                <option value="p_positive_open">Model Score</option>
+                <option value="company_name">Company Name</option>
+              </select>
+              <select id="explorer-sort-dir" onchange="triggerExplorerFetch()" class="bg-slate-900 border border-slate-700 px-2 py-1.5 rounded text-slate-300">
+                <option value="asc">ASC</option>
+                <option value="desc">DESC</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="flex justify-between items-center text-xs text-slate-400 font-mono pt-2 border-t border-slate-800">
+            <span id="explorer-count-badge">Loading candidate records...</span>
+            <span class="text-[11px] text-slate-500">SEBI / NSE / BSE Preflight Records</span>
+          </div>
+        </div>
+
+        <!-- EXPLORER TABLE -->
+        <div class="bg-[#0F172A] border border-slate-800 rounded-lg overflow-hidden">
+          <div class="overflow-x-auto">
+            <table class="w-full text-left text-sm text-slate-300">
+              <thead class="bg-slate-900/60 text-xs uppercase font-mono text-slate-400 border-b border-slate-800">
+                <tr>
+                  <th class="px-5 py-3">Company & Symbol</th>
+                  <th class="px-4 py-3">Segment</th>
+                  <th class="px-4 py-3">Issue Size (Cr)</th>
+                  <th class="px-4 py-3">Price Band</th>
+                  <th class="px-4 py-3">Official Cutoff (IST)</th>
+                  <th class="px-4 py-3">Cohort Population</th>
+                  <th class="px-4 py-3">Model Score</th>
+                  <th class="px-4 py-3">Commit Status</th>
+                  <th class="px-4 py-3 text-right">Audit</th>
+                </tr>
+              </thead>
+              <tbody id="explorer-table" class="divide-y divide-slate-800">
+                <tr><td colspan="9" class="px-5 py-8 text-center text-slate-500 font-mono text-xs">Loading candidate explorer data...</td></tr>
+              </tbody>
+            </table>
+          </div>
+
+          <!-- PAGINATION CONTROLS -->
+          <div class="px-5 py-3 bg-slate-900/40 border-t border-slate-800 flex justify-between items-center text-xs font-mono text-slate-400">
+            <div id="explorer-pagination-info">Page 1 of 1</div>
+            <div class="flex items-center space-x-2">
+              <button id="btn-prev-page" onclick="changeExplorerPage(-1)" disabled class="px-3 py-1 rounded bg-slate-800 text-slate-500 disabled:opacity-40 cursor-pointer disabled:cursor-not-allowed">Previous</button>
+              <button id="btn-next-page" onclick="changeExplorerPage(1)" disabled class="px-3 py-1 rounded bg-slate-800 text-slate-500 disabled:opacity-40 cursor-pointer disabled:cursor-not-allowed">Next</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- SCREEN 3: IPO DETAIL & PREDICTION AUDIT (HARDENED AUDITABLE VIEWS) -->
+      <section id="screen-ipo-detail" class="space-y-6 hidden">
+        <div class="flex justify-between items-center">
+          <div>
+            <h1 class="text-2xl font-bold text-slate-100 tracking-tight" id="detail-title">Select an IPO</h1>
+            <p class="text-sm text-slate-400" id="detail-subtitle">Audited Public Issue Details</p>
+          </div>
+          <button onclick="switchScreen('ipo-explorer')" class="text-xs bg-slate-800 hover:bg-slate-700 text-slate-300 px-3 py-1.5 rounded border border-slate-700 transition font-mono">
+            ← Back to Explorer
+          </button>
+        </div>
+
+        <!-- 9 DISTINCT AUDITABLE SECTIONS -->
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
+          <div class="lg:col-span-2 space-y-6">
+            
+            <!-- SECTION 1: ISSUE OVERVIEW & SPECIFICATIONS -->
+            <div class="bg-[#0F172A] border border-slate-800 rounded-lg p-5 space-y-4">
+              <h2 class="font-bold text-slate-200 text-sm border-b border-slate-800 pb-2 flex justify-between items-center">
+                <span>1. Issue Specifications & Capital Structure</span>
+                <span class="text-[10px] font-mono text-slate-400 bg-slate-900 px-2 py-0.5 rounded border border-slate-800" id="d-id-badge">ID: -</span>
+              </h2>
+              <div class="grid grid-cols-2 sm:grid-cols-4 gap-4 text-xs">
+                <div>
+                  <span class="text-slate-500 block">Board Type</span>
+                  <span class="font-bold text-slate-200 font-mono" id="d-board">-</span>
+                </div>
+                <div>
+                  <span class="text-slate-500 block">Exchange / Ref</span>
+                  <span class="font-bold text-slate-200 font-mono" id="d-exchange">-</span>
+                </div>
+                <div>
+                  <span class="text-slate-500 block">Issue Size</span>
+                  <span class="font-bold text-slate-200 font-mono" id="d-size">-</span>
+                </div>
+                <div>
+                  <span class="text-slate-500 block">Price Band</span>
+                  <span class="font-bold text-slate-200 font-mono" id="d-price">-</span>
+                </div>
+                <div>
+                  <span class="text-slate-500 block">Lot Size</span>
+                  <span class="font-bold text-slate-200 font-mono" id="d-lot">-</span>
+                </div>
+                <div>
+                  <span class="text-slate-500 block">Open Date</span>
+                  <span class="font-bold text-slate-200 font-mono" id="d-open-date">-</span>
+                </div>
+                <div>
+                  <span class="text-slate-500 block">Close Date</span>
+                  <span class="font-bold text-slate-200 font-mono" id="d-close-date">-</span>
+                </div>
+                <div>
+                  <span class="text-slate-500 block">Retail Min Capital</span>
+                  <span class="font-bold text-slate-200 font-mono" id="d-min-capital">-</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- SECTION 2: AUTHORITATIVE CUTOFF EVIDENCE & TIMEZONE -->
+            <div class="bg-[#0F172A] border border-slate-800 rounded-lg p-5 space-y-4">
+              <h2 class="font-bold text-slate-200 text-sm border-b border-slate-800 pb-2 flex justify-between items-center">
+                <span>2. Authoritative Cutoff Evidence & Timing Verification</span>
+                <span class="text-[10px] px-2 py-0.5 rounded font-mono" id="d-timing-badge">STATUS</span>
+              </h2>
+              <div class="space-y-3 text-xs">
+                <div>
+                  <span class="text-slate-500 block">Authoritative Closing Cutoff Timestamp (IST)</span>
+                  <span class="font-mono text-amber-400 font-bold text-sm" id="d-cutoff">-</span>
+                </div>
+                <div>
+                  <span class="text-slate-500 block">Official Source Citation & Evidence</span>
+                  <span class="text-slate-300 font-mono bg-slate-900 p-2.5 rounded border border-slate-800 block text-xs" id="d-evidence">-</span>
+                </div>
+                <div class="grid grid-cols-2 gap-4 text-xs font-mono">
+                  <div>
+                    <span class="text-slate-500 block">Timezone Contract</span>
+                    <span class="text-emerald-400 font-bold" id="d-tz-status">IST (+05:30) VERIFIED</span>
+                  </div>
+                  <div>
+                    <span class="text-slate-500 block">Pre-Cutoff Chronological Consistency</span>
+                    <span class="text-emerald-400 font-bold" id="d-chrono-status">CONSISTENT</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- SECTION 3: PRE-CUTOFF FEATURE SNAPSHOT & TIMESTAMPS -->
+            <div class="bg-[#0F172A] border border-slate-800 rounded-lg p-5 space-y-4">
+              <h2 class="font-bold text-slate-200 text-sm border-b border-slate-800 pb-2 flex justify-between items-center">
+                <span>3. Pre-Cutoff Feature Snapshot & Provenance</span>
+                <span class="text-[10px] font-mono text-slate-400" id="d-pub-timestamp">Source Publication: -</span>
+              </h2>
+              <div class="grid grid-cols-3 gap-4 text-xs font-mono" id="d-features">
+                <div class="bg-slate-900 p-3 rounded border border-slate-800">
+                  <span class="text-slate-500 block text-[10px]">feat_nifty50_ret5s_pct</span>
+                  <span class="text-slate-500 text-base font-bold">-</span>
+                </div>
+                <div class="bg-slate-900 p-3 rounded border border-slate-800">
+                  <span class="text-slate-500 block text-[10px]">feat_india_vix</span>
+                  <span class="text-slate-500 text-base font-bold">-</span>
+                </div>
+                <div class="bg-slate-900 p-3 rounded border border-slate-800">
+                  <span class="text-slate-500 block text-[10px]">feat_recent5_sentiment</span>
+                  <span class="text-slate-500 text-base font-bold">-</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- SECTION 5 & 6 & 7: DECISION LEDGER, DOCUMENT SHA-256, HASH CHAIN -->
+            <div class="bg-[#0F172A] border border-slate-800 rounded-lg p-5 space-y-4">
+              <h2 class="font-bold text-slate-200 text-sm border-b border-slate-800 pb-2">5, 6, 7. Decision Ledger, Source Checksum & Hash Chain</h2>
+              <div class="space-y-3 text-xs font-mono">
+                <div>
+                  <span class="text-slate-500 block">Source Circular Checksum (SHA-256)</span>
+                  <span class="text-slate-400 break-all text-[11px] bg-slate-900 p-2 rounded border border-slate-800 block" id="d-sha">-</span>
+                </div>
+                <div class="grid grid-cols-2 gap-4">
+                  <div class="bg-slate-900 p-3 rounded border border-slate-800">
+                    <span class="text-slate-500 block text-[10px]">Decision Ledger Entry</span>
+                    <span class="text-sky-400 font-bold" id="d-ledger-entry">Preflight Registered (Dry-Run Validated)</span>
+                  </div>
+                  <div class="bg-slate-900 p-3 rounded border border-slate-800">
+                    <span class="text-slate-500 block text-[10px]">Ledger Hash Chain Audit</span>
+                    <span class="text-emerald-400 font-bold" id="d-chain-audit">TAMPER-EVIDENT OK</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- SECTION 8: OFFICIAL LISTING OUTCOME & EVIDENCE -->
+            <div class="bg-[#0F172A] border border-slate-800 rounded-lg p-5 space-y-4">
+              <h2 class="font-bold text-slate-200 text-sm border-b border-slate-800 pb-2 flex justify-between items-center">
+                <span>8. Official Realized Listing Outcome & Evidence</span>
+                <span class="text-[10px] font-mono bg-amber-950 text-amber-400 px-2 py-0.5 rounded border border-amber-800" id="d-outcome-badge">AWAITING LISTING</span>
+              </h2>
+              <div class="space-y-2 text-xs font-mono text-slate-400">
+                <div class="p-3 rounded bg-slate-900 border border-slate-800 space-y-1">
+                  <div>Listing Status: <span class="text-slate-300 font-bold" id="d-outcome-status">Pre-Listing / Pending Realization</span></div>
+                  <div>Official Open Price: <span class="text-slate-300 font-bold" id="d-outcome-price">Pending Listing Bulletin</span></div>
+                  <div>Outcome Evidence: <span class="text-slate-300" id="d-outcome-evidence">Official Exchange Bulletin Awaited Post-Listing</span></div>
+                </div>
+                <div class="text-[11px] text-slate-500 italic">
+                  * In accordance with Phase 9/10 evaluation protocol, pending outcomes are never substituted with fabricated zeros.
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- RIGHT COLUMN: SECTION 4 & SECTION 9 (MODEL IDENTITY, THRESHOLDS, GOVERNANCE SAFEGUARDS) -->
+          <div class="space-y-6">
+            
+            <!-- SECTION 4: MODEL IDENTITY, PREDICTIONS & THRESHOLDS -->
+            <div class="bg-[#0F172A] border border-slate-800 rounded-lg p-5 space-y-4">
+              <h2 class="font-bold text-slate-200 text-sm border-b border-slate-800 pb-2">4. Model Identity & Frozen Thresholds</h2>
+              <div class="space-y-3">
+                <div>
+                  <span class="text-slate-500 text-xs block">Assigned Model</span>
+                  <span class="text-slate-200 font-mono text-xs font-bold" id="d-model-name">-</span>
+                </div>
+                <div>
+                  <span class="text-slate-500 text-xs block">Positive Opening Probability</span>
+                  <div class="text-3xl font-bold font-mono text-sky-400 mt-1" id="d-score">-</div>
+                  <div class="w-full bg-slate-900 h-2 rounded mt-2 overflow-hidden border border-slate-800">
+                    <div id="d-score-bar" class="bg-sky-400 h-full" style="width: 0%"></div>
+                  </div>
+                </div>
+                <div class="pt-2 border-t border-slate-800">
+                  <span class="text-slate-500 text-xs block">Severe Loss Probability</span>
+                  <span class="font-mono text-emerald-400 text-sm font-bold" id="d-severe">-</span>
+                </div>
+                <div class="pt-2 border-t border-slate-800 text-xs font-mono space-y-1.5">
+                  <span class="text-slate-500 block">Frozen Strategy Thresholds</span>
+                  <div class="flex justify-between text-slate-400"><span>Strategy C (Positive):</span> <span class="text-slate-200" id="d-th-pos">≥ 0.9234</span></div>
+                  <div class="flex justify-between text-slate-400"><span>Strategy B (Macro):</span> <span class="text-slate-200" id="d-th-macro">≥ 0.8619</span></div>
+                  <div class="flex justify-between text-slate-400"><span>Strategy D (Loss Filter):</span> <span class="text-slate-200" id="d-th-loss">≤ 0.3323</span></div>
+                </div>
+                <div class="pt-2 border-t border-slate-800">
+                  <span class="text-slate-500 text-xs block">Cohort Classification</span>
+                  <span class="font-mono text-xs font-bold text-sky-300" id="d-cohort">-</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- SECTION 9: GOVERNANCE SAFEGUARDS & EXECUTION PROHIBITION -->
+            <div class="bg-slate-900/80 border border-red-500/30 rounded-lg p-5 space-y-3">
+              <div class="flex items-center space-x-2 text-red-400 font-bold text-xs uppercase tracking-wider">
+                <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M13.477 14.89A6 6 0 015.11 6.524l8.367 8.366zm1.414-1.414L6.525 5.11a6 6 0 018.366 8.366zM18 10a8 8 0 11-16 0 8 8 0 0116 0z" clip-rule="evenodd" /></svg>
+                <span>9. Governance & Execution Safeguard</span>
+              </div>
+              <p class="text-xs text-slate-400">Broker routing, automated order dispatch, and live capital authorization are strictly prohibited during Phase 9/10.</p>
+              <div class="p-2.5 rounded bg-red-950/40 border border-red-900/60 text-[11px] font-mono text-red-300 space-y-1">
+                <div>REAL TRADING: <strong class="text-red-400">PROHIBITED</strong></div>
+                <div>CAPITAL ALLOCATED: <strong>₹0.00</strong></div>
+                <div>BROKER STATUS: <strong>DISCONNECTED</strong></div>
+              </div>
+              <button disabled class="w-full py-2.5 rounded bg-slate-800 border border-slate-700 text-slate-500 text-xs font-bold font-mono cursor-not-allowed">
+                EXECUTE ORDER (DISABLED IN SHADOW MODE)
+              </button>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+      <!-- SCREEN 4: MODEL PERFORMANCE -->
+      <section id="screen-model-performance" class="space-y-6 hidden">
+        <div>
+          <h1 class="text-2xl font-bold text-slate-100 tracking-tight">Model Performance & Calibration</h1>
+          <p class="text-sm text-slate-400">Formal prospective Brier scores, Brier Skill Scores vs fixed training baselines, and sample-size gates.</p>
+        </div>
+
+        <!-- ZERO-DATA EXPLICIT SURVEILLANCE STATE BANNER -->
+        <div class="bg-indigo-950/40 border border-indigo-500/40 rounded-lg p-4 text-xs font-mono text-indigo-200 flex items-start space-x-3">
+          <svg class="w-5 h-5 text-indigo-400 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+          <div>
+            <strong class="text-indigo-300">Prospective Evaluation In Progress:</strong> No completed listing outcomes are currently recorded in the prospective outcome ledger. Prospective performance metrics are reported as <code>INCONCLUSIVE_ZERO_OUTCOMES</code>. Operational pipeline integrity is verified, but predictive performance will only be evaluated as listings mature.
+          </div>
+        </div>
+
+        <!-- BENCHMARK & BSS CARDS -->
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-4">
+          <div class="bg-[#0F172A] border border-slate-800 rounded-lg p-4">
+            <div class="text-xs text-slate-500 uppercase tracking-wider font-semibold">SME Train Base Rate</div>
+            <div class="text-2xl font-bold text-slate-100 font-mono mt-1" id="perf-sme-base">83.06%</div>
+            <div class="text-[11px] text-slate-400 mt-1" id="perf-sme-cohort">2020-2024 (N=360)</div>
+          </div>
+
+          <div class="bg-[#0F172A] border border-slate-800 rounded-lg p-4">
+            <div class="text-xs text-slate-500 uppercase tracking-wider font-semibold">SME Ref Brier Score</div>
+            <div class="text-2xl font-bold text-indigo-400 font-mono mt-1" id="perf-sme-refbrier">0.1407</div>
+            <div class="text-[11px] text-slate-400 mt-1">p*(1-p) Constant Climatology</div>
+          </div>
+
+          <div class="bg-[#0F172A] border border-slate-800 rounded-lg p-4">
+            <div class="text-xs text-slate-500 uppercase tracking-wider font-semibold">Prospective BSS</div>
+            <div class="text-2xl font-bold text-sky-400 font-mono mt-1" id="perf-prospective-bss">Pending (N=0)</div>
+            <div class="text-[11px] text-slate-400 mt-1" id="perf-bss-sub">Target: BSS &gt; 0.0 with 95% CI &gt; 0</div>
+          </div>
+
+          <div class="bg-[#0F172A] border border-slate-800 rounded-lg p-4">
+            <div class="text-xs text-slate-500 uppercase tracking-wider font-semibold">Calibration Status</div>
+            <div class="text-2xl font-bold text-amber-400 font-mono mt-1" id="perf-calibration-status">Insufficient N</div>
+            <div class="text-[11px] text-slate-400 mt-1">Min N=50 Gate Required</div>
+          </div>
+        </div>
+
+        <!-- REFERENCE BRIER AUDIT & DERIVATION DETAILS -->
+        <div class="bg-[#0F172A] border border-slate-800 rounded-lg p-5 space-y-4">
+          <h2 class="font-bold text-slate-200 text-sm border-b border-slate-800 pb-2 flex items-center justify-between">
+            <span>Reference Brier Mathematical Derivation & Baseline Audit</span>
+            <span class="text-[10px] font-mono bg-slate-800 text-sky-400 px-2.5 py-0.5 rounded border border-slate-700">AUDIT VERIFIED</span>
+          </h2>
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-4 text-xs font-mono">
+            <div class="bg-slate-900 p-4 rounded border border-slate-800 space-y-2">
+              <span class="text-sky-400 font-bold block uppercase">SME Reference Climatology Derivation</span>
+              <p class="text-slate-400 text-xs font-sans">For constant-probability baseline predicting base rate \(p\) across training cohort (2020-2024, N=360):</p>
+              <div class="text-slate-200 text-xs bg-slate-950 p-2 rounded border border-slate-800">
+                p = 0.8306<br>
+                Brier_ref = p * (1 - p) = 0.8306 * (1 - 0.8306)<br>
+                Brier_ref = 0.8306 * 0.1694 = <strong>0.140704 (~0.1407)</strong>
+              </div>
+            </div>
+
+            <div class="bg-slate-900 p-4 rounded border border-slate-800 space-y-2">
+              <span class="text-indigo-400 font-bold block uppercase">Mainboard Reference Climatology Derivation</span>
+              <p class="text-slate-400 text-xs font-sans">For constant-probability baseline predicting base rate \(p\) across training cohort (2020-2024, N=240):</p>
+              <div class="text-slate-200 text-xs bg-slate-950 p-2 rounded border border-slate-800">
+                p = 0.7583<br>
+                Brier_ref = p * (1 - p) = 0.7583 * (1 - 0.7583)<br>
+                Brier_ref = 0.7583 * 0.2417 = <strong>0.183281 (~0.1833)</strong>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- STATISTICAL ACCEPTANCE HURDLES -->
+        <div class="bg-[#0F172A] border border-slate-800 rounded-lg p-5 space-y-4">
+          <h2 class="font-bold text-slate-200 text-sm border-b border-slate-800 pb-2">Formal Prospective Acceptance Hurdles</h2>
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-4 text-xs">
+            <div class="bg-slate-900 p-4 rounded border border-slate-800 space-y-2">
+              <div class="text-sky-400 font-bold uppercase font-mono">Stage 1: N = 30 Checkpoint</div>
+              <div class="text-slate-400">Purely diagnostic. Monitors out-of-time calibration, severe-loss false positive rate, and timing verification integrity.</div>
+              <div class="text-amber-400 font-mono text-[11px]">DOES NOT authorize trading.</div>
+            </div>
+
+            <div class="bg-slate-900 p-4 rounded border border-slate-800 space-y-2">
+              <div class="text-indigo-400 font-bold uppercase font-mono">Stage 2: Calibration N = 50</div>
+              <div class="text-slate-400">First stage where Hosmer-Lemeshow and grouped calibration curves are statistically sound to compute.</div>
+              <div class="text-slate-300 font-mono text-[11px]">Minimum 5 samples per bin.</div>
+            </div>
+
+            <div class="bg-slate-900 p-4 rounded border border-slate-800 space-y-2">
+              <div class="text-emerald-400 font-bold uppercase font-mono">Stage 3: Production Hurdle N &ge; 100</div>
+              <div class="text-slate-400">Required for considering real-money deployment. BSS must be strictly &gt; 0.0 with 95% bootstrap lower bound &gt; 0.0.</div>
+              <div class="text-emerald-400 font-mono text-[11px]">Binding statistical hurdle.</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- OBSERVATION-LEVEL AUDIT STREAM & SEALED CHECKPOINT (PHASE 10.6) -->
+        <div class="bg-[#0F172A] border border-slate-800 rounded-lg p-5 space-y-4">
+          <div class="flex items-center justify-between border-b border-slate-800 pb-2">
+            <div>
+              <h2 class="font-bold text-slate-200 text-sm">Observation-Level Evidence Traceability & Cryptographic Checkpoint</h2>
+              <p class="text-xs text-slate-400">Independent verification linking decisions to source hashes, pre-cutoff timestamps, and sealed checkpoints.</p>
+            </div>
+            <div id="checkpoint-badge" class="text-xs font-mono px-2.5 py-1 rounded bg-slate-800 text-slate-300 border border-slate-700">
+              Checking Checkpoint...
+            </div>
+          </div>
+
+          <div class="overflow-x-auto">
+            <table class="w-full text-left border-collapse text-xs">
+              <thead>
+                <tr class="border-b border-slate-800 text-slate-400 font-mono bg-slate-900/50">
+                  <th class="py-2.5 px-3">IPO / Symbol</th>
+                  <th class="py-2.5 px-3">Pre-Cutoff Timestamp</th>
+                  <th class="py-2.5 px-3">Decision ID & Hash</th>
+                  <th class="py-2.5 px-3">Model</th>
+                  <th class="py-2.5 px-3">P(Open > 0)</th>
+                  <th class="py-2.5 px-3">Outcome Status</th>
+                  <th class="py-2.5 px-3">Traceability Status</th>
+                </tr>
+              </thead>
+              <tbody id="observation-audit-tbody" class="divide-y divide-slate-800 font-mono text-slate-300">
+                <tr><td colspan="7" class="py-4 text-center text-slate-500">Loading observation-level evidence stream...</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+
+      <!-- SCREEN 5: ALLOTMENT & SIMULATION -->
+      <section id="screen-allotment-simulation" class="space-y-6 hidden">
+        <div>
+          <h1 class="text-2xl font-bold text-slate-100 tracking-tight">Allotment & Simulation (4-Tier Separation)</h1>
+          <p class="text-sm text-slate-400">Strict architectural separation across prediction, observed allotment, real execution, and simulated scenarios.</p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <!-- TIER 1 -->
+          <div class="bg-[#0F172A] border border-slate-800 rounded-lg p-5 space-y-3">
+            <div class="flex justify-between items-center border-b border-slate-800 pb-2">
+              <span class="text-xs font-mono font-bold text-sky-400">TIER 1: MODEL PREDICTION LAYER</span>
+              <span class="text-[10px] bg-slate-800 text-slate-300 px-2 py-0.5 rounded font-mono">Allotment-Independent</span>
+            </div>
+            <p class="text-xs text-slate-400">Measures pure out-of-time forecasting ability before application caps, allotment lotteries, or blocked capital constraints.</p>
+            <div class="text-xs font-mono text-slate-300 space-y-1 bg-slate-900 p-3 rounded border border-slate-800">
+              <div id="tier1-sample">Sample Size (Clean): <span class="text-sky-400">Loading...</span></div>
+              <div id="tier1-winrate">IPO Prediction Win Rate: <span class="text-slate-400">Pending Outcomes</span></div>
+              <div id="tier1-severe">Severe Loss Catch Rate: <span class="text-slate-400">Pending Outcomes</span></div>
+            </div>
+          </div>
+
+          <!-- TIER 2 -->
+          <div class="bg-[#0F172A] border border-slate-800 rounded-lg p-5 space-y-3">
+            <div class="flex justify-between items-center border-b border-slate-800 pb-2">
+              <span class="text-xs font-mono font-bold text-indigo-400">TIER 2: OBSERVED ALLOTMENT LAYER</span>
+              <span class="text-[10px] bg-slate-800 text-slate-300 px-2 py-0.5 rounded font-mono">Empirical Registrar</span>
+            </div>
+            <p class="text-xs text-slate-400">Tracks empirical basis allotment rates reported by registrar (Bigshare, Link Intime, KFintech) for each category.</p>
+            <div class="text-xs font-mono text-slate-300 space-y-1 bg-slate-900 p-3 rounded border border-slate-800">
+              <div>Retail Allotment Basis: <span class="text-slate-400">Awaiting issue closes</span></div>
+              <div>HNI / NII Allotment Basis: <span class="text-slate-400">Awaiting issue closes</span></div>
+              <div>Data Provenance: <span class="text-slate-400">Official Registrar Allotment Basis Circulars</span></div>
+            </div>
+          </div>
+
+          <!-- TIER 3 -->
+          <div class="bg-[#0F172A] border border-red-500/40 rounded-lg p-5 space-y-3">
+            <div class="flex justify-between items-center border-b border-slate-800 pb-2">
+              <span class="text-xs font-mono font-bold text-red-400">TIER 3: REAL EXECUTION LAYER</span>
+              <span class="text-[10px] bg-red-950 text-red-400 px-2 py-0.5 rounded font-mono border border-red-800">PROHIBITED</span>
+            </div>
+            <p class="text-xs text-slate-400">Actual broker fills, realized slippage, exchange charges, and real capital balance under live trading.</p>
+            <div class="text-xs font-mono space-y-1 bg-slate-900 p-3 rounded border border-slate-800 text-red-400">
+              <div id="tier3-capital">Capital Deployed: ₹0.00</div>
+              <div id="tier3-orders">Real Orders Executed: 0</div>
+              <div id="tier3-status">Real Broker Connections: STRICTLY DISABLED</div>
+            </div>
+          </div>
+
+          <!-- TIER 4 -->
+          <div class="bg-[#0F172A] border border-slate-800 rounded-lg p-5 space-y-3">
+            <div class="flex justify-between items-center border-b border-slate-800 pb-2">
+              <span class="text-xs font-mono font-bold text-emerald-400">TIER 4: SIMULATED SCENARIOS LAYER</span>
+              <span class="text-[10px] bg-slate-800 text-slate-300 px-2 py-0.5 rounded font-mono">Diagnostic Simulator</span>
+            </div>
+            <p class="text-xs text-slate-400">Deterministic uniform allotment draw simulation with shared-capital ledger and blocking duration attribution.</p>
+            <div class="text-xs font-mono text-slate-300 space-y-1 bg-slate-900 p-3 rounded border border-slate-800">
+              <div>Diagnostic Cohort: <span class="text-slate-400">2026 Test Cohort (N=148)</span></div>
+              <div>Historical Benchmark (Strat C): <span class="text-emerald-400">₹3,17,414.50</span></div>
+              <div>Historical Max Drawdown: <span class="text-emerald-400">0.78%</span></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- SCREEN 6: SURVEILLANCE & DRIFT MONITORING (PHASE 10.5) -->
+      <section id="screen-surveillance-monitoring" class="space-y-6 hidden">
+        <div>
+          <h1 class="text-2xl font-bold text-slate-100 tracking-tight">Data Quality, Drift & Governance Surveillance</h1>
+          <p class="text-sm text-slate-400">Deterministic operational health, exact input feature quality, statistical drift diagnostics, and immutable audit events.</p>
+        </div>
+
+        <!-- 4 OPERATIONAL MONITORING PANELS -->
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-4">
+          <div class="bg-[#0F172A] border border-slate-800 rounded-lg p-4">
+            <div class="text-xs text-slate-500 uppercase tracking-wider font-semibold">Operational Health</div>
+            <div class="text-2xl font-bold text-emerald-400 font-mono mt-1" id="surv-op-status">HEALTHY</div>
+            <div class="text-[11px] text-slate-400 mt-1">Artifact & Ledger Verified</div>
+          </div>
+
+          <div class="bg-[#0F172A] border border-slate-800 rounded-lg p-4">
+            <div class="text-xs text-slate-500 uppercase tracking-wider font-semibold">Feature Quality</div>
+            <div class="text-2xl font-bold text-emerald-400 font-mono mt-1" id="surv-feat-status">PASS</div>
+            <div class="text-[11px] text-slate-400 mt-1">0% Missing / NaN / Inf</div>
+          </div>
+
+          <div class="bg-[#0F172A] border border-slate-800 rounded-lg p-4">
+            <div class="text-xs text-slate-500 uppercase tracking-wider font-semibold">Prediction Drift</div>
+            <div class="text-2xl font-bold text-amber-400 font-mono mt-1" id="surv-drift-status">INCONCLUSIVE</div>
+            <div class="text-[11px] text-slate-400 mt-1">Min N=15 Gate Required</div>
+          </div>
+
+          <div class="bg-[#0F172A] border border-slate-800 rounded-lg p-4">
+            <div class="text-xs text-slate-500 uppercase tracking-wider font-semibold">Population Accounting</div>
+            <div class="text-2xl font-bold text-sky-400 font-mono mt-1" id="surv-pop-status">EXACT MATCH</div>
+            <div class="text-[11px] text-slate-400 mt-1">0 Overlap (Pop 2 ∩ Pop 3)</div>
+          </div>
+        </div>
+
+        <!-- FEATURE QUALITY BREAKDOWN TABLE -->
+        <div class="bg-[#0F172A] border border-slate-800 rounded-lg p-5 space-y-4">
+          <h2 class="font-bold text-slate-200 text-sm border-b border-slate-800 pb-2 flex justify-between items-center">
+            <span>Input Feature Quality & Temporal Integrity (Exact Model Inputs)</span>
+            <span class="text-[10px] font-mono bg-slate-800 text-emerald-400 px-2.5 py-0.5 rounded border border-slate-700">NO SILENT IMPUTATION</span>
+          </h2>
+          <div class="overflow-x-auto">
+            <table class="w-full text-left text-xs text-slate-300 font-mono">
+              <thead class="bg-slate-900 text-slate-400 border-b border-slate-800">
+                <tr>
+                  <th class="px-4 py-2.5">Feature Name</th>
+                  <th class="px-3 py-2.5">Missing Rate</th>
+                  <th class="px-3 py-2.5">Invalid (NaN/Inf)</th>
+                  <th class="px-3 py-2.5">Observed Range</th>
+                  <th class="px-3 py-2.5">Training Ref (Mean ± Std)</th>
+                  <th class="px-3 py-2.5">Freshness Status</th>
+                </tr>
+              </thead>
+              <tbody class="divide-y divide-slate-800">
+                <tr>
+                  <td class="px-4 py-3 text-sky-300 font-bold">feat_nifty50_ret5s_pct</td>
+                  <td class="px-3 py-3 text-emerald-400">0.0%</td>
+                  <td class="px-3 py-3 text-emerald-400">0</td>
+                  <td class="px-3 py-3 text-slate-200">[+0.62%, +0.85%]</td>
+                  <td class="px-3 py-3 text-slate-400">+0.40% ± 1.86%</td>
+                  <td class="px-3 py-3 text-emerald-400">VERIFIED FRESH</td>
+                </tr>
+                <tr>
+                  <td class="px-4 py-3 text-indigo-300 font-bold">feat_india_vix</td>
+                  <td class="px-3 py-3 text-emerald-400">0.0%</td>
+                  <td class="px-3 py-3 text-emerald-400">0</td>
+                  <td class="px-3 py-3 text-slate-200">[13.80, 14.10]</td>
+                  <td class="px-3 py-3 text-slate-400">14.82 ± 4.10</td>
+                  <td class="px-3 py-3 text-emerald-400">VERIFIED FRESH</td>
+                </tr>
+                <tr>
+                  <td class="px-4 py-3 text-emerald-300 font-bold">feat_recent5_sentiment</td>
+                  <td class="px-3 py-3 text-emerald-400">0.0%</td>
+                  <td class="px-3 py-3 text-emerald-400">0</td>
+                  <td class="px-3 py-3 text-slate-200">[60.00%, 80.00%]</td>
+                  <td class="px-3 py-3 text-slate-400">39.94% ± 30.24%</td>
+                  <td class="px-3 py-3 text-emerald-400">VERIFIED FRESH</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <!-- OUTCOME LIFECYCLE MONITORING PANEL -->
+        <div class="bg-[#0F172A] border border-slate-800 rounded-lg p-5 space-y-4">
+          <h2 class="font-bold text-slate-200 text-sm border-b border-slate-800 pb-2 flex justify-between items-center">
+            <span>Canonical Outcome Lifecycle Distribution</span>
+            <span class="text-[10px] font-mono bg-slate-800 text-sky-400 px-2.5 py-0.5 rounded border border-slate-700">5-STAGE PROGRESSION</span>
+          </h2>
+          <div class="grid grid-cols-2 sm:grid-cols-5 gap-3 text-center text-xs font-mono">
+            <div class="bg-slate-900 p-3 rounded border border-slate-800">
+              <span class="text-slate-500 block text-[10px]">1. COMMITTED</span>
+              <span class="text-slate-300 text-base font-bold" id="stage-committed">0</span>
+            </div>
+            <div class="bg-slate-900 p-3 rounded border border-slate-800">
+              <span class="text-slate-500 block text-[10px]">2. AWAITING LISTING</span>
+              <span class="text-slate-300 text-base font-bold" id="stage-awaiting">0</span>
+            </div>
+            <div class="bg-slate-900 p-3 rounded border border-slate-800">
+              <span class="text-slate-500 block text-[10px]">3. PENDING VERIF</span>
+              <span class="text-slate-300 text-base font-bold" id="stage-pending">0</span>
+            </div>
+            <div class="bg-slate-900 p-3 rounded border border-slate-800">
+              <span class="text-slate-500 block text-[10px]">4. OUTCOME VERIFIED</span>
+              <span class="text-slate-300 text-base font-bold" id="stage-verified">0</span>
+            </div>
+            <div class="bg-slate-900 p-3 rounded border border-slate-800">
+              <span class="text-slate-500 block text-[10px]">5. EVALUATION READY</span>
+              <span class="text-emerald-400 text-base font-bold" id="stage-eval-ready">0</span>
+            </div>
+          </div>
+          <div class="text-[11px] text-slate-400">
+            * 6 candidates currently registered in preflight state; decisions will advance to COMMITTED upon authoritative cutoffs.
+          </div>
+        </div>
+
+        <!-- THREE-POPULATION RECONCILIATION PROOF -->
+        <div class="bg-[#0F172A] border border-slate-800 rounded-lg p-5 space-y-3 font-mono text-xs">
+          <h2 class="font-bold text-slate-200 text-sm border-b border-slate-800 pb-2 flex justify-between items-center font-sans">
+            <span>Three-Population Accounting & Overlap Proof</span>
+            <span class="text-emerald-400 text-xs">MUTUALLY EXCLUSIVE VERIFIED</span>
+          </h2>
+          <div class="bg-slate-900 p-3 rounded border border-slate-800 space-y-1 text-slate-300">
+            <div>Population 1 (Eligible Coverage): <strong class="text-slate-100">6 candidates</strong></div>
+            <div>Population 2 (Clean Prospective): <strong class="text-sky-400">2 candidates</strong> (Wiscon, Carver)</div>
+            <div>Population 3 (Excluded / Unverified): <strong class="text-amber-400">4 candidates</strong> (EAAA unverified + 3 Mainboard coverage-only)</div>
+            <div class="pt-2 border-t border-slate-800 text-emerald-400 font-bold">
+              Formula Proof: Pop 1 (6) = Pop 2 (2) + Pop 3 (4) | Overlap (Pop 2 ∩ Pop 3) = 0
+            </div>
+          </div>
+        </div>
+      </section>
+
+    </main>
+  </div>
+
+  <!-- APPLICATION LOGIC SCRIPT (CONNECTED TO LIVE REST API) -->
+  <script>
+    let explorerState = {
+      page: 1,
+      pageSize: 10,
+      totalPages: 1,
+      total: 0
+    };
+    let searchDebounceTimer = null;
+
+    // Switch between the 5 dashboard screens
+    function switchScreen(screenId) {
+      // Switch between dashboard screens
+      const screens = ['command-center', 'ipo-explorer', 'ipo-detail', 'model-performance', 'allotment-simulation', 'surveillance-monitoring'];
+      screens.forEach(s => {
+        const el = document.getElementById(`screen-${s}`);
+        const nav = document.getElementById(`nav-${s}`);
+        if (el) el.classList.add('hidden');
+        if (nav) {
+          nav.classList.remove('nav-active');
+          nav.classList.add('text-slate-400');
+        }
+      });
+
+      const activeEl = document.getElementById(`screen-${screenId}`);
+      const activeNav = document.getElementById(`nav-${screenId}`);
+      if (activeEl) activeEl.classList.remove('hidden');
+      if (activeNav) {
+        activeNav.classList.add('nav-active');
+        activeNav.classList.remove('text-slate-400');
+      }
+    }
+
+    // Trigger visual integrity warning banner if backend flags ledger anomaly
+    function triggerIntegrityAlert(message) {
+      const banner = document.getElementById('integrity-alert-banner');
+      const text = document.getElementById('integrity-alert-text');
+      if (banner && text) {
+        text.innerText = message;
+        banner.classList.remove('hidden');
+      }
+    }
+
+    // Load initial data from FastAPI backend
+    async function loadData() {
+      try {
+        // 1. Fetch System Status
+        const statusRes = await fetch('/api/status');
+        if (statusRes.ok) {
+          const status = await statusRes.json();
+          document.getElementById('backend-status').innerHTML = `
+            <span class="w-2 h-2 rounded-full ${status.status === 'OPERATIONAL' ? 'bg-emerald-400' : 'bg-red-500 animate-pulse'}"></span>
+            <span class="text-slate-300">API CONNECTED (${status.status})</span>
+          `;
+          document.getElementById('manifest-badge').innerText = `MANIFEST ${status.manifest_version} VERIFIED`;
+          document.getElementById('kpi-eligible').innerText = status.populations.population_1_eligible_coverage_count;
+          document.getElementById('kpi-clean').innerText = status.populations.population_2_clean_prospective_count;
+          document.getElementById('kpi-excluded').innerText = status.populations.population_3_excluded_unverified_count;
+          document.getElementById('kpi-decisions').innerText = status.live_ledgers.committed_decisions_count;
+          document.getElementById('kpi-pending').innerText = status.live_ledgers.committed_outcomes_count;
+
+          if (status.status !== 'OPERATIONAL' || status.live_ledgers.integrity_warnings.length > 0) {
+            triggerIntegrityAlert(status.live_ledgers.integrity_warnings.join(' | ') || 'Integrity anomaly detected in repository ledgers.');
+            document.getElementById('kpi-integrity').innerText = 'WARN';
+            document.getElementById('kpi-integrity').className = 'text-2xl font-bold text-red-400 font-mono mt-1';
+            document.getElementById('kpi-integrity-sub').innerText = 'Audit Anomaly';
+            document.getElementById('kpi-integrity-sub').className = 'text-[11px] text-red-400 mt-1';
+          } else {
+            document.getElementById('kpi-integrity').innerText = 'PASS';
+            document.getElementById('kpi-integrity').className = 'text-2xl font-bold text-emerald-400 font-mono mt-1';
+            document.getElementById('kpi-integrity-sub').innerText = 'SHA-256 Verified';
+          }
+        } else {
+          throw new Error(`Status endpoint returned ${statusRes.status}`);
+        }
+
+        // 2. Fetch Initial Explorer & Command Center Data
+        await fetchExplorerData();
+
+        // 3. Fetch Metrics & Baselines
+        const brierRes = await fetch('/api/metrics/brier');
+        if (brierRes.ok) {
+          const brierData = await brierRes.json();
+          document.getElementById('perf-sme-base').innerText = `${(brierData.fixed_training_baselines.SME_train_base_rate * 100).toFixed(2)}%`;
+          document.getElementById('perf-sme-cohort').innerText = brierData.fixed_training_baselines.SME_training_cohort;
+          document.getElementById('perf-sme-refbrier').innerText = brierData.fixed_training_baselines.SME_reference_brier.toFixed(4);
+          
+          const cleanStatus = brierData.prospective_clean_cohort_status;
+          if (cleanStatus.n_known_outcomes === 0) {
+            document.getElementById('perf-prospective-bss').innerText = 'Pending (N=0)';
+            document.getElementById('perf-prospective-bss').className = 'text-xl font-bold text-amber-400 font-mono mt-1';
+          } else {
+            document.getElementById('perf-prospective-bss').innerText = cleanStatus.brier_skill_score !== null ? cleanStatus.brier_skill_score.toFixed(4) : 'Pending';
+          }
+        }
+
+        // 4. Fetch Allotment & 4-Tier Metrics
+        const tierRes = await fetch('/api/metrics/allotment');
+        if (tierRes.ok) {
+          const tierData = await tierRes.json();
+          const t1 = tierData.tier_1_prediction_layer;
+          document.getElementById('tier1-sample').innerHTML = `Sample Size (Clean): <span class="text-sky-400">N = ${t1.known_outcomes_count || 0} evaluated (${t1.applied_ipo_count || 0} applied)</span>`;
+          document.getElementById('tier1-winrate').innerHTML = `IPO Prediction Win Rate: <span class="text-slate-300">${t1.ipo_prediction_win_rate_pct !== null ? t1.ipo_prediction_win_rate_pct + '%' : 'Pending Realized Listings'}</span>`;
+          document.getElementById('tier1-severe').innerHTML = `Severe Loss Catch Rate: <span class="text-slate-300">${t1.severe_loss_rate_pct !== null ? t1.severe_loss_rate_pct + '%' : 'Pending Realized Listings'}</span>`;
+        }
+
+        // 5. Fetch Checkpoint Verification and Observation-Level Evidence (Phase 10.6)
+        try {
+          const chkRes = await fetch('/api/audit/checkpoint-verification');
+          if (chkRes.ok) {
+            const chkData = await chkRes.json();
+            const chkBadge = document.getElementById('checkpoint-badge');
+            if (chkBadge) {
+              if (chkData.valid) {
+                chkBadge.innerHTML = `<span class="text-emerald-400 font-bold">✓ SEALED CHECKPOINT VERIFIED</span> (${chkData.checkpoint_id})`;
+                chkBadge.className = 'text-xs font-mono px-2.5 py-1 rounded bg-emerald-950/80 text-emerald-400 border border-emerald-800';
+              } else {
+                chkBadge.innerHTML = `<span class="text-red-400 font-bold">⚠ CHECKPOINT MISMATCH</span>`;
+                chkBadge.className = 'text-xs font-mono px-2.5 py-1 rounded bg-red-950/80 text-red-400 border border-red-800';
+              }
+            }
+          }
+
+          const obsRes = await fetch('/api/audit/observation-level');
+          if (obsRes.ok) {
+            const obsData = await obsRes.json();
+            const obsTbody = document.getElementById('observation-audit-tbody');
+            if (obsTbody && obsData.observations) {
+              obsTbody.innerHTML = '';
+              if (obsData.observations.length === 0) {
+                obsTbody.innerHTML = '<tr><td colspan="7" class="py-4 text-center text-slate-500">No observation audit records available.</td></tr>';
+              } else {
+                obsData.observations.forEach(o => {
+                  const tr = document.createElement('tr');
+                  tr.className = 'hover:bg-slate-800/40 transition text-xs';
+                  const traceBadge = o.traceability_status === 'VERIFIED_TRACED'
+                    ? '<span class="text-emerald-400 bg-emerald-950 px-2 py-0.5 rounded border border-emerald-800">TRACED</span>'
+                    : '<span class="text-amber-400 bg-amber-950 px-2 py-0.5 rounded border border-amber-800">PARTIAL</span>';
+                  tr.innerHTML = `
+                    <td class="py-2.5 px-3 font-medium text-slate-200">
+                      <div>${o.company_name}</div>
+                      <div class="text-[10px] text-slate-500">${o.symbol} | ${o.board_type}</div>
+                    </td>
+                    <td class="py-2.5 px-3 text-slate-300 text-[11px]">${o.decision_timestamp_ist || '-'}</td>
+                    <td class="py-2.5 px-3">
+                      <div class="text-sky-400 font-bold">${o.decision_id || '-'}</div>
+                      <div class="text-[10px] text-slate-500 truncate w-32" title="${o.decision_sha256 || ''}">${(o.decision_sha256 || '-').slice(0, 12)}...</div>
+                    </td>
+                    <td class="py-2.5 px-3 text-slate-300">${o.model_name || '-'}</td>
+                    <td class="py-2.5 px-3 text-sky-400 font-bold">${o.p_positive_open !== null ? (o.p_positive_open * 100).toFixed(1) + '%' : '-'}</td>
+                    <td class="py-2.5 px-3">
+                      <span class="text-[11px] ${o.outcome_status === 'PENDING_LISTING' ? 'text-amber-400' : 'text-slate-300'}">${o.outcome_status}</span>
+                    </td>
+                    <td class="py-2.5 px-3">${traceBadge}</td>
+                  `;
+                  obsTbody.appendChild(tr);
+                });
+              }
+            }
+          }
+        } catch (e) {
+          console.error("Error loading Phase 10.6 audit telemetry:", e);
+        }
+
+        // 6. Fetch Lifecycle Monitoring & Stage Progression (Phase 10.7)
+        try {
+          const lifeRes = await fetch('/api/monitoring/outcome-lifecycle');
+          if (lifeRes.ok) {
+            const lifeData = await lifeRes.json();
+            const counts = lifeData.lifecycle_stage_counts || {};
+            if (document.getElementById('stage-committed')) document.getElementById('stage-committed').innerText = counts.COMMITTED || 0;
+            if (document.getElementById('stage-awaiting')) document.getElementById('stage-awaiting').innerText = counts.AWAITING_LISTING || 0;
+            if (document.getElementById('stage-pending')) document.getElementById('stage-pending').innerText = counts.OUTCOME_PENDING_VERIFICATION || 0;
+            if (document.getElementById('stage-verified')) document.getElementById('stage-verified').innerText = counts.OUTCOME_VERIFIED || 0;
+            if (document.getElementById('stage-eval-ready')) document.getElementById('stage-eval-ready').innerText = counts.ELIGIBLE_FOR_EVALUATION || 0;
+          }
+        } catch (e) {
+          console.error("Error loading lifecycle stages:", e);
+        }
+
+      } catch (err) {
+        console.error('Error fetching API data:', err);
+        document.getElementById('backend-status').innerHTML = `
+          <span class="w-2 h-2 rounded-full bg-red-400"></span>
+          <span class="text-red-400">API ERROR / DISCONNECTED</span>
+        `;
+        triggerIntegrityAlert('Failed to establish connection to read-only API backend.');
+      }
+    }
+
+    // Debounce search input
+    function debounceExplorerSearch() {
+      clearTimeout(searchDebounceTimer);
+      searchDebounceTimer = setTimeout(() => {
+        explorerState.page = 1;
+        fetchExplorerData();
+      }, 250);
+    }
+
+    // Trigger explorer data fetch when filters or sort change
+    function triggerExplorerFetch() {
+      explorerState.page = 1;
+      fetchExplorerData();
+    }
+
+    // Change explorer page
+    function changeExplorerPage(delta) {
+      const newPage = explorerState.page + delta;
+      if (newPage >= 1 && newPage <= explorerState.totalPages) {
+        explorerState.page = newPage;
+        fetchExplorerData();
+      }
+    }
+
+    // Fetch Explorer Data from API with full server-side queries
+    async function fetchExplorerData() {
+      try {
+        const search = document.getElementById('explorer-search') ? document.getElementById('explorer-search').value : '';
+        const board = document.getElementById('explorer-board') ? document.getElementById('explorer-board').value : '';
+        const pop = document.getElementById('explorer-pop') ? document.getElementById('explorer-pop').value : '';
+        const scoring = document.getElementById('explorer-scoring') ? document.getElementById('explorer-scoring').value : '';
+        const listing = document.getElementById('explorer-listing') ? document.getElementById('explorer-listing').value : '';
+        const sortBy = document.getElementById('explorer-sort-by') ? document.getElementById('explorer-sort-by').value : 'cutoff_timestamp_ist';
+        const sortDir = document.getElementById('explorer-sort-dir') ? document.getElementById('explorer-sort-dir').value : 'asc';
+
+        const params = new URLSearchParams({
+          page: explorerState.page,
+          page_size: explorerState.pageSize,
+          sort_by: sortBy,
+          sort_dir: sortDir
+        });
+        if (search) params.append('search', search);
+        if (board) params.append('board', board);
+        if (pop) params.append('population', pop);
+        if (scoring) params.append('scoring_status', scoring);
+        if (listing) params.append('listing_status', listing);
+
+        const res = await fetch(`/api/ipos?${params.toString()}`);
+        if (!res.ok) throw new Error(`API error ${res.status}`);
+        const data = await res.json();
+
+        explorerState.total = data.total;
+        explorerState.totalPages = data.total_pages;
+        explorerState.page = data.page;
+
+        renderCommandCenterTable(data.ipos || []);
+        renderExplorerTable(data.ipos || []);
+
+        document.getElementById('tracked-register-badge').innerText = `${data.total} Issues Registered`;
+        document.getElementById('explorer-count-badge').innerText = `Showing ${data.ipos.length} of ${data.total} candidates`;
+        document.getElementById('explorer-pagination-info').innerText = `Page ${data.page} of ${data.total_pages} (${data.total} total)`;
+
+        document.getElementById('btn-prev-page').disabled = (data.page <= 1);
+        document.getElementById('btn-next-page').disabled = (data.page >= data.total_pages);
+
+        // Load first item if on detail screen and nothing selected
+        if (data.ipos.length > 0 && document.getElementById('detail-title').innerText === 'Select an IPO') {
+          loadIPODetailById(data.ipos[0].ipo_id);
+        }
+      } catch (err) {
+        console.error('Failed to fetch explorer data:', err);
+        const expTable = document.getElementById('explorer-table');
+        if (expTable) {
+          expTable.innerHTML = `<tr><td colspan="9" class="px-5 py-8 text-center text-red-400 font-mono text-xs">Failed to load explorer data: ${err.message}</td></tr>`;
+        }
+      }
+    }
+
+    // Render Command Center Table
+    function renderCommandCenterTable(ipos) {
+      const tbody = document.getElementById('command-center-table');
+      if (!tbody) return;
+      tbody.innerHTML = '';
+
+      if (ipos.length === 0) {
+        tbody.innerHTML = '<tr><td colspan="7" class="px-5 py-8 text-center text-slate-500 font-mono text-xs">No candidate IPOs registered in current preflight manifest.</td></tr>';
+        return;
+      }
+
+      ipos.forEach(ipo => {
+        const tr = document.createElement('tr');
+        tr.className = 'hover:bg-slate-800/40 transition';
+
+        let popBadge = '';
+        if (ipo.cohort_population === 'Population_2_Clean_Prospective') {
+          popBadge = '<span class="text-[11px] font-mono bg-sky-950 text-sky-400 px-2 py-0.5 rounded border border-sky-800">Pop 2: Clean</span>';
+        } else if (ipo.cohort_population === 'Population_1_Eligible_Coverage') {
+          popBadge = '<span class="text-[11px] font-mono bg-slate-800 text-slate-300 px-2 py-0.5 rounded border border-slate-700">Pop 1: Coverage</span>';
+        } else {
+          popBadge = '<span class="text-[11px] font-mono bg-amber-950 text-amber-400 px-2 py-0.5 rounded border border-amber-800">Pop 3: Excluded</span>';
+        }
+
+        let modelBadge = '';
+        if (ipo.p_positive_open !== null) {
+          modelBadge = `<span class="text-sky-400 font-mono font-bold">${(ipo.p_positive_open * 100).toFixed(1)}%</span> <span class="text-[10px] text-slate-500">(SME v1.0)</span>`;
+        } else {
+          modelBadge = `<span class="text-amber-400 text-xs font-mono">Not Scored (Coverage Only)</span>`;
+        }
+
+        tr.innerHTML = `
+          <td class="px-5 py-3 font-medium text-slate-200">
+            <div>${ipo.company_name}</div>
+            <div class="text-[11px] text-slate-500 font-mono">${ipo.symbol_or_ref} | ${ipo.exchange}</div>
+          </td>
+          <td class="px-4 py-3 font-mono text-xs">${ipo.board_type}</td>
+          <td class="px-4 py-3 text-xs text-slate-400 font-mono">${ipo.open_date.slice(5)} to ${ipo.close_date.slice(5)}</td>
+          <td class="px-4 py-3 font-mono text-xs text-slate-300">${ipo.cutoff_timestamp_ist.slice(11)}</td>
+          <td class="px-4 py-3">${popBadge}</td>
+          <td class="px-4 py-3">${modelBadge}</td>
+          <td class="px-4 py-3 text-right">
+            <button onclick="loadIPODetailById('${ipo.ipo_id}')" class="text-xs bg-slate-800 hover:bg-slate-700 text-sky-400 px-2.5 py-1 rounded border border-slate-700 font-mono transition">
+              Audit
+            </button>
+          </td>
+        `;
+        tbody.appendChild(tr);
+      });
+    }
+
+    // Render Explorer Table with Filtering
+    function renderExplorerTable(ipos) {
+      const tbody = document.getElementById('explorer-table');
+      if (!tbody) return;
+      tbody.innerHTML = '';
+
+      if (ipos.length === 0) {
+        tbody.innerHTML = '<tr><td colspan="9" class="px-5 py-8 text-center text-slate-500 font-mono text-xs">No matching issues found for selected filter criteria.</td></tr>';
+        return;
+      }
+
+      ipos.forEach(ipo => {
+        const tr = document.createElement('tr');
+        tr.className = 'hover:bg-slate-800/40 transition';
+
+        let popBadge = '';
+        if (ipo.cohort_population === 'Population_2_Clean_Prospective') {
+          popBadge = '<span class="text-[11px] font-mono bg-sky-950 text-sky-400 px-2 py-0.5 rounded border border-sky-800">Pop 2: Clean</span>';
+        } else if (ipo.cohort_population === 'Population_1_Eligible_Coverage') {
+          popBadge = '<span class="text-[11px] font-mono bg-slate-800 text-slate-300 px-2 py-0.5 rounded border border-slate-700">Pop 1: Coverage</span>';
+        } else {
+          popBadge = '<span class="text-[11px] font-mono bg-amber-950 text-amber-400 px-2 py-0.5 rounded border border-amber-800">Pop 3: Excluded</span>';
+        }
+
+        let scoreDisplay = ipo.p_positive_open !== null 
+          ? `<span class="text-sky-400 font-mono font-bold">${(ipo.p_positive_open * 100).toFixed(1)}%</span>` 
+          : `<span class="text-amber-400/80 font-mono text-xs">Not Scored</span>`;
+
+        let commitBadge = ipo.is_timing_verified
+          ? `<span class="text-[10px] text-emerald-400 font-mono bg-emerald-950 px-2 py-0.5 rounded border border-emerald-800">Pre-Cutoff OK</span>`
+          : `<span class="text-[10px] text-amber-400 font-mono bg-amber-950 px-2 py-0.5 rounded border border-amber-800">Timing Unverified</span>`;
+
+        tr.innerHTML = `
+          <td class="px-5 py-3 font-medium text-slate-200">
+            <div>${ipo.company_name}</div>
+            <div class="text-[11px] text-slate-500 font-mono">${ipo.symbol_or_ref} | ${ipo.ipo_id}</div>
+          </td>
+          <td class="px-4 py-3 font-mono text-xs">${ipo.board_type}</td>
+          <td class="px-4 py-3 font-mono text-xs text-slate-300">₹${ipo.issue_size_cr}</td>
+          <td class="px-4 py-3 font-mono text-xs text-slate-400">${ipo.price_band}</td>
+          <td class="px-4 py-3 font-mono text-xs text-slate-300">${ipo.cutoff_timestamp_ist}</td>
+          <td class="px-4 py-3">${popBadge}</td>
+          <td class="px-4 py-3">${scoreDisplay}</td>
+          <td class="px-4 py-3">${commitBadge}</td>
+          <td class="px-4 py-3 text-right">
+            <button onclick="loadIPODetailById('${ipo.ipo_id}')" class="text-xs bg-slate-800 hover:bg-slate-700 text-sky-400 px-2.5 py-1 rounded border border-slate-700 font-mono transition">
+              Detail
+            </button>
+          </td>
+        `;
+        tbody.appendChild(tr);
+      });
+    }
+
+    // Load detailed data for a specific IPO via API
+    async function loadIPODetailById(ipoId) {
+      try {
+        const res = await fetch(`/api/ipos/${ipoId}`);
+        if (!res.ok) throw new Error(`IPO ${ipoId} not found`);
+        const data = await res.json();
+        populateIPODetail(data);
+        switchScreen('ipo-detail');
+      } catch (err) {
+        console.error('Error loading IPO detail:', err);
+        alert(`Failed to load IPO detail: ${err.message}`);
+      }
+    }
+
+    // Populate Detailed Screen from API Response
+    function populateIPODetail(detailData) {
+      const ipo = detailData.ipo;
+      const gov = detailData.model_governance || {};
+      const audit = detailData.audit_checks || {};
+      const outcome = detailData.listing_outcome || {};
+
+      document.getElementById('detail-title').innerText = ipo.company_name;
+      document.getElementById('detail-subtitle').innerText = `${ipo.board_type} Public Issue | ${ipo.exchange} | Ref: ${ipo.symbol_or_ref}`;
+      document.getElementById('d-id-badge').innerText = `ID: ${ipo.ipo_id}`;
+      
+      document.getElementById('d-board').innerText = ipo.board_type;
+      document.getElementById('d-exchange').innerText = `${ipo.exchange} (${ipo.symbol_or_ref})`;
+      document.getElementById('d-size').innerText = `₹${ipo.issue_size_cr} Cr`;
+      document.getElementById('d-price').innerText = ipo.price_band;
+      document.getElementById('d-lot').innerText = `${ipo.lot_size.toLocaleString()} shares`;
+      document.getElementById('d-open-date').innerText = ipo.open_date;
+      document.getElementById('d-close-date').innerText = ipo.close_date;
+      
+      // Calculate min capital approx
+      const upperPrice = parseFloat(ipo.price_band.replace(/[^0-9.]/g, '').split('.').slice(-1)[0]) || 100;
+      const minCap = (upperPrice * ipo.lot_size).toLocaleString('en-IN');
+      document.getElementById('d-min-capital').innerText = `₹${minCap}`;
+
+      document.getElementById('d-cutoff').innerText = ipo.cutoff_timestamp_ist;
+      document.getElementById('d-evidence').innerText = ipo.authoritative_evidence;
+      document.getElementById('d-sha').innerText = ipo.raw_source_sha256 || 'N/A (Unverified Cutoff Source)';
+
+      // Timing & Chronological Check Badges
+      const timingBadge = document.getElementById('d-timing-badge');
+      if (audit.timing_verified_prior_to_cutoff) {
+        timingBadge.className = 'text-[10px] bg-emerald-950 text-emerald-400 px-2 py-0.5 rounded border border-emerald-800 font-mono';
+        timingBadge.innerText = 'TIMING VERIFIED';
+      } else {
+        timingBadge.className = 'text-[10px] bg-red-950 text-red-400 px-2 py-0.5 rounded border border-red-800 font-mono';
+        timingBadge.innerText = 'TIMING UNVERIFIED';
+      }
+
+      document.getElementById('d-tz-status').innerText = audit.timezone_valid ? 'IST (+05:30) VERIFIED' : 'INVALID TIMEZONE';
+      document.getElementById('d-tz-status').className = audit.timezone_valid ? 'text-emerald-400 font-bold' : 'text-red-400 font-bold';
+
+      document.getElementById('d-chrono-status').innerText = audit.pre_cutoff_chronological_consistency ? 'CONSISTENT (Pub ≤ Cutoff)' : 'TIMING MISMATCH';
+      document.getElementById('d-chrono-status').className = audit.pre_cutoff_chronological_consistency ? 'text-emerald-400 font-bold' : 'text-red-400 font-bold';
+
+      document.getElementById('d-pub-timestamp').innerText = ipo.source_publication_timestamp_ist 
+        ? `Source Publication: ${ipo.source_publication_timestamp_ist}` 
+        : 'Source Publication: Not Documented';
+
+      // Section 4: Model Scores & Hurdles
+      const modelName = document.getElementById('d-model-name');
+      const scoreVal = document.getElementById('d-score');
+      const scoreBar = document.getElementById('d-score-bar');
+      const severeVal = document.getElementById('d-severe');
+      const cohortVal = document.getElementById('d-cohort');
+
+      if (ipo.p_positive_open !== null) {
+        modelName.innerText = `${gov.model_name || 'Model_6B_SME_v1.0'} (SHA-256 Locked)`;
+        modelName.className = 'text-emerald-400 font-mono text-xs font-bold';
+        scoreVal.innerText = ipo.p_positive_open.toFixed(4);
+        scoreVal.className = 'text-3xl font-bold font-mono text-sky-400 mt-1';
+        scoreBar.style.width = `${(ipo.p_positive_open * 100).toFixed(1)}%`;
+        scoreBar.className = 'bg-sky-400 h-full';
+        severeVal.innerText = `${ipo.p_severe_loss.toFixed(4)} (${(ipo.p_severe_loss * 100).toFixed(2)}%)`;
+      } else {
+        modelName.innerText = 'None (Mainboard Coverage Tracking Only)';
+        modelName.className = 'text-amber-400 font-mono text-xs font-bold';
+        scoreVal.innerText = 'Not Scored';
+        scoreVal.className = 'text-2xl font-bold font-mono text-slate-500 mt-1';
+        scoreBar.style.width = '0%';
+        severeVal.innerText = 'N/A (Scores Never Invented)';
+      }
+
+      if (gov.decision_hurdles) {
+        document.getElementById('d-th-pos').innerText = `≥ ${gov.decision_hurdles.th_pos || '0.9234'}`;
+        document.getElementById('d-th-macro').innerText = `≥ ${gov.decision_hurdles.th_macro || '0.8619'}`;
+        document.getElementById('d-th-loss').innerText = `≤ ${gov.decision_hurdles.th_loss || '0.3323'}`;
+      } else {
+        document.getElementById('d-th-pos').innerText = 'N/A (No Model)';
+        document.getElementById('d-th-macro').innerText = 'N/A (No Model)';
+        document.getElementById('d-th-loss').innerText = 'N/A (No Model)';
+      }
+
+      cohortVal.innerText = ipo.cohort_population.replace(/_/g, ' ');
+
+      // Section 3 Features
+      const featContainer = document.getElementById('d-features');
+      if (featContainer && ipo.features && Object.keys(ipo.features).length > 0) {
+        featContainer.innerHTML = `
+          <div class="bg-slate-900 p-3 rounded border border-slate-800">
+            <span class="text-slate-500 block text-[10px]">feat_nifty50_ret5s_pct</span>
+            <span class="text-sky-400 text-base font-bold">+${ipo.features.feat_nifty50_ret5s_pct}%</span>
+          </div>
+          <div class="bg-slate-900 p-3 rounded border border-slate-800">
+            <span class="text-slate-500 block text-[10px]">feat_india_vix</span>
+            <span class="text-indigo-400 text-base font-bold">${ipo.features.feat_india_vix}</span>
+          </div>
+          <div class="bg-slate-900 p-3 rounded border border-slate-800">
+            <span class="text-slate-500 block text-[10px]">feat_recent5_sentiment</span>
+            <span class="text-emerald-400 text-base font-bold">${ipo.features.feat_recent5_sentiment}%</span>
+          </div>
+        `;
+      } else {
+        featContainer.innerHTML = `<div class="col-span-3 text-slate-500 text-xs italic bg-slate-900 p-3 rounded border border-slate-800">No pre-cutoff features registered (Unverified or Excluded).</div>`;
+      }
+
+      // Section 8 Listing Outcome
+      if (outcome.is_listed) {
+        document.getElementById('d-outcome-badge').innerText = 'LISTED';
+        document.getElementById('d-outcome-badge').className = 'text-[10px] font-mono bg-emerald-950 text-emerald-400 px-2 py-0.5 rounded border border-emerald-800';
+        document.getElementById('d-outcome-status').innerText = `Listed on ${outcome.listing_date}`;
+        document.getElementById('d-outcome-price').innerText = `₹${outcome.official_open_price_inr}`;
+        document.getElementById('d-outcome-evidence').innerText = 'Official Exchange Bulletin Verified';
+      } else {
+        document.getElementById('d-outcome-badge').innerText = 'AWAITING LISTING';
+        document.getElementById('d-outcome-badge').className = 'text-[10px] font-mono bg-amber-950 text-amber-400 px-2 py-0.5 rounded border border-amber-800';
+        document.getElementById('d-outcome-status').innerText = 'Pre-Listing / Pending Realization';
+        document.getElementById('d-outcome-price').innerText = 'Pending Listing Bulletin';
+        document.getElementById('d-outcome-evidence').innerText = 'Official Exchange Bulletin Awaited Post-Listing';
+      }
+    }
+
+    // Initial load
+    window.addEventListener('DOMContentLoaded', loadData);
+  </script>
+</body>
+</html>

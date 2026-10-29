@@ -1,0 +1,15 @@
+listing_year,market_segment,total_ipos,verified_primary_source,temporal_eligible_count,price_band_available,fixed_price_issues,coverage_pct
+2020,Mainboard,14,13,12,13,0,92.86
+2020,SME,30,6,6,6,6,20.0
+2021,Mainboard,64,62,61,62,0,96.88
+2021,SME,55,20,19,20,19,36.36
+2022,Mainboard,38,35,35,35,0,92.11
+2022,SME,108,52,49,52,41,48.15
+2023,Mainboard,59,56,53,56,0,94.92
+2023,SME,179,118,117,118,63,65.92
+2024,Mainboard,90,85,81,85,0,94.44
+2024,SME,245,178,176,178,43,72.65
+2025,Mainboard,104,103,99,103,0,99.04
+2025,SME,268,117,116,117,12,43.66
+2026,Mainboard,94,92,91,92,0,97.87
+2026,SME,167,58,58,58,3,34.73

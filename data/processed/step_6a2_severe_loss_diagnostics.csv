@@ -1,0 +1,5 @@
+segment,cohort,sample_size,severe_loss_events,severe_loss_prevalence_pct,roc_auc,pr_auc,mean_prob_severe_cases,mean_prob_non_severe_cases,score_gap_severe_minus_nonsevere,diagnostic_verdict,primary_driver
+Mainboard,Validation_2025,99,4,4.04,0.4697,0.0461,0.3613,0.3732,-0.0119,INVERTED_RANKING,Feature regime reversal: 2026 severe loss IPOs had lower pre-issue VIX / higher recent sentiment than non-severe IPOs
+Mainboard,Test_2026,92,8,8.7,0.349,0.0746,0.392,0.4229,-0.0309,INVERTED_RANKING,Feature regime reversal: 2026 severe loss IPOs had lower pre-issue VIX / higher recent sentiment than non-severe IPOs
+SME,Validation_2025,116,16,13.79,0.4888,0.155,0.5092,0.5114,-0.0022,INVERTED_RANKING,Feature regime reversal: 2026 severe loss IPOs had lower pre-issue VIX / higher recent sentiment than non-severe IPOs
+SME,Test_2026,58,12,20.69,0.3505,0.1658,0.4869,0.4929,-0.0061,INVERTED_RANKING,Feature regime reversal: 2026 severe loss IPOs had lower pre-issue VIX / higher recent sentiment than non-severe IPOs

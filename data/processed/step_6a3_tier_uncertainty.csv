@@ -1,0 +1,4 @@
+segment,cohort,rank_tier,total_ipos,positive_open_count,empirical_win_rate_pct,wilson_ci_95_low_pct,wilson_ci_95_high_pct,mean_predicted_prob_pct,calibration_overconfidence_gap_pct,uncertainty_assessment
+SME,Test_2026,Tier_1_Low_Prob,20,9,45.0,25.82,65.79,74.69,29.69,True rate for Tier_1_Low_Prob lies between 25.8% and 65.8% (N=20). Cannot guarantee a future 75% rate.
+SME,Test_2026,Tier_2_Mid_Prob,18,10,55.56,33.72,75.44,82.54,26.98,True rate for Tier_2_Mid_Prob lies between 33.7% and 75.4% (N=18). Cannot guarantee a future 75% rate.
+SME,Test_2026,Tier_3_High_Prob,20,15,75.0,53.13,88.81,83.85,8.85,True rate for Tier_3_High_Prob lies between 53.1% and 88.8% (N=20). Cannot guarantee a future 75% rate.

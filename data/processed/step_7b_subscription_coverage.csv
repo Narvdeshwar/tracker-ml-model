@@ -1,0 +1,15 @@
+listing_year,market_segment,total_ipos,cutoff_verified_ipos,qib_verified_count,nii_verified_count,retail_verified_count,total_sub_verified_count,day1_snapshot_available,day2_snapshot_available,day3_snapshot_available,final_snapshot_available,timestamped_subscription_coverage_pct,timing_unverified_count
+2020,Mainboard,14,13,0,0,0,0,0,0,0,0,0.0,14
+2020,SME,30,7,0,0,0,0,0,0,0,0,0.0,30
+2021,Mainboard,64,62,0,0,0,0,0,0,0,0,0.0,64
+2021,SME,55,21,0,0,0,0,0,0,0,0,0.0,55
+2022,Mainboard,38,37,0,0,0,0,0,0,0,0,0.0,38
+2022,SME,108,52,0,0,0,0,0,0,0,0,0.0,108
+2023,Mainboard,59,56,0,0,0,0,0,0,0,0,0.0,59
+2023,SME,179,117,0,0,0,0,0,0,0,0,0.0,179
+2024,Mainboard,90,86,0,0,0,0,0,0,0,0,0.0,90
+2024,SME,245,176,0,0,0,0,0,0,0,0,0.0,245
+2025,Mainboard,104,100,0,0,0,0,0,0,0,0,0.0,104
+2025,SME,268,116,0,0,0,0,0,0,0,0,0.0,268
+2026,Mainboard,94,93,0,0,0,0,0,0,0,0,0.0,94
+2026,SME,167,58,0,0,0,0,0,0,0,0,0.0,167

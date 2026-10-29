@@ -1,0 +1,3 @@
+segment,cohort,sample_size,positive_rate,model_roc_auc,model_roc_auc_ci_95,base_roc_auc,delta_roc_auc,delta_roc_ci_95,model_pr_auc,model_pr_auc_ci_95,base_pr_auc,delta_pr_auc,delta_pr_ci_95,model_brier_score,base_brier_score,delta_brier_score,delta_brier_ci_95,model_log_loss,base_log_loss,delta_log_loss,delta_log_loss_ci_95
+Mainboard,Test_2026,92,0.6522,0.4893,"[0.3555, 0.6216]",0.5,-0.0107,"[-0.1445, 0.1216]",0.6631,"[0.5411, 0.7891]",0.6522,0.0109,"[-0.0621, 0.1015]",0.2386,0.2368,0.0018,"[-0.0030, 0.0065]",0.6762,0.6708,0.0054,"[-0.0073, 0.0185]"
+SME,Test_2026,58,0.5862,0.6109,"[0.4614, 0.7571]",0.5,0.1109,"[-0.0386, 0.2571]",0.7097,"[0.5566, 0.8588]",0.5862,0.1235,"[0.0155, 0.2545]",0.2894,0.3041,-0.0147,"[-0.0309, 0.0005]",0.8021,0.8499,-0.0478,"[-0.0944, -0.0032]"

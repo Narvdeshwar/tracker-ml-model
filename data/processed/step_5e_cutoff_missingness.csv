@@ -1,0 +1,11 @@
+dimension,group,total_ipos,verified_cutoffs,unresolved_cutoffs,unresolved_pct,verified_positive_close_rate,unresolved_positive_close_rate,verified_severe_loss_rate,unresolved_severe_loss_rate,p_value_outcome_difference
+Board,Overall,1515,987,528,34.85,75.89,70.45,8.21,13.07,0.0
+Board,Mainboard,463,445,18,3.89,72.36,77.78,7.42,0.0,0.3022
+Board,SME,1052,542,510,48.48,78.78,70.2,8.86,13.53,0.0
+Year,2020,44,20,24,54.55,70.0,62.5,5.0,4.17,0.0049
+Year,2021,119,82,37,31.09,70.73,70.27,7.32,2.7,0.0302
+Year,2022,146,89,57,39.04,74.16,80.7,8.99,10.53,0.8328
+Year,2023,238,171,67,28.15,86.55,77.61,3.51,5.97,0.1888
+Year,2024,335,260,75,22.39,84.62,94.67,4.23,1.33,0.2343
+Year,2025,372,215,157,42.2,66.51,61.15,12.09,24.2,0.3361
+Year,2026,261,150,111,42.53,66.67,59.46,15.33,16.22,0.308

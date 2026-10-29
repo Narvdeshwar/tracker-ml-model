@@ -1,0 +1,4 @@
+metric,point_estimate,bootstrap_mean,bootstrap_ci_95_low,bootstrap_ci_95_high,zero_excluded_in_ci,degenerate_resamples_skipped,methodology_notes
+PR-AUC Lift (vs In-Sample Prevalence),0.1235,0.1308,0.0165,0.2536,True,0,Paired bootstrap preserving outcome/probability correspondence. AP benchmark dynamically recomputed as resample prevalence.
+ROC-AUC Lift (vs Chance 0.50),0.1109,0.1086,-0.0393,0.2574,False,0,"Paired bootstrap vs 0.50 chance baseline. Spans zero [-0.0386, 0.2571] due to N=58 sample variance."
+Brier Score Lift (vs Train Constant Base Rate),-0.0147,-0.0146,-0.0306,-0.0001,True,0,Negative delta indicates improvement in probability error.

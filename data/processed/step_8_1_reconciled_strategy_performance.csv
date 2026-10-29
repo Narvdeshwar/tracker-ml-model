@@ -1,0 +1,7 @@
+strategy,start_capital,final_portfolio_val,net_profit_total,mainboard_contribution,sme_contribution,reconciliation_diff,roi_pct,max_drawdown_pct,apps_submitted,apps_rejected_capital,allotments_won,allotments_mainboard,allotments_sme,allotment_win_rate_pct,mean_return_per_allotment,worst_single_loss_pct,severe_losses_total,severe_losses_mainboard,severe_losses_sme
+Strategy_A_Apply_All,500000.0,1386445.0,886445.0,90682.5,795762.5,0.0,177.29,9.24,148,0,79,51,28,67.09,15.71,-21.35,9,6,3
+Strategy_B_Macro_Filter,500000.0,1070070.0,570070.0,22732.5,547337.5,0.0,114.01,0.18,59,0,27,16,11,77.78,21.83,-11.49,2,2,0
+Strategy_C_Positive_Ranking,500000.0,865159.5,365159.5,41659.5,323500.0,0.0,73.03,0.4,56,0,34,25,9,73.53,15.78,-12.85,2,2,0
+Strategy_D_Downside_Filter,500000.0,1138100.0,638100.0,55237.5,582862.5,0.0,127.62,8.01,99,0,50,28,22,72.0,16.69,-21.35,6,4,2
+Strategy_E_Combined,500000.0,843712.5,343712.5,20212.5,323500.0,0.0,68.74,0.37,37,0,22,13,9,77.27,17.89,-12.6,1,1,0
+Strategy_F_No_Application,500000.0,500000.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,0,0,0,0.0,0.0,0.0,0,0,0

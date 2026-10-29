@@ -1,0 +1,13 @@
+segment,cohort,rank_tier,threshold_rule,total_ipos,actual_positive_count,actual_positive_rate_pct,mean_predicted_prob_pct,calibration_gap_pct
+Mainboard,Validation_2025,Tier_1_Low_Prob,"q1=0.7687, q2=0.7857 (tuned on Val 2025)",34,24,70.59,75.87,5.28
+Mainboard,Validation_2025,Tier_2_Mid_Prob,"q1=0.7687, q2=0.7857 (tuned on Val 2025)",33,23,69.7,77.77,8.08
+Mainboard,Validation_2025,Tier_3_High_Prob,"q1=0.7687, q2=0.7857 (tuned on Val 2025)",32,22,68.75,79.66,10.91
+Mainboard,Test_2026,Tier_1_Low_Prob,"q1=0.7687, q2=0.7857 (tuned on Val 2025)",49,34,69.39,75.14,5.75
+Mainboard,Test_2026,Tier_2_Mid_Prob,"q1=0.7687, q2=0.7857 (tuned on Val 2025)",33,20,60.61,77.6,16.99
+Mainboard,Test_2026,Tier_3_High_Prob,"q1=0.7687, q2=0.7857 (tuned on Val 2025)",10,6,60.0,79.08,19.08
+SME,Validation_2025,Tier_1_Low_Prob,"q1=0.8077, q2=0.8333 (tuned on Val 2025)",39,27,69.23,78.8,9.57
+SME,Validation_2025,Tier_2_Mid_Prob,"q1=0.8077, q2=0.8333 (tuned on Val 2025)",39,22,56.41,82.25,25.84
+SME,Validation_2025,Tier_3_High_Prob,"q1=0.8077, q2=0.8333 (tuned on Val 2025)",38,24,63.16,84.8,21.64
+SME,Test_2026,Tier_1_Low_Prob,"q1=0.8077, q2=0.8333 (tuned on Val 2025)",20,9,45.0,74.69,29.69
+SME,Test_2026,Tier_2_Mid_Prob,"q1=0.8077, q2=0.8333 (tuned on Val 2025)",18,10,55.56,82.54,26.98
+SME,Test_2026,Tier_3_High_Prob,"q1=0.8077, q2=0.8333 (tuned on Val 2025)",20,15,75.0,83.85,8.85

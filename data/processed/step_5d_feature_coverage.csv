@@ -1,0 +1,13 @@
+feature,label,total_records,non_missing,missing,coverage_pct,mainboard_non_missing,sme_non_missing
+ipo_id,Identifier,1515,1515,0,100.0,463,1052
+prediction_cutoff_date,Cutoff Date,1515,987,528,65.15,445,542
+target_listing_open_return_pct,Target Open Return,1515,1512,3,99.8,463,1049
+target_listing_close_return_pct,Target Close Return,1515,1515,0,100.0,463,1052
+nifty50_return_5s,Market Nifty50 5s,1515,987,528,65.15,445,542
+nifty500_return_5s,Market Nifty500 5s,1515,987,528,65.15,445,542
+india_vix_level_at_cutoff,Market India VIX,1515,984,531,64.95,443,541
+nifty_sme_emerge_return_5s,SME Emerge 5s,1515,979,536,64.62,439,540
+bse_sme_ipo_return_5s,BSE SME IPO 5s,1515,974,541,64.29,435,539
+recent5_mean_listing_open_return_pct,Recent 5 Sentiment,1515,986,529,65.08,445,541
+total_subscription_multiple,Total Subscription (Verified),1515,0,1515,0.0,0,0
+gmp_amount_inr,GMP (Verified),1515,0,1515,0.0,0,0

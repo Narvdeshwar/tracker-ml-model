@@ -1,0 +1,21 @@
+{
+  "model_version": "Model_6B_SME_v1.0",
+  "model_name": "SME Positive-Opening Logistic Classifier",
+  "target_definition": "target_listing_open_return_pct > 0",
+  "features": [
+    "feat_nifty50_ret5s_pct",
+    "feat_india_vix",
+    "feat_recent5_sentiment"
+  ],
+  "feature_schema_version": "v1.0",
+  "training_cohort": "SME_2020_2024_Verified_Cutoffs",
+  "training_sample_size": 368,
+  "training_positive_rate": 0.8342391304347826,
+  "sha256_hash": "dbf2eec7169888424698c55286c59c406c58b61ff77d34ca6beabab1e53aad76",
+  "operating_threshold": 0.5,
+  "rank_tier_boundaries": {
+    "tier_1_max_prob": 0.8018,
+    "tier_2_max_prob": 0.8385
+  },
+  "status": "FROZEN_FOR_PROSPECTIVE_EVALUATION"
+}

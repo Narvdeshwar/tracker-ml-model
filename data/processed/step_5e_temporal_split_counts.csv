@@ -1,0 +1,10 @@
+split_name,board,total_cohort_ipos,verified_cutoff_ipos,verified_positive_open_count,verified_positive_open_pct,verified_severe_loss_open_count,verified_severe_loss_open_pct,verified_positive_close_count,verified_severe_loss_close_count
+Train (2020-2024),All,882,622,498,80.06,31,4.98,506,32
+Train (2020-2024),Mainboard,265,254,191,75.2,13,5.12,192,15
+Train (2020-2024),SME,617,368,307,83.42,18,4.89,314,17
+Validation (2025),All,372,215,142,66.05,20,9.3,143,26
+Validation (2025),Mainboard,104,99,69,69.7,4,4.04,66,6
+Validation (2025),SME,268,116,73,62.93,16,13.79,77,20
+Out-of-Time Test (2026),All,261,150,94,62.67,20,13.33,100,23
+Out-of-Time Test (2026),Mainboard,94,92,60,65.22,8,8.7,64,12
+Out-of-Time Test (2026),SME,167,58,34,58.62,12,20.69,36,11

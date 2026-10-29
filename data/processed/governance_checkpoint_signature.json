@@ -1,0 +1,13 @@
+{
+  "checkpoint_id": "CHK_20261028084517",
+  "sealed_timestamp_ist": "2026-10-28 08:45:17 IST",
+  "sealed_files": {
+    "decision_ledger_sha256": "FILE_NOT_FOUND",
+    "outcome_ledger_sha256": "FILE_NOT_FOUND",
+    "governance_audit_events_sha256": "FILE_NOT_FOUND",
+    "manifest_sha256": "b19c913e7c0e0afd6054255f389a4cab3a15d79e338f67c5fc04cacde7e86c6e",
+    "frozen_sme_model_sha256": "dbf2eec7169888424698c55286c59c406c58b61ff77d34ca6beabab1e53aad76"
+  },
+  "signature_algorithm": "SHA256_SEALED_DIGEST",
+  "sealed_checkpoint_sha256": "7c6bf0dcf4d4bd43c4426914ecf9d871d9e8293bb5853b187d292d17740942a8"
+}

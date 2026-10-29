@@ -1,0 +1,13 @@
+market_segment,strategy,dedicated_capital_inr,final_portfolio_val,net_profit_inr,roi_pct,max_drawdown_pct,apps_submitted,apps_rejected_capital,allotments_won,allotment_win_rate_pct,mean_return_per_allotment,worst_single_loss_pct,severe_losses_incurred
+Mainboard,Strategy_A_Apply_All,500000.0,590682.5,90682.5,18.14,0.94,90,0,51,64.71,11.85,-12.85,6
+Mainboard,Strategy_B_Macro_Filter,500000.0,522732.5,22732.5,4.55,0.33,38,0,16,62.5,9.47,-11.49,2
+Mainboard,Strategy_C_Positive_Ranking,500000.0,541659.5,41659.5,8.33,0.58,38,0,25,64.0,11.11,-12.85,2
+Mainboard,Strategy_D_Downside_Filter,500000.0,555237.5,55237.5,11.05,0.68,53,0,28,67.86,13.15,-12.6,4
+Mainboard,Strategy_E_Combined,500000.0,520212.5,20212.5,4.04,0.54,19,0,13,61.54,10.37,-12.6,1
+Mainboard,Strategy_F_No_Application,500000.0,500000.0,0.0,0.0,0.0,0,0,0,0.0,0.0,0.0,0
+SME,Strategy_A_Apply_All,500000.0,1295762.5,795762.5,159.15,8.57,58,0,28,71.43,22.74,-21.35,3
+SME,Strategy_B_Macro_Filter,500000.0,1047337.5,547337.5,109.47,0.0,21,0,11,100.0,39.81,0.04,0
+SME,Strategy_C_Positive_Ranking,500000.0,823500.0,323500.0,64.7,0.0,18,0,9,100.0,28.76,0.04,0
+SME,Strategy_D_Downside_Filter,500000.0,1082862.5,582862.5,116.57,7.65,46,0,22,77.27,21.2,-21.35,2
+SME,Strategy_E_Combined,500000.0,823500.0,323500.0,64.7,0.0,18,0,9,100.0,28.76,0.04,0
+SME,Strategy_F_No_Application,500000.0,500000.0,0.0,0.0,0.0,0,0,0,0.0,0.0,0.0,0

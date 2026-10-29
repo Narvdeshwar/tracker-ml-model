@@ -1,0 +1,17 @@
+model_id,target,segment,cohort,total_evaluated,true_negatives,false_positives,false_negatives,true_positives,actual_positive_count,predicted_positive_count
+Model_6B_Logistic_PositiveOpen,Target_A_Positive_Open,Mainboard,Test_2026,92,0,32,0,60,60,92
+Model_6B_Logistic_PositiveOpen,Target_A_Positive_Open,Mainboard,Validation_2025,99,0,30,0,69,69,99
+Model_6B_Logistic_PositiveOpen,Target_A_Positive_Open,SME,Test_2026,58,0,24,0,34,34,58
+Model_6B_Logistic_PositiveOpen,Target_A_Positive_Open,SME,Validation_2025,116,0,43,0,73,73,116
+Model_6C_SevereLoss_Classifier,Target_B_Severe_Loss,Mainboard,Test_2026,92,1,83,0,8,8,91
+Model_6C_SevereLoss_Classifier,Target_B_Severe_Loss,Mainboard,Validation_2025,99,15,80,0,4,4,84
+Model_6C_SevereLoss_Classifier,Target_B_Severe_Loss,SME,Test_2026,58,0,46,0,12,12,58
+Model_6C_SevereLoss_Classifier,Target_B_Severe_Loss,SME,Validation_2025,116,0,100,0,16,16,116
+Model_6A_BaseRate_Audited,Target_A_Positive_Open,Mainboard,Validation_2025,99,0,30,0,69,69,99
+Model_6A_BaseRate_Audited,Target_A_Positive_Open,Mainboard,Test_2026,92,0,32,0,60,60,92
+Model_6A_BaseRate_Audited,Target_A_Positive_Open,SME,Validation_2025,116,0,43,0,73,73,116
+Model_6A_BaseRate_Audited,Target_A_Positive_Open,SME,Test_2026,58,0,24,0,34,34,58
+Model_6A_BaseRate_Audited,Target_B_Severe_Loss,Mainboard,Validation_2025,99,95,0,4,0,4,0
+Model_6A_BaseRate_Audited,Target_B_Severe_Loss,Mainboard,Test_2026,92,84,0,8,0,8,0
+Model_6A_BaseRate_Audited,Target_B_Severe_Loss,SME,Validation_2025,116,100,0,16,0,16,0
+Model_6A_BaseRate_Audited,Target_B_Severe_Loss,SME,Test_2026,58,46,0,12,0,12,0

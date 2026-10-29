@@ -1,0 +1,70 @@
+{
+  "manifest_name": "Phase_9B_Baseline_Governance_Manifest",
+  "manifest_version": "v1.0-Phase9B-Frozen",
+  "manifest_created_timestamp_ist": "2026-10-28 07:35:00 IST",
+  "governing_protocol": "reports/phase_9_evaluation_protocol.md",
+  "governing_audit": "reports/phase_9a1_evaluation_protocol_review.md",
+  "execution_mode": "OPERATIONAL_SHADOW_LOGGING_ONLY",
+  "real_money_trading": "STRICTLY_PROHIBITED",
+  "automatic_production_authorization_at_30_ipos": false,
+  "frozen_baseline_models": {
+    "Model_6B_SME_v1.0": {
+      "path": "models/frozen/model_6b_sme_v1.joblib",
+      "sha256": "dbf2eec7169888424698c55286c59c406c58b61ff77d34ca6beabab1e53aad76",
+      "algorithm": "LogisticRegression(C=1.0, solver='lbfgs', random_state=42)",
+      "target": "target_positive_open (listing_open_return_pct > 0)",
+      "training_cohort": "2020-2024 (N=360)",
+      "validation_cohort": "2025 (N=116)",
+      "features": [
+        "nifty50_return_5s",
+        "india_vix_level_at_cutoff",
+        "recent5_positive_listing_rate"
+      ]
+    }
+  },
+  "frozen_decision_hurdles": {
+    "Mainboard": {
+      "th_pos": 0.7756,
+      "th_macro": 0.7904,
+      "th_loss": 0.4868,
+      "derivation_source": "Validation 2025 (N=98)"
+    },
+    "SME": {
+      "th_pos": 0.9234,
+      "th_macro": 0.8619,
+      "th_loss": 0.3323,
+      "derivation_source": "Validation 2025 (N=116)"
+    }
+  },
+  "frozen_historical_training_base_rates": {
+    "Mainboard": {
+      "cohort": "2020-2024",
+      "sample_size": 240,
+      "positive_open_base_rate": 0.7583,
+      "severe_loss_base_rate": 0.0542
+    },
+    "SME": {
+      "cohort": "2020-2024",
+      "sample_size": 360,
+      "positive_open_base_rate": 0.8306,
+      "severe_loss_base_rate": 0.0500
+    }
+  },
+  "three_population_tracking_contract": {
+    "Population_1_All_Eligible": "Denominator for decision coverage reporting. Includes all eligible IPOs closing during evaluation window.",
+    "Population_2_Clean_Prospective": "IPOs with verified pre-cutoff timestamps and documents. Primary leakage-controlled evaluation cohort.",
+    "Population_3_Excluded_Unverified": "Retained for transparency, reporting coverage, exclusion reasons, and selection bias audits."
+  },
+  "four_tier_reporting_standard": {
+    "Tier_1_Model_Prediction": "Pure out-of-time forecasting accuracy (IPO-level, allotment-independent).",
+    "Tier_2_Observed_Allotment": "Empirical retail allotment experience from official registrar basis circulars.",
+    "Tier_3_Actual_Execution": "Realized broker fills, actual opening auction slippage, and exchange transaction fees (Prohibited in shadow mode).",
+    "Tier_4_Simulated_Scenario": "Hypothetical sensitivity matrix under deterministic SHA-256 uniform draws."
+  },
+  "future_production_acceptance_hurdles": {
+    "minimum_sample_size": 100,
+    "brier_skill_score_rule": "Point estimate BSS > 0.0 and 95% bootstrap confidence interval lower bound > 0.0",
+    "severe_loss_event_requirement": "N_severe >= 25 with demonstrated catch rate statistically superior to base rate",
+    "operational_review_requirement": "Independent formal review and audit document; no automatic authorization."
+  }
+}

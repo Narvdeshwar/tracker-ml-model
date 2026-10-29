@@ -1,0 +1,1096 @@
+ipo_id,company_name,segment,cohort,prediction_cutoff_date,target_name,actual_outcome,predicted_probability,predicted_binary,model_id,predicted_continuous_return
+indo-farm-equipment-a88664,Indo Farm Equipment Limited,Mainboard,Validation_2025,2025-01-02,Target_A_Positive_Open,1.0,0.7763,1.0,Model_6B_Logistic_PositiveOpen,
+standard-glass-lining-technology-7de754,Standard Glass Lining Technology Limited,Mainboard,Validation_2025,2025-01-08,Target_A_Positive_Open,1.0,0.7622,1.0,Model_6B_Logistic_PositiveOpen,
+quadrant-future-tek-0d0c0d,Quadrant Future Tek Limited,Mainboard,Validation_2025,2025-01-09,Target_A_Positive_Open,1.0,0.7467,1.0,Model_6B_Logistic_PositiveOpen,
+laxmi-dental-61673f,Laxmi Dental Limited,Mainboard,Validation_2025,2025-01-15,Target_A_Positive_Open,1.0,0.7391,1.0,Model_6B_Logistic_PositiveOpen,
+stallion-india-fluorochemicals-96bec9,Stallion India Fluorochemicals Limited,Mainboard,Validation_2025,2025-01-20,Target_A_Positive_Open,1.0,0.7532,1.0,Model_6B_Logistic_PositiveOpen,
+denta-water-infra-solutions-c512ce,Denta Water and Infra Solutions Limited,Mainboard,Validation_2025,2025-01-24,Target_A_Positive_Open,1.0,0.7381,1.0,Model_6B_Logistic_PositiveOpen,
+dr-agarwal-s-health-care-5038a8,Dr. Agarwal's Health Care Limited,Mainboard,Validation_2025,2025-01-31,Target_A_Positive_Open,0.0,0.7825,1.0,Model_6B_Logistic_PositiveOpen,
+ajax-engineering-34ccc3,AJAX Engineering Limited,Mainboard,Validation_2025,2025-02-12,Target_A_Positive_Open,0.0,0.7515,1.0,Model_6B_Logistic_PositiveOpen,
+hexaware-technologies-03f09a,Hexaware Technologies Limited,Mainboard,Validation_2025,2025-02-14,Target_A_Positive_Open,1.0,0.7524,1.0,Model_6B_Logistic_PositiveOpen,
+quality-power-electrical-equipments-2187af,Quality Power Electrical Equipments Limited,Mainboard,Validation_2025,2025-02-18,Target_A_Positive_Open,1.0,0.7695,1.0,Model_6B_Logistic_PositiveOpen,
+ather-energy-2af7ad,Ather Energy Limited,Mainboard,Validation_2025,2025-04-30,Target_A_Positive_Open,1.0,0.7631,1.0,Model_6B_Logistic_PositiveOpen,
+borana-weaves-b78b95,Borana Weaves Limited,Mainboard,Validation_2025,2025-05-22,Target_A_Positive_Open,1.0,0.7416,1.0,Model_6B_Logistic_PositiveOpen,
+belrise-fb0efd,Belrise Industries Limited,Mainboard,Validation_2025,2025-05-23,Target_A_Positive_Open,1.0,0.7511,1.0,Model_6B_Logistic_PositiveOpen,
+schloss-bangalore-a76781,Schloss Bangalore Limited,Mainboard,Validation_2025,2025-05-28,Target_A_Positive_Open,0.0,0.7502,1.0,Model_6B_Logistic_PositiveOpen,
+prostarm-info-systems-604c9a,Prostarm Info Systems Limited,Mainboard,Validation_2025,2025-05-29,Target_A_Positive_Open,1.0,0.7763,1.0,Model_6B_Logistic_PositiveOpen,
+scoda-tubes-23a5e5,Scoda Tubes Limited,Mainboard,Validation_2025,2025-05-30,Target_A_Positive_Open,0.0,0.7668,1.0,Model_6B_Logistic_PositiveOpen,
+oswal-pumps-7e09aa,Oswal Pumps Limited,Mainboard,Validation_2025,2025-06-17,Target_A_Positive_Open,1.0,0.7621,1.0,Model_6B_Logistic_PositiveOpen,
+arisinfra-solutions-1b7f20,ArisInfra Solutions Limited,Mainboard,Validation_2025,2025-06-20,Target_A_Positive_Open,0.0,0.7824,1.0,Model_6B_Logistic_PositiveOpen,
+ellenbarrie-industrial-gases-ae7b6e,Ellenbarrie Industrial Gases Limited,Mainboard,Validation_2025,2025-06-26,Target_A_Positive_Open,1.0,0.7921,1.0,Model_6B_Logistic_PositiveOpen,
+globe-civil-projects-756c8c,Globe Civil Projects Limited,Mainboard,Validation_2025,2025-06-26,Target_A_Positive_Open,1.0,0.7921,1.0,Model_6B_Logistic_PositiveOpen,
+kalpataru-bf5570,Kalpataru Limited,Mainboard,Validation_2025,2025-06-26,Target_A_Positive_Open,0.0,0.7921,1.0,Model_6B_Logistic_PositiveOpen,
+sambhv-steel-tubes-7d8716,Sambhv Steel Tubes Limited,Mainboard,Validation_2025,2025-06-27,Target_A_Positive_Open,1.0,0.7857,1.0,Model_6B_Logistic_PositiveOpen,
+hdb-financial-services-b330ec,HDB Financial Services Limited,Mainboard,Validation_2025,2025-06-27,Target_A_Positive_Open,1.0,0.7857,1.0,Model_6B_Logistic_PositiveOpen,
+indogulf-cropsciences-734e33,Indogulf Cropsciences Limited,Mainboard,Validation_2025,2025-06-30,Target_A_Positive_Open,0.0,0.7937,1.0,Model_6B_Logistic_PositiveOpen,
+crizac-ffd65f,Crizac Limited,Mainboard,Validation_2025,2025-07-04,Target_A_Positive_Open,1.0,0.7798,1.0,Model_6B_Logistic_PositiveOpen,
+travel-food-services-99035c,Travel Food Services Limited,Mainboard,Validation_2025,2025-07-09,Target_A_Positive_Open,1.0,0.7923,1.0,Model_6B_Logistic_PositiveOpen,
+smartworks-coworking-spaces-70588c,Smartworks Coworking Spaces Limited,Mainboard,Validation_2025,2025-07-14,Target_A_Positive_Open,1.0,0.7593,1.0,Model_6B_Logistic_PositiveOpen,
+anthem-biosciences-c6a0b0,Anthem Biosciences Limited,Mainboard,Validation_2025,2025-07-16,Target_A_Positive_Open,1.0,0.7665,1.0,Model_6B_Logistic_PositiveOpen,
+gng-electronics-431f93,GNG Electronics Limited,Mainboard,Validation_2025,2025-07-25,Target_A_Positive_Open,1.0,0.7767,1.0,Model_6B_Logistic_PositiveOpen,
+indiqube-spaces-40215a,Indiqube Spaces Limited,Mainboard,Validation_2025,2025-07-25,Target_A_Positive_Open,0.0,0.7767,1.0,Model_6B_Logistic_PositiveOpen,
+brigade-hotel-ventures-1a78cd,Brigade Hotel Ventures Limited,Mainboard,Validation_2025,2025-07-28,Target_A_Positive_Open,0.0,0.7649,1.0,Model_6B_Logistic_PositiveOpen,
+shanti-gold-international-f650c4,Shanti Gold International Limited,Mainboard,Validation_2025,2025-07-29,Target_A_Positive_Open,1.0,0.771,1.0,Model_6B_Logistic_PositiveOpen,
+aditya-infotech-8ed0aa,Aditya Infotech Limited,Mainboard,Validation_2025,2025-07-31,Target_A_Positive_Open,1.0,0.7684,1.0,Model_6B_Logistic_PositiveOpen,
+laxmi-india-finance-275811,Laxmi India Finance Limited,Mainboard,Validation_2025,2025-07-31,Target_A_Positive_Open,0.0,0.7684,1.0,Model_6B_Logistic_PositiveOpen,
+m-b-engineering-4c93c2,M & B Engineering Limited,Mainboard,Validation_2025,2025-08-01,Target_A_Positive_Open,0.0,0.7687,1.0,Model_6B_Logistic_PositiveOpen,
+sri-lotus-developers-realty-97c88c,Sri Lotus Developers and Realty Limited,Mainboard,Validation_2025,2025-08-01,Target_A_Positive_Open,1.0,0.7687,1.0,Model_6B_Logistic_PositiveOpen,
+highway-infrastructure-de1f40,Highway Infrastructure Limited,Mainboard,Validation_2025,2025-08-07,Target_A_Positive_Open,1.0,0.7778,1.0,Model_6B_Logistic_PositiveOpen,
+all-time-plastics-01e731,All Time Plastics Limited,Mainboard,Validation_2025,2025-08-11,Target_A_Positive_Open,1.0,0.7683,1.0,Model_6B_Logistic_PositiveOpen,
+jsw-cement-975419,JSW Cement Limited,Mainboard,Validation_2025,2025-08-11,Target_A_Positive_Open,1.0,0.7683,1.0,Model_6B_Logistic_PositiveOpen,
+bluestone-jewellery-lifestyle-3a5abd,BlueStone Jewellery and Lifestyle Limited,Mainboard,Validation_2025,2025-08-13,Target_A_Positive_Open,0.0,0.7811,1.0,Model_6B_Logistic_PositiveOpen,
+regaal-resources-c46f3b,Regaal Resources Limited,Mainboard,Validation_2025,2025-08-14,Target_A_Positive_Open,1.0,0.7799,1.0,Model_6B_Logistic_PositiveOpen,
+shreeji-shipping-global-524d58,Shreeji Shipping Global Limited,Mainboard,Validation_2025,2025-08-21,Target_A_Positive_Open,1.0,0.8033,1.0,Model_6B_Logistic_PositiveOpen,
+vikram-solar-f7c4d9,Vikram Solar Limited,Mainboard,Validation_2025,2025-08-21,Target_A_Positive_Open,1.0,0.8033,1.0,Model_6B_Logistic_PositiveOpen,
+gem-aromatics-5ba178,Gem Aromatics Limited,Mainboard,Validation_2025,2025-08-21,Target_A_Positive_Open,1.0,0.8033,1.0,Model_6B_Logistic_PositiveOpen,
+patel-retail-3ce6e2,Patel Retail Limited,Mainboard,Validation_2025,2025-08-21,Target_A_Positive_Open,1.0,0.8033,1.0,Model_6B_Logistic_PositiveOpen,
+mangal-electrical-47908d,Mangal Electrical Industries Limited,Mainboard,Validation_2025,2025-08-22,Target_A_Positive_Open,0.0,0.7955,1.0,Model_6B_Logistic_PositiveOpen,
+anlon-healthcare-12cf21,Anlon Healthcare Limited,Mainboard,Validation_2025,2025-08-29,Target_A_Positive_Open,1.0,0.7671,1.0,Model_6B_Logistic_PositiveOpen,
+vikran-engineering-5f2e69,Vikran Engineering Limited,Mainboard,Validation_2025,2025-08-29,Target_A_Positive_Open,1.0,0.7671,1.0,Model_6B_Logistic_PositiveOpen,
+amanta-healthcare-228780,Amanta Healthcare Limited,Mainboard,Validation_2025,2025-09-03,Target_A_Positive_Open,1.0,0.7823,1.0,Model_6B_Logistic_PositiveOpen,
+dev-accelerator-114447,Dev Accelerator Limited,Mainboard,Validation_2025,2025-09-12,Target_A_Positive_Open,0.0,0.8025,1.0,Model_6B_Logistic_PositiveOpen,
+shringar-house-of-mangalsutra-cde434,Shringar House Of Mangalsutra Limited,Mainboard,Validation_2025,2025-09-12,Target_A_Positive_Open,1.0,0.8025,1.0,Model_6B_Logistic_PositiveOpen,
+urban-8b2b23,Urban Company Limited,Mainboard,Validation_2025,2025-09-12,Target_A_Positive_Open,1.0,0.8025,1.0,Model_6B_Logistic_PositiveOpen,
+euro-pratik-sales-f89506,Euro Pratik Sales Limited,Mainboard,Validation_2025,2025-09-18,Target_A_Positive_Open,1.0,0.7997,1.0,Model_6B_Logistic_PositiveOpen,
+vms-tmt-c7f278,VMS TMT Limited,Mainboard,Validation_2025,2025-09-19,Target_A_Positive_Open,1.0,0.7845,1.0,Model_6B_Logistic_PositiveOpen,
+ivalue-infosolutions-c89b2f,Ivalue Infosolutions Limited,Mainboard,Validation_2025,2025-09-22,Target_A_Positive_Open,0.0,0.7722,1.0,Model_6B_Logistic_PositiveOpen,
+gk-energy-eecbd5,GK Energy Limited,Mainboard,Validation_2025,2025-09-23,Target_A_Positive_Open,1.0,0.7558,1.0,Model_6B_Logistic_PositiveOpen,
+atlanta-electricals-d5388e,Atlanta Electricals Limited,Mainboard,Validation_2025,2025-09-24,Target_A_Positive_Open,1.0,0.75,1.0,Model_6B_Logistic_PositiveOpen,
+ganesh-consumer-products-ed2820,Ganesh Consumer Products Limited,Mainboard,Validation_2025,2025-09-24,Target_A_Positive_Open,0.0,0.75,1.0,Model_6B_Logistic_PositiveOpen,
+solarworld-energy-solutions-9aecd7,Solarworld Energy Solutions Limited,Mainboard,Validation_2025,2025-09-25,Target_A_Positive_Open,1.0,0.7562,1.0,Model_6B_Logistic_PositiveOpen,
+seshaasai-technologies-aa4474,Seshaasai Technologies Limited,Mainboard,Validation_2025,2025-09-25,Target_A_Positive_Open,1.0,0.7562,1.0,Model_6B_Logistic_PositiveOpen,
+anand-rathi-share-stock-brokers-7d93bc,Anand Rathi Share And Stock Brokers Limited,Mainboard,Validation_2025,2025-09-25,Target_A_Positive_Open,1.0,0.7562,1.0,Model_6B_Logistic_PositiveOpen,
+jaro-institute-of-technology-management-research-1d78ed,Jaro Institute of Technology Management and Research Limited,Mainboard,Validation_2025,2025-09-25,Target_A_Positive_Open,0.0,0.7562,1.0,Model_6B_Logistic_PositiveOpen,
+bmw-ventures-f5b14a,BMW Ventures Limited,Mainboard,Validation_2025,2025-09-26,Target_A_Positive_Open,0.0,0.7669,1.0,Model_6B_Logistic_PositiveOpen,
+epack-prefab-technologies-271657,Epack Prefab Technologies Limited,Mainboard,Validation_2025,2025-09-26,Target_A_Positive_Open,0.0,0.7669,1.0,Model_6B_Logistic_PositiveOpen,
+jain-resource-recycling-d4fd3f,Jain Resource Recycling Limited,Mainboard,Validation_2025,2025-09-26,Target_A_Positive_Open,1.0,0.7669,1.0,Model_6B_Logistic_PositiveOpen,
+jinkushal-36b8b6,Jinkushal Industries Limited,Mainboard,Validation_2025,2025-09-29,Target_A_Positive_Open,1.0,0.7729,1.0,Model_6B_Logistic_PositiveOpen,
+trualt-bioenergy-cef02e,Trualt Bioenergy Limited,Mainboard,Validation_2025,2025-09-29,Target_A_Positive_Open,1.0,0.7729,1.0,Model_6B_Logistic_PositiveOpen,
+pace-digitek-8a9806,Pace Digitek Limited,Mainboard,Validation_2025,2025-09-30,Target_A_Positive_Open,1.0,0.7752,1.0,Model_6B_Logistic_PositiveOpen,
+fabtech-technologies-89e60b,Fabtech Technologies Limited,Mainboard,Validation_2025,2025-10-01,Target_A_Positive_Open,1.0,0.7854,1.0,Model_6B_Logistic_PositiveOpen,
+glottis-7290ab,Glottis Limited,Mainboard,Validation_2025,2025-10-01,Target_A_Positive_Open,0.0,0.7854,1.0,Model_6B_Logistic_PositiveOpen,
+advance-agrolife-13f5e9,Advance Agrolife Limited,Mainboard,Validation_2025,2025-10-03,Target_A_Positive_Open,1.0,0.7934,1.0,Model_6B_Logistic_PositiveOpen,
+om-freight-forwarders-ba6bcb,Om Freight Forwarders Limited,Mainboard,Validation_2025,2025-10-03,Target_A_Positive_Open,0.0,0.7934,1.0,Model_6B_Logistic_PositiveOpen,
+wework-india-management-b8209c,WeWork India Management Limited,Mainboard,Validation_2025,2025-10-07,Target_A_Positive_Open,1.0,0.7991,1.0,Model_6B_Logistic_PositiveOpen,
+lg-electronics-india-1aa5cb,LG Electronics India Limited,Mainboard,Validation_2025,2025-10-09,Target_A_Positive_Open,1.0,0.8005,1.0,Model_6B_Logistic_PositiveOpen,
+canara-robeco-asset-management-5b8eb6,Canara Robeco Asset Management Company Limited,Mainboard,Validation_2025,2025-10-13,Target_A_Positive_Open,1.0,0.7917,1.0,Model_6B_Logistic_PositiveOpen,
+rubicon-research-81a94a,Rubicon Research Limited,Mainboard,Validation_2025,2025-10-13,Target_A_Positive_Open,1.0,0.7917,1.0,Model_6B_Logistic_PositiveOpen,
+midwest-4ba090,Midwest Limited,Mainboard,Validation_2025,2025-10-17,Target_A_Positive_Open,1.0,0.7944,1.0,Model_6B_Logistic_PositiveOpen,
+orkla-india-eb04e9,Orkla India Limited,Mainboard,Validation_2025,2025-10-31,Target_A_Positive_Open,1.0,0.7814,1.0,Model_6B_Logistic_PositiveOpen,
+studds-accessories-74db0c,Studds Accessories Limited,Mainboard,Validation_2025,2025-11-03,Target_A_Positive_Open,0.0,0.7757,1.0,Model_6B_Logistic_PositiveOpen,
+lenskart-solutions-95756e,Lenskart Solutions Limited,Mainboard,Validation_2025,2025-11-04,Target_A_Positive_Open,0.0,0.7718,1.0,Model_6B_Logistic_PositiveOpen,
+billionbrains-garage-ventures-6ce46c,Billionbrains Garage Ventures Limited,Mainboard,Validation_2025,2025-11-07,Target_A_Positive_Open,1.0,0.7743,1.0,Model_6B_Logistic_PositiveOpen,
+pine-labs-eb3a50,Pine Labs Limited,Mainboard,Validation_2025,2025-11-11,Target_A_Positive_Open,1.0,0.7853,1.0,Model_6B_Logistic_PositiveOpen,
+emmvee-photovoltaic-power-845b31,Emmvee Photovoltaic Power Limited,Mainboard,Validation_2025,2025-11-13,Target_A_Positive_Open,0.0,0.8003,1.0,Model_6B_Logistic_PositiveOpen,
+physicswallah-5d83a0,Physicswallah Limited,Mainboard,Validation_2025,2025-11-13,Target_A_Positive_Open,1.0,0.8003,1.0,Model_6B_Logistic_PositiveOpen,
+tenneco-clean-air-india-02bff4,Tenneco Clean Air India Limited,Mainboard,Validation_2025,2025-11-14,Target_A_Positive_Open,1.0,0.7995,1.0,Model_6B_Logistic_PositiveOpen,
+fujiyama-power-systems-eafd71,Fujiyama Power Systems Limited,Mainboard,Validation_2025,2025-11-17,Target_A_Positive_Open,0.0,0.7998,1.0,Model_6B_Logistic_PositiveOpen,
+capillary-technologies-india-b5f6ec,Capillary Technologies India Limited,Mainboard,Validation_2025,2025-11-18,Target_A_Positive_Open,0.0,0.7923,1.0,Model_6B_Logistic_PositiveOpen,
+excelsoft-technologies-b2d070,Excelsoft Technologies Limited,Mainboard,Validation_2025,2025-11-21,Target_A_Positive_Open,1.0,0.7703,1.0,Model_6B_Logistic_PositiveOpen,
+sudeep-pharma-0b7089,Sudeep Pharma Limited,Mainboard,Validation_2025,2025-11-25,Target_A_Positive_Open,1.0,0.7704,1.0,Model_6B_Logistic_PositiveOpen,
+aequs-99ea09,Aequs Limited,Mainboard,Validation_2025,2025-12-05,Target_A_Positive_Open,1.0,0.7909,1.0,Model_6B_Logistic_PositiveOpen,
+meesho-517d11,Meesho Limited,Mainboard,Validation_2025,2025-12-05,Target_A_Positive_Open,1.0,0.7909,1.0,Model_6B_Logistic_PositiveOpen,
+vidya-wires-b2b3b9,Vidya Wires Limited,Mainboard,Validation_2025,2025-12-05,Target_A_Positive_Open,0.0,0.7909,1.0,Model_6B_Logistic_PositiveOpen,
+corona-remedies-4770be,Corona Remedies Limited,Mainboard,Validation_2025,2025-12-10,Target_A_Positive_Open,1.0,0.7752,1.0,Model_6B_Logistic_PositiveOpen,
+wakefit-innovations-79804a,Wakefit Innovations Limited,Mainboard,Validation_2025,2025-12-10,Target_A_Positive_Open,0.0,0.7752,1.0,Model_6B_Logistic_PositiveOpen,
+nephrocare-health-services-1a5680,Nephrocare Health Services Limited,Mainboard,Validation_2025,2025-12-12,Target_A_Positive_Open,1.0,0.7766,1.0,Model_6B_Logistic_PositiveOpen,
+park-medi-world-de5fdb,Park Medi World Limited,Mainboard,Validation_2025,2025-12-12,Target_A_Positive_Open,0.0,0.7766,1.0,Model_6B_Logistic_PositiveOpen,
+icici-prudential-asset-management-35c231,ICICI Prudential Asset Management Company Limited,Mainboard,Validation_2025,2025-12-16,Target_A_Positive_Open,1.0,0.7891,1.0,Model_6B_Logistic_PositiveOpen,
+ksh-international-3fc1b4,KSH International Limited,Mainboard,Validation_2025,2025-12-18,Target_A_Positive_Open,0.0,0.7925,1.0,Model_6B_Logistic_PositiveOpen,
+gujarat-kidney-super-speciality-750c60,Gujarat Kidney And Super Speciality Limited,Mainboard,Validation_2025,2025-12-24,Target_A_Positive_Open,1.0,0.8035,1.0,Model_6B_Logistic_PositiveOpen,
+bharat-coking-coal-7060de,Bharat Coking Coal Limited,Mainboard,Test_2026,2026-01-13,Target_A_Positive_Open,1.0,0.7635,1.0,Model_6B_Logistic_PositiveOpen,
+amagi-media-labs-88941f,Amagi Media Labs Limited,Mainboard,Test_2026,2026-01-16,Target_A_Positive_Open,0.0,0.7764,1.0,Model_6B_Logistic_PositiveOpen,
+shadowfax-technologies-79b8d7,Shadowfax Technologies Limited,Mainboard,Test_2026,2026-01-22,Target_A_Positive_Open,0.0,0.7699,1.0,Model_6B_Logistic_PositiveOpen,
+aye-finance-603dea,Aye Finance Limited,Mainboard,Test_2026,2026-02-11,Target_A_Positive_Open,0.0,0.7893,1.0,Model_6B_Logistic_PositiveOpen,
+fractal-analytics-cd2759,Fractal Analytics Limited,Mainboard,Test_2026,2026-02-11,Target_A_Positive_Open,0.0,0.7893,1.0,Model_6B_Logistic_PositiveOpen,
+gaudium-ivf-women-health-5519bb,Gaudium IVF and Women Health Limited,Mainboard,Test_2026,2026-02-24,Target_A_Positive_Open,1.0,0.7696,1.0,Model_6B_Logistic_PositiveOpen,
+clean-max-enviro-energy-solutions-822e5c,Clean Max Enviro Energy Solutions Limited,Mainboard,Test_2026,2026-02-25,Target_A_Positive_Open,0.0,0.7707,1.0,Model_6B_Logistic_PositiveOpen,
+shree-ram-twistex-6be8bc,Shree Ram Twistex Limited,Mainboard,Test_2026,2026-02-25,Target_A_Positive_Open,0.0,0.7707,1.0,Model_6B_Logistic_PositiveOpen,
+pngs-reva-diamond-jewellery-021096,PNGS Reva Diamond Jewellery Limited,Mainboard,Test_2026,2026-02-26,Target_A_Positive_Open,0.0,0.7858,1.0,Model_6B_Logistic_PositiveOpen,
+omnitech-engineering-a26936,Omnitech Engineering Limited,Mainboard,Test_2026,2026-02-27,Target_A_Positive_Open,0.0,0.7702,1.0,Model_6B_Logistic_PositiveOpen,
+sedemac-mechatronics-2f5b34,Sedemac Mechatronics Limited,Mainboard,Test_2026,2026-03-06,Target_A_Positive_Open,1.0,0.7309,1.0,Model_6B_Logistic_PositiveOpen,
+rajputana-stainless-250ef1,Rajputana Stainless Limited,Mainboard,Test_2026,2026-03-11,Target_A_Positive_Open,0.0,0.7338,1.0,Model_6B_Logistic_PositiveOpen,
+innovision-26b7f3,Innovision Limited,Mainboard,Test_2026,2026-03-17,Target_A_Positive_Open,0.0,0.7317,1.0,Model_6B_Logistic_PositiveOpen,
+gsp-crop-science-a201ac,GSP Crop Science Limited,Mainboard,Test_2026,2026-03-18,Target_A_Positive_Open,1.0,0.7568,1.0,Model_6B_Logistic_PositiveOpen,
+central-mine-planning-design-institute-02e629,Central Mine Planning & Design Institute Limited,Mainboard,Test_2026,2026-03-24,Target_A_Positive_Open,0.0,0.7073,1.0,Model_6B_Logistic_PositiveOpen,
+amir-chand-jagdish-kumar-exports-6dad4b,Amir Chand Jagdish Kumar (Exports) Limited,Mainboard,Test_2026,2026-03-27,Target_A_Positive_Open,0.0,0.7169,1.0,Model_6B_Logistic_PositiveOpen,
+powerica-e58a3e,Powerica Ltd.,Mainboard,Test_2026,2026-03-27,Target_A_Positive_Open,0.0,0.7169,1.0,Model_6B_Logistic_PositiveOpen,
+sai-parenterals-77f5fa,Sai Parenterals Limited,Mainboard,Test_2026,2026-03-27,Target_A_Positive_Open,1.0,0.7169,1.0,Model_6B_Logistic_PositiveOpen,
+om-power-transmission-37c154,Om Power Transmission Limited,Mainboard,Test_2026,2026-04-13,Target_A_Positive_Open,1.0,0.7849,1.0,Model_6B_Logistic_PositiveOpen,
+onemi-technology-solutions-7627e6,OnEMI Technology Solutions Limited,Mainboard,Test_2026,2026-05-05,Target_A_Positive_Open,1.0,0.7572,1.0,Model_6B_Logistic_PositiveOpen,
+cmr-green-technologies-f059eb,CMR Green Technologies Limited,Mainboard,Test_2026,2026-06-05,Target_A_Positive_Open,1.0,0.7666,1.0,Model_6B_Logistic_PositiveOpen,
+hexagon-nutrition-06c172,Hexagon Nutrition Limited,Mainboard,Test_2026,2026-06-09,Target_A_Positive_Open,1.0,0.7578,1.0,Model_6B_Logistic_PositiveOpen,
+turtlemint-fintech-solutions-597838,Turtlemint Fintech Solutions Limited,Mainboard,Test_2026,2026-06-23,Target_A_Positive_Open,0.0,0.766,1.0,Model_6B_Logistic_PositiveOpen,
+waterways-leisure-tourism-94055d,Waterways Leisure Tourism Limited,Mainboard,Test_2026,2026-06-25,Target_A_Positive_Open,0.0,0.7767,1.0,Model_6B_Logistic_PositiveOpen,
+advit-jewels-c81f5b,Advit Jewels Limited,Mainboard,Test_2026,2026-06-25,Target_A_Positive_Open,1.0,0.7767,1.0,Model_6B_Logistic_PositiveOpen,
+csm-technologies-afa4ea,CSM Technologies Limited,Mainboard,Test_2026,2026-06-29,Target_A_Positive_Open,0.0,0.7714,1.0,Model_6B_Logistic_PositiveOpen,
+aastha-spintex-9f20ba,Aastha Spintex Limited,Mainboard,Test_2026,2026-07-01,Target_A_Positive_Open,0.0,0.7827,1.0,Model_6B_Logistic_PositiveOpen,
+knack-packaging-c10943,Knack Packaging Limited,Mainboard,Test_2026,2026-07-03,Target_A_Positive_Open,1.0,0.7995,1.0,Model_6B_Logistic_PositiveOpen,
+kusumgar-a25d10,Kusumgar Limited,Mainboard,Test_2026,2026-07-10,Target_A_Positive_Open,1.0,0.7754,1.0,Model_6B_Logistic_PositiveOpen,
+laser-power-infra-c4e32f,Laser Power & Infra Limited,Mainboard,Test_2026,2026-07-13,Target_A_Positive_Open,1.0,0.7598,1.0,Model_6B_Logistic_PositiveOpen,
+alpine-texworld-e09061,Alpine Texworld Limited,Mainboard,Test_2026,2026-07-16,Target_A_Positive_Open,0.0,0.7663,1.0,Model_6B_Logistic_PositiveOpen,
+sbi-funds-management-a2cd28,SBI Funds Management Limited,Mainboard,Test_2026,2026-07-16,Target_A_Positive_Open,1.0,0.7663,1.0,Model_6B_Logistic_PositiveOpen,
+caliber-mining-logistics-ca99f6,Caliber Mining And Logistics Limited,Mainboard,Test_2026,2026-07-21,Target_A_Positive_Open,1.0,0.7696,1.0,Model_6B_Logistic_PositiveOpen,
+xtranet-technologies-34e4ac,Xtranet Technologies Limited,Mainboard,Test_2026,2026-07-27,Target_A_Positive_Open,1.0,0.7638,1.0,Model_6B_Logistic_PositiveOpen,
+lohia-40dd01,Lohia Corp Limited,Mainboard,Test_2026,2026-07-27,Target_A_Positive_Open,1.0,0.7638,1.0,Model_6B_Logistic_PositiveOpen,
+indo-mim-e53267,INDO-MIM Limited,Mainboard,Test_2026,2026-07-27,Target_A_Positive_Open,1.0,0.7638,1.0,Model_6B_Logistic_PositiveOpen,
+manipal-health-enterprises-be53c7,Manipal Health Enterprises Limited,Mainboard,Test_2026,2026-07-31,Target_A_Positive_Open,1.0,0.791,1.0,Model_6B_Logistic_PositiveOpen,
+juniper-green-energy-01d14f,Juniper Green Energy Limited,Mainboard,Test_2026,2026-08-03,Target_A_Positive_Open,1.0,0.7965,1.0,Model_6B_Logistic_PositiveOpen,
+mv-electrosystems-9424fa,MV Electrosystems Limited,Mainboard,Test_2026,2026-08-03,Target_A_Positive_Open,1.0,0.7965,1.0,Model_6B_Logistic_PositiveOpen,
+ardee-499b3c,Ardee Industries Limited,Mainboard,Test_2026,2026-08-07,Target_A_Positive_Open,1.0,0.7842,1.0,Model_6B_Logistic_PositiveOpen,
+technocraft-ventures-da5de7,Technocraft Ventures Limited,Mainboard,Test_2026,2026-08-11,Target_A_Positive_Open,1.0,0.7744,1.0,Model_6B_Logistic_PositiveOpen,
+molbio-diagnostics-ae0281,Molbio Diagnostics Limited,Mainboard,Test_2026,2026-08-12,Target_A_Positive_Open,1.0,0.7726,1.0,Model_6B_Logistic_PositiveOpen,
+dhoot-transmission-8a900e,Dhoot Transmission Limited,Mainboard,Test_2026,2026-08-12,Target_A_Positive_Open,1.0,0.7726,1.0,Model_6B_Logistic_PositiveOpen,
+milky-mist-dairy-food-754e4b,Milky Mist Dairy Food Limited,Mainboard,Test_2026,2026-08-13,Target_A_Positive_Open,1.0,0.7709,1.0,Model_6B_Logistic_PositiveOpen,
+behari-lal-engineering-5f390e,Behari Lal Engineering Limited,Mainboard,Test_2026,2026-08-14,Target_A_Positive_Open,1.0,0.7686,1.0,Model_6B_Logistic_PositiveOpen,
+shiprocket-ddcc51,Shiprocket Limited,Mainboard,Test_2026,2026-08-14,Target_A_Positive_Open,1.0,0.7686,1.0,Model_6B_Logistic_PositiveOpen,
+horizon-industrial-parks-f3703b,Horizon Industrial Parks Limited,Mainboard,Test_2026,2026-08-19,Target_A_Positive_Open,1.0,0.7689,1.0,Model_6B_Logistic_PositiveOpen,
+lalithaa-jewellery-mart-769ac1,Lalithaa Jewellery Mart Limited,Mainboard,Test_2026,2026-08-19,Target_A_Positive_Open,1.0,0.7689,1.0,Model_6B_Logistic_PositiveOpen,
+shankesh-jewellers-886d2e,Shankesh Jewellers Limited,Mainboard,Test_2026,2026-08-20,Target_A_Positive_Open,1.0,0.7784,1.0,Model_6B_Logistic_PositiveOpen,
+sunshine-pictures-caf8cd,Sunshine Pictures Limited,Mainboard,Test_2026,2026-08-20,Target_A_Positive_Open,1.0,0.7784,1.0,Model_6B_Logistic_PositiveOpen,
+gaja-alternative-asset-management-bfc07a,Gaja Alternative Asset Management Limited,Mainboard,Test_2026,2026-08-21,Target_A_Positive_Open,1.0,0.7668,1.0,Model_6B_Logistic_PositiveOpen,
+tempsens-instruments-india-6c8d0c,Tempsens Instruments (India) Limited,Mainboard,Test_2026,2026-08-24,Target_A_Positive_Open,1.0,0.7659,1.0,Model_6B_Logistic_PositiveOpen,
+augmont-enterprises-dda518,Augmont Enterprises Limited,Mainboard,Test_2026,2026-08-25,Target_A_Positive_Open,1.0,0.7877,1.0,Model_6B_Logistic_PositiveOpen,
+hy-tech-engineers-71544f,Hy-Tech Engineers Limited,Mainboard,Test_2026,2026-08-27,Target_A_Positive_Open,1.0,0.7824,1.0,Model_6B_Logistic_PositiveOpen,
+skyways-air-services-5e9e79,Skyways Air Services Limited,Mainboard,Test_2026,2026-08-27,Target_A_Positive_Open,0.0,0.7824,1.0,Model_6B_Logistic_PositiveOpen,
+symbiotec-pharmalab-519a1e,Symbiotec Pharmalab Limited,Mainboard,Test_2026,2026-08-27,Target_A_Positive_Open,0.0,0.7824,1.0,Model_6B_Logistic_PositiveOpen,
+annu-projects-6f5fa5,Annu Projects Limited,Mainboard,Test_2026,2026-08-28,Target_A_Positive_Open,0.0,0.7859,1.0,Model_6B_Logistic_PositiveOpen,
+lumino-61ba1c,Lumino Industries Limited,Mainboard,Test_2026,2026-08-31,Target_A_Positive_Open,1.0,0.7717,1.0,Model_6B_Logistic_PositiveOpen,
+esds-software-solution-168931,ESDS Software Solution Limited,Mainboard,Test_2026,2026-09-01,Target_A_Positive_Open,1.0,0.7647,1.0,Model_6B_Logistic_PositiveOpen,
+priority-jewels-ea50d2,Priority Jewels Limited,Mainboard,Test_2026,2026-09-01,Target_A_Positive_Open,1.0,0.7647,1.0,Model_6B_Logistic_PositiveOpen,
+purple-style-labs-b3f101,Purple Style Labs Limited,Mainboard,Test_2026,2026-09-02,Target_A_Positive_Open,0.0,0.7764,1.0,Model_6B_Logistic_PositiveOpen,
+rays-of-belief-2c98d7,Rays of Belief Limited,Mainboard,Test_2026,2026-09-03,Target_A_Positive_Open,0.0,0.7854,1.0,Model_6B_Logistic_PositiveOpen,
+deepa-jewellers-799f11,Deepa Jewellers Limited,Mainboard,Test_2026,2026-09-03,Target_A_Positive_Open,1.0,0.7854,1.0,Model_6B_Logistic_PositiveOpen,
+pranav-constructions-24708a,Pranav Constructions Limited,Mainboard,Test_2026,2026-09-09,Target_A_Positive_Open,1.0,0.7518,1.0,Model_6B_Logistic_PositiveOpen,
+glass-wall-systems-india-92bf54,Glass Wall Systems (India) Limited,Mainboard,Test_2026,2026-09-10,Target_A_Positive_Open,1.0,0.7553,1.0,Model_6B_Logistic_PositiveOpen,
+kanohar-electricals-fee013,Kanohar Electricals Limited,Mainboard,Test_2026,2026-09-10,Target_A_Positive_Open,1.0,0.7553,1.0,Model_6B_Logistic_PositiveOpen,
+prasol-chemicals-d22d87,Prasol Chemicals Limited,Mainboard,Test_2026,2026-09-10,Target_A_Positive_Open,0.0,0.7553,1.0,Model_6B_Logistic_PositiveOpen,
+steamhouse-india-401917,Steamhouse India Limited,Mainboard,Test_2026,2026-09-11,Target_A_Positive_Open,1.0,0.7497,1.0,Model_6B_Logistic_PositiveOpen,
+rentomojo-770eb9,Rentomojo Limited,Mainboard,Test_2026,2026-09-11,Target_A_Positive_Open,1.0,0.7497,1.0,Model_6B_Logistic_PositiveOpen,
+karamtara-engineering-7f6528,Karamtara Engineering Limited,Mainboard,Test_2026,2026-09-11,Target_A_Positive_Open,1.0,0.7497,1.0,Model_6B_Logistic_PositiveOpen,
+lcc-projects-18eda4,LCC Projects Limited,Mainboard,Test_2026,2026-09-11,Target_A_Positive_Open,1.0,0.7497,1.0,Model_6B_Logistic_PositiveOpen,
+asset-reconstruction-india-86e022,Asset Reconstruction Company (India) Limited,Mainboard,Test_2026,2026-09-11,Target_A_Positive_Open,0.0,0.7497,1.0,Model_6B_Logistic_PositiveOpen,
+manipal-payment-identity-solutions-d460d3,Manipal Payment and Identity Solutions Limited,Mainboard,Test_2026,2026-09-11,Target_A_Positive_Open,0.0,0.7497,1.0,Model_6B_Logistic_PositiveOpen,
+veegaland-developers-704d3b,Veegaland Developers Limited,Mainboard,Test_2026,2026-09-15,Target_A_Positive_Open,1.0,0.7406,1.0,Model_6B_Logistic_PositiveOpen,
+manika-plastech-712c3c,Manika Plastech Limited,Mainboard,Test_2026,2026-09-16,Target_A_Positive_Open,0.0,0.7593,1.0,Model_6B_Logistic_PositiveOpen,
+hero-motors-09ccf9,Hero Motors Limited,Mainboard,Test_2026,2026-09-18,Target_A_Positive_Open,0.0,0.7787,1.0,Model_6B_Logistic_PositiveOpen,
+jindal-supreme-india-4a973e,Jindal Supreme (India) Limited,Mainboard,Test_2026,2026-09-18,Target_A_Positive_Open,1.0,0.7787,1.0,Model_6B_Logistic_PositiveOpen,
+ss-retail-1bf8ce,SS Retail Limited,Mainboard,Test_2026,2026-09-18,Target_A_Positive_Open,1.0,0.7787,1.0,Model_6B_Logistic_PositiveOpen,
+sonaselection-india-eb7b6a,Sonaselection India Limited,Mainboard,Test_2026,2026-09-21,Target_A_Positive_Open,1.0,0.7866,1.0,Model_6B_Logistic_PositiveOpen,
+ipo-2026-09-29-ine0m5301040,Varmora Granito Limited,Mainboard,Test_2026,2026-09-24,Target_A_Positive_Open,1.0,0.77,1.0,Model_6B_Logistic_PositiveOpen,
+ipo-2026-09-30-ine505m01015,Adroit Industries (India) Limited,Mainboard,Test_2026,2026-09-25,Target_A_Positive_Open,1.0,0.7645,1.0,Model_6B_Logistic_PositiveOpen,
+ipo-2026-09-30-ine1qja01015,Swastika Infra Limited,Mainboard,Test_2026,2026-09-25,Target_A_Positive_Open,1.0,0.7645,1.0,Model_6B_Logistic_PositiveOpen,
+ipo-2026-09-30-ine0twe01016,ArMee Infotech Limited,Mainboard,Test_2026,2026-09-25,Target_A_Positive_Open,0.0,0.7645,1.0,Model_6B_Logistic_PositiveOpen,
+ipo-2026-09-30-ine147x01013,Elevate Campuses Limited,Mainboard,Test_2026,2026-09-25,Target_A_Positive_Open,0.0,0.7645,1.0,Model_6B_Logistic_PositiveOpen,
+ipo-2026-10-01-ine0otc01025,A-One Steels India Limited,Mainboard,Test_2026,2026-09-28,Target_A_Positive_Open,1.0,0.7485,1.0,Model_6B_Logistic_PositiveOpen,
+ipo-2026-10-01-ine0ptn01011,Moneyview Limited,Mainboard,Test_2026,2026-09-28,Target_A_Positive_Open,1.0,0.7485,1.0,Model_6B_Logistic_PositiveOpen,
+ipo-2026-10-05-ine0d4501011,German Green Steel and Power Limited,Mainboard,Test_2026,2026-09-29,Target_A_Positive_Open,1.0,0.7399,1.0,Model_6B_Logistic_PositiveOpen,
+ipo-2026-10-05-ine0j1n01028,Orient Cables (India) Limited,Mainboard,Test_2026,2026-09-29,Target_A_Positive_Open,1.0,0.7399,1.0,Model_6B_Logistic_PositiveOpen,
+ipo-2026-10-05-ine580p01029,AceVector Limited,Mainboard,Test_2026,2026-09-29,Target_A_Positive_Open,0.0,0.7399,1.0,Model_6B_Logistic_PositiveOpen,
+ipo-2026-10-05-ine804w01029,Runwal Enterprises Limited,Mainboard,Test_2026,2026-09-29,Target_A_Positive_Open,0.0,0.7399,1.0,Model_6B_Logistic_PositiveOpen,
+ipo-2026-10-06-ine029n01014,Shah Investor's Home Limited,Mainboard,Test_2026,2026-09-30,Target_A_Positive_Open,1.0,0.7411,1.0,Model_6B_Logistic_PositiveOpen,
+ipo-2026-10-06-ine307k01028,Srit India Limited,Mainboard,Test_2026,2026-09-30,Target_A_Positive_Open,1.0,0.7411,1.0,Model_6B_Logistic_PositiveOpen,
+indo-farm-equipment-a88664,Indo Farm Equipment Limited,Mainboard,Validation_2025,2025-01-02,Target_B_Severe_Loss,0.0,0.3909,1.0,Model_6C_SevereLoss_Classifier,
+standard-glass-lining-technology-7de754,Standard Glass Lining Technology Limited,Mainboard,Validation_2025,2025-01-08,Target_B_Severe_Loss,0.0,0.4354,1.0,Model_6C_SevereLoss_Classifier,
+quadrant-future-tek-0d0c0d,Quadrant Future Tek Limited,Mainboard,Validation_2025,2025-01-09,Target_B_Severe_Loss,0.0,0.4814,1.0,Model_6C_SevereLoss_Classifier,
+laxmi-dental-61673f,Laxmi Dental Limited,Mainboard,Validation_2025,2025-01-15,Target_B_Severe_Loss,0.0,0.5202,1.0,Model_6C_SevereLoss_Classifier,
+stallion-india-fluorochemicals-96bec9,Stallion India Fluorochemicals Limited,Mainboard,Validation_2025,2025-01-20,Target_B_Severe_Loss,0.0,0.4838,1.0,Model_6C_SevereLoss_Classifier,
+denta-water-infra-solutions-c512ce,Denta Water and Infra Solutions Limited,Mainboard,Validation_2025,2025-01-24,Target_B_Severe_Loss,0.0,0.535,1.0,Model_6C_SevereLoss_Classifier,
+dr-agarwal-s-health-care-5038a8,Dr. Agarwal's Health Care Limited,Mainboard,Validation_2025,2025-01-31,Target_B_Severe_Loss,0.0,0.3563,1.0,Model_6C_SevereLoss_Classifier,
+ajax-engineering-34ccc3,AJAX Engineering Limited,Mainboard,Validation_2025,2025-02-12,Target_B_Severe_Loss,0.0,0.4592,1.0,Model_6C_SevereLoss_Classifier,
+hexaware-technologies-03f09a,Hexaware Technologies Limited,Mainboard,Validation_2025,2025-02-14,Target_B_Severe_Loss,0.0,0.4555,1.0,Model_6C_SevereLoss_Classifier,
+quality-power-electrical-equipments-2187af,Quality Power Electrical Equipments Limited,Mainboard,Validation_2025,2025-02-18,Target_B_Severe_Loss,0.0,0.3964,1.0,Model_6C_SevereLoss_Classifier,
+ather-energy-2af7ad,Ather Energy Limited,Mainboard,Validation_2025,2025-04-30,Target_B_Severe_Loss,0.0,0.4242,1.0,Model_6C_SevereLoss_Classifier,
+borana-weaves-b78b95,Borana Weaves Limited,Mainboard,Validation_2025,2025-05-22,Target_B_Severe_Loss,0.0,0.5063,1.0,Model_6C_SevereLoss_Classifier,
+belrise-fb0efd,Belrise Industries Limited,Mainboard,Validation_2025,2025-05-23,Target_B_Severe_Loss,0.0,0.4744,1.0,Model_6C_SevereLoss_Classifier,
+schloss-bangalore-a76781,Schloss Bangalore Limited,Mainboard,Validation_2025,2025-05-28,Target_B_Severe_Loss,0.0,0.4806,1.0,Model_6C_SevereLoss_Classifier,
+prostarm-info-systems-604c9a,Prostarm Info Systems Limited,Mainboard,Validation_2025,2025-05-29,Target_B_Severe_Loss,0.0,0.3763,1.0,Model_6C_SevereLoss_Classifier,
+scoda-tubes-23a5e5,Scoda Tubes Limited,Mainboard,Validation_2025,2025-05-30,Target_B_Severe_Loss,0.0,0.4085,1.0,Model_6C_SevereLoss_Classifier,
+oswal-pumps-7e09aa,Oswal Pumps Limited,Mainboard,Validation_2025,2025-06-17,Target_B_Severe_Loss,0.0,0.4286,1.0,Model_6C_SevereLoss_Classifier,
+arisinfra-solutions-1b7f20,ArisInfra Solutions Limited,Mainboard,Validation_2025,2025-06-20,Target_B_Severe_Loss,0.0,0.3608,1.0,Model_6C_SevereLoss_Classifier,
+ellenbarrie-industrial-gases-ae7b6e,Ellenbarrie Industrial Gases Limited,Mainboard,Validation_2025,2025-06-26,Target_B_Severe_Loss,0.0,0.3314,1.0,Model_6C_SevereLoss_Classifier,
+globe-civil-projects-756c8c,Globe Civil Projects Limited,Mainboard,Validation_2025,2025-06-26,Target_B_Severe_Loss,0.0,0.3314,1.0,Model_6C_SevereLoss_Classifier,
+kalpataru-bf5570,Kalpataru Limited,Mainboard,Validation_2025,2025-06-26,Target_B_Severe_Loss,0.0,0.3314,1.0,Model_6C_SevereLoss_Classifier,
+sambhv-steel-tubes-7d8716,Sambhv Steel Tubes Limited,Mainboard,Validation_2025,2025-06-27,Target_B_Severe_Loss,0.0,0.3529,1.0,Model_6C_SevereLoss_Classifier,
+hdb-financial-services-b330ec,HDB Financial Services Limited,Mainboard,Validation_2025,2025-06-27,Target_B_Severe_Loss,0.0,0.3529,1.0,Model_6C_SevereLoss_Classifier,
+indogulf-cropsciences-734e33,Indogulf Cropsciences Limited,Mainboard,Validation_2025,2025-06-30,Target_B_Severe_Loss,0.0,0.3169,1.0,Model_6C_SevereLoss_Classifier,
+crizac-ffd65f,Crizac Limited,Mainboard,Validation_2025,2025-07-04,Target_B_Severe_Loss,0.0,0.3562,1.0,Model_6C_SevereLoss_Classifier,
+travel-food-services-99035c,Travel Food Services Limited,Mainboard,Validation_2025,2025-07-09,Target_B_Severe_Loss,0.0,0.3083,1.0,Model_6C_SevereLoss_Classifier,
+smartworks-coworking-spaces-70588c,Smartworks Coworking Spaces Limited,Mainboard,Validation_2025,2025-07-14,Target_B_Severe_Loss,0.0,0.4429,1.0,Model_6C_SevereLoss_Classifier,
+anthem-biosciences-c6a0b0,Anthem Biosciences Limited,Mainboard,Validation_2025,2025-07-16,Target_B_Severe_Loss,0.0,0.416,1.0,Model_6C_SevereLoss_Classifier,
+gng-electronics-431f93,GNG Electronics Limited,Mainboard,Validation_2025,2025-07-25,Target_B_Severe_Loss,0.0,0.374,1.0,Model_6C_SevereLoss_Classifier,
+indiqube-spaces-40215a,Indiqube Spaces Limited,Mainboard,Validation_2025,2025-07-25,Target_B_Severe_Loss,0.0,0.374,1.0,Model_6C_SevereLoss_Classifier,
+brigade-hotel-ventures-1a78cd,Brigade Hotel Ventures Limited,Mainboard,Validation_2025,2025-07-28,Target_B_Severe_Loss,0.0,0.4158,1.0,Model_6C_SevereLoss_Classifier,
+shanti-gold-international-f650c4,Shanti Gold International Limited,Mainboard,Validation_2025,2025-07-29,Target_B_Severe_Loss,0.0,0.3955,1.0,Model_6C_SevereLoss_Classifier,
+aditya-infotech-8ed0aa,Aditya Infotech Limited,Mainboard,Validation_2025,2025-07-31,Target_B_Severe_Loss,0.0,0.4054,1.0,Model_6C_SevereLoss_Classifier,
+laxmi-india-finance-275811,Laxmi India Finance Limited,Mainboard,Validation_2025,2025-07-31,Target_B_Severe_Loss,1.0,0.4054,1.0,Model_6C_SevereLoss_Classifier,
+m-b-engineering-4c93c2,M & B Engineering Limited,Mainboard,Validation_2025,2025-08-01,Target_B_Severe_Loss,0.0,0.4038,1.0,Model_6C_SevereLoss_Classifier,
+sri-lotus-developers-realty-97c88c,Sri Lotus Developers and Realty Limited,Mainboard,Validation_2025,2025-08-01,Target_B_Severe_Loss,0.0,0.4038,1.0,Model_6C_SevereLoss_Classifier,
+highway-infrastructure-de1f40,Highway Infrastructure Limited,Mainboard,Validation_2025,2025-08-07,Target_B_Severe_Loss,0.0,0.3666,1.0,Model_6C_SevereLoss_Classifier,
+all-time-plastics-01e731,All Time Plastics Limited,Mainboard,Validation_2025,2025-08-11,Target_B_Severe_Loss,0.0,0.4096,1.0,Model_6C_SevereLoss_Classifier,
+jsw-cement-975419,JSW Cement Limited,Mainboard,Validation_2025,2025-08-11,Target_B_Severe_Loss,0.0,0.4096,1.0,Model_6C_SevereLoss_Classifier,
+bluestone-jewellery-lifestyle-3a5abd,BlueStone Jewellery and Lifestyle Limited,Mainboard,Validation_2025,2025-08-13,Target_B_Severe_Loss,0.0,0.3584,1.0,Model_6C_SevereLoss_Classifier,
+regaal-resources-c46f3b,Regaal Resources Limited,Mainboard,Validation_2025,2025-08-14,Target_B_Severe_Loss,0.0,0.3627,1.0,Model_6C_SevereLoss_Classifier,
+shreeji-shipping-global-524d58,Shreeji Shipping Global Limited,Mainboard,Validation_2025,2025-08-21,Target_B_Severe_Loss,0.0,0.2756,0.0,Model_6C_SevereLoss_Classifier,
+vikram-solar-f7c4d9,Vikram Solar Limited,Mainboard,Validation_2025,2025-08-21,Target_B_Severe_Loss,0.0,0.2756,0.0,Model_6C_SevereLoss_Classifier,
+gem-aromatics-5ba178,Gem Aromatics Limited,Mainboard,Validation_2025,2025-08-21,Target_B_Severe_Loss,0.0,0.2756,0.0,Model_6C_SevereLoss_Classifier,
+patel-retail-3ce6e2,Patel Retail Limited,Mainboard,Validation_2025,2025-08-21,Target_B_Severe_Loss,0.0,0.2756,0.0,Model_6C_SevereLoss_Classifier,
+mangal-electrical-47908d,Mangal Electrical Industries Limited,Mainboard,Validation_2025,2025-08-22,Target_B_Severe_Loss,0.0,0.3016,1.0,Model_6C_SevereLoss_Classifier,
+anlon-healthcare-12cf21,Anlon Healthcare Limited,Mainboard,Validation_2025,2025-08-29,Target_B_Severe_Loss,0.0,0.3979,1.0,Model_6C_SevereLoss_Classifier,
+vikran-engineering-5f2e69,Vikran Engineering Limited,Mainboard,Validation_2025,2025-08-29,Target_B_Severe_Loss,0.0,0.3979,1.0,Model_6C_SevereLoss_Classifier,
+amanta-healthcare-228780,Amanta Healthcare Limited,Mainboard,Validation_2025,2025-09-03,Target_B_Severe_Loss,0.0,0.3539,1.0,Model_6C_SevereLoss_Classifier,
+dev-accelerator-114447,Dev Accelerator Limited,Mainboard,Validation_2025,2025-09-12,Target_B_Severe_Loss,0.0,0.2788,0.0,Model_6C_SevereLoss_Classifier,
+shringar-house-of-mangalsutra-cde434,Shringar House Of Mangalsutra Limited,Mainboard,Validation_2025,2025-09-12,Target_B_Severe_Loss,0.0,0.2788,0.0,Model_6C_SevereLoss_Classifier,
+urban-8b2b23,Urban Company Limited,Mainboard,Validation_2025,2025-09-12,Target_B_Severe_Loss,0.0,0.2788,0.0,Model_6C_SevereLoss_Classifier,
+euro-pratik-sales-f89506,Euro Pratik Sales Limited,Mainboard,Validation_2025,2025-09-18,Target_B_Severe_Loss,0.0,0.2925,0.0,Model_6C_SevereLoss_Classifier,
+vms-tmt-c7f278,VMS TMT Limited,Mainboard,Validation_2025,2025-09-19,Target_B_Severe_Loss,0.0,0.3533,1.0,Model_6C_SevereLoss_Classifier,
+ivalue-infosolutions-c89b2f,Ivalue Infosolutions Limited,Mainboard,Validation_2025,2025-09-22,Target_B_Severe_Loss,0.0,0.4057,1.0,Model_6C_SevereLoss_Classifier,
+gk-energy-eecbd5,GK Energy Limited,Mainboard,Validation_2025,2025-09-23,Target_B_Severe_Loss,0.0,0.473,1.0,Model_6C_SevereLoss_Classifier,
+atlanta-electricals-d5388e,Atlanta Electricals Limited,Mainboard,Validation_2025,2025-09-24,Target_B_Severe_Loss,0.0,0.4919,1.0,Model_6C_SevereLoss_Classifier,
+ganesh-consumer-products-ed2820,Ganesh Consumer Products Limited,Mainboard,Validation_2025,2025-09-24,Target_B_Severe_Loss,0.0,0.4919,1.0,Model_6C_SevereLoss_Classifier,
+solarworld-energy-solutions-9aecd7,Solarworld Energy Solutions Limited,Mainboard,Validation_2025,2025-09-25,Target_B_Severe_Loss,0.0,0.454,1.0,Model_6C_SevereLoss_Classifier,
+seshaasai-technologies-aa4474,Seshaasai Technologies Limited,Mainboard,Validation_2025,2025-09-25,Target_B_Severe_Loss,0.0,0.454,1.0,Model_6C_SevereLoss_Classifier,
+anand-rathi-share-stock-brokers-7d93bc,Anand Rathi Share And Stock Brokers Limited,Mainboard,Validation_2025,2025-09-25,Target_B_Severe_Loss,0.0,0.454,1.0,Model_6C_SevereLoss_Classifier,
+jaro-institute-of-technology-management-research-1d78ed,Jaro Institute of Technology Management and Research Limited,Mainboard,Validation_2025,2025-09-25,Target_B_Severe_Loss,0.0,0.454,1.0,Model_6C_SevereLoss_Classifier,
+bmw-ventures-f5b14a,BMW Ventures Limited,Mainboard,Validation_2025,2025-09-26,Target_B_Severe_Loss,1.0,0.3992,1.0,Model_6C_SevereLoss_Classifier,
+epack-prefab-technologies-271657,Epack Prefab Technologies Limited,Mainboard,Validation_2025,2025-09-26,Target_B_Severe_Loss,0.0,0.3992,1.0,Model_6C_SevereLoss_Classifier,
+jain-resource-recycling-d4fd3f,Jain Resource Recycling Limited,Mainboard,Validation_2025,2025-09-26,Target_B_Severe_Loss,0.0,0.3992,1.0,Model_6C_SevereLoss_Classifier,
+jinkushal-36b8b6,Jinkushal Industries Limited,Mainboard,Validation_2025,2025-09-29,Target_B_Severe_Loss,0.0,0.3759,1.0,Model_6C_SevereLoss_Classifier,
+trualt-bioenergy-cef02e,Trualt Bioenergy Limited,Mainboard,Validation_2025,2025-09-29,Target_B_Severe_Loss,0.0,0.3759,1.0,Model_6C_SevereLoss_Classifier,
+pace-digitek-8a9806,Pace Digitek Limited,Mainboard,Validation_2025,2025-09-30,Target_B_Severe_Loss,0.0,0.3663,1.0,Model_6C_SevereLoss_Classifier,
+fabtech-technologies-89e60b,Fabtech Technologies Limited,Mainboard,Validation_2025,2025-10-01,Target_B_Severe_Loss,0.0,0.334,1.0,Model_6C_SevereLoss_Classifier,
+glottis-7290ab,Glottis Limited,Mainboard,Validation_2025,2025-10-01,Target_B_Severe_Loss,1.0,0.334,1.0,Model_6C_SevereLoss_Classifier,
+advance-agrolife-13f5e9,Advance Agrolife Limited,Mainboard,Validation_2025,2025-10-03,Target_B_Severe_Loss,0.0,0.3067,1.0,Model_6C_SevereLoss_Classifier,
+om-freight-forwarders-ba6bcb,Om Freight Forwarders Limited,Mainboard,Validation_2025,2025-10-03,Target_B_Severe_Loss,1.0,0.3067,1.0,Model_6C_SevereLoss_Classifier,
+wework-india-management-b8209c,WeWork India Management Limited,Mainboard,Validation_2025,2025-10-07,Target_B_Severe_Loss,0.0,0.2968,0.0,Model_6C_SevereLoss_Classifier,
+lg-electronics-india-1aa5cb,LG Electronics India Limited,Mainboard,Validation_2025,2025-10-09,Target_B_Severe_Loss,0.0,0.2864,0.0,Model_6C_SevereLoss_Classifier,
+canara-robeco-asset-management-5b8eb6,Canara Robeco Asset Management Company Limited,Mainboard,Validation_2025,2025-10-13,Target_B_Severe_Loss,0.0,0.3166,1.0,Model_6C_SevereLoss_Classifier,
+rubicon-research-81a94a,Rubicon Research Limited,Mainboard,Validation_2025,2025-10-13,Target_B_Severe_Loss,0.0,0.3166,1.0,Model_6C_SevereLoss_Classifier,
+midwest-4ba090,Midwest Limited,Mainboard,Validation_2025,2025-10-17,Target_B_Severe_Loss,0.0,0.312,1.0,Model_6C_SevereLoss_Classifier,
+orkla-india-eb04e9,Orkla India Limited,Mainboard,Validation_2025,2025-10-31,Target_B_Severe_Loss,0.0,0.3526,1.0,Model_6C_SevereLoss_Classifier,
+studds-accessories-74db0c,Studds Accessories Limited,Mainboard,Validation_2025,2025-11-03,Target_B_Severe_Loss,0.0,0.3733,1.0,Model_6C_SevereLoss_Classifier,
+lenskart-solutions-95756e,Lenskart Solutions Limited,Mainboard,Validation_2025,2025-11-04,Target_B_Severe_Loss,0.0,0.3862,1.0,Model_6C_SevereLoss_Classifier,
+billionbrains-garage-ventures-6ce46c,Billionbrains Garage Ventures Limited,Mainboard,Validation_2025,2025-11-07,Target_B_Severe_Loss,0.0,0.3736,1.0,Model_6C_SevereLoss_Classifier,
+pine-labs-eb3a50,Pine Labs Limited,Mainboard,Validation_2025,2025-11-11,Target_B_Severe_Loss,0.0,0.335,1.0,Model_6C_SevereLoss_Classifier,
+emmvee-photovoltaic-power-845b31,Emmvee Photovoltaic Power Limited,Mainboard,Validation_2025,2025-11-13,Target_B_Severe_Loss,0.0,0.2836,0.0,Model_6C_SevereLoss_Classifier,
+physicswallah-5d83a0,Physicswallah Limited,Mainboard,Validation_2025,2025-11-13,Target_B_Severe_Loss,0.0,0.2836,0.0,Model_6C_SevereLoss_Classifier,
+tenneco-clean-air-india-02bff4,Tenneco Clean Air India Limited,Mainboard,Validation_2025,2025-11-14,Target_B_Severe_Loss,0.0,0.2889,0.0,Model_6C_SevereLoss_Classifier,
+fujiyama-power-systems-eafd71,Fujiyama Power Systems Limited,Mainboard,Validation_2025,2025-11-17,Target_B_Severe_Loss,0.0,0.2884,0.0,Model_6C_SevereLoss_Classifier,
+capillary-technologies-india-b5f6ec,Capillary Technologies India Limited,Mainboard,Validation_2025,2025-11-18,Target_B_Severe_Loss,0.0,0.3135,1.0,Model_6C_SevereLoss_Classifier,
+excelsoft-technologies-b2d070,Excelsoft Technologies Limited,Mainboard,Validation_2025,2025-11-21,Target_B_Severe_Loss,0.0,0.4076,1.0,Model_6C_SevereLoss_Classifier,
+sudeep-pharma-0b7089,Sudeep Pharma Limited,Mainboard,Validation_2025,2025-11-25,Target_B_Severe_Loss,0.0,0.4043,1.0,Model_6C_SevereLoss_Classifier,
+aequs-99ea09,Aequs Limited,Mainboard,Validation_2025,2025-12-05,Target_B_Severe_Loss,0.0,0.3163,1.0,Model_6C_SevereLoss_Classifier,
+meesho-517d11,Meesho Limited,Mainboard,Validation_2025,2025-12-05,Target_B_Severe_Loss,0.0,0.3163,1.0,Model_6C_SevereLoss_Classifier,
+vidya-wires-b2b3b9,Vidya Wires Limited,Mainboard,Validation_2025,2025-12-05,Target_B_Severe_Loss,0.0,0.3163,1.0,Model_6C_SevereLoss_Classifier,
+corona-remedies-4770be,Corona Remedies Limited,Mainboard,Validation_2025,2025-12-10,Target_B_Severe_Loss,0.0,0.3783,1.0,Model_6C_SevereLoss_Classifier,
+wakefit-innovations-79804a,Wakefit Innovations Limited,Mainboard,Validation_2025,2025-12-10,Target_B_Severe_Loss,0.0,0.3783,1.0,Model_6C_SevereLoss_Classifier,
+nephrocare-health-services-1a5680,Nephrocare Health Services Limited,Mainboard,Validation_2025,2025-12-12,Target_B_Severe_Loss,0.0,0.3773,1.0,Model_6C_SevereLoss_Classifier,
+park-medi-world-de5fdb,Park Medi World Limited,Mainboard,Validation_2025,2025-12-12,Target_B_Severe_Loss,0.0,0.3773,1.0,Model_6C_SevereLoss_Classifier,
+icici-prudential-asset-management-35c231,ICICI Prudential Asset Management Company Limited,Mainboard,Validation_2025,2025-12-16,Target_B_Severe_Loss,0.0,0.3262,1.0,Model_6C_SevereLoss_Classifier,
+ksh-international-3fc1b4,KSH International Limited,Mainboard,Validation_2025,2025-12-18,Target_B_Severe_Loss,0.0,0.3086,1.0,Model_6C_SevereLoss_Classifier,
+gujarat-kidney-super-speciality-750c60,Gujarat Kidney And Super Speciality Limited,Mainboard,Validation_2025,2025-12-24,Target_B_Severe_Loss,0.0,0.2744,0.0,Model_6C_SevereLoss_Classifier,
+bharat-coking-coal-7060de,Bharat Coking Coal Limited,Mainboard,Test_2026,2026-01-13,Target_B_Severe_Loss,0.0,0.4238,1.0,Model_6C_SevereLoss_Classifier,
+amagi-media-labs-88941f,Amagi Media Labs Limited,Mainboard,Test_2026,2026-01-16,Target_B_Severe_Loss,1.0,0.3735,1.0,Model_6C_SevereLoss_Classifier,
+shadowfax-technologies-79b8d7,Shadowfax Technologies Limited,Mainboard,Test_2026,2026-01-22,Target_B_Severe_Loss,0.0,0.3916,1.0,Model_6C_SevereLoss_Classifier,
+aye-finance-603dea,Aye Finance Limited,Mainboard,Test_2026,2026-02-11,Target_B_Severe_Loss,0.0,0.3268,1.0,Model_6C_SevereLoss_Classifier,
+fractal-analytics-cd2759,Fractal Analytics Limited,Mainboard,Test_2026,2026-02-11,Target_B_Severe_Loss,0.0,0.3268,1.0,Model_6C_SevereLoss_Classifier,
+gaudium-ivf-women-health-5519bb,Gaudium IVF and Women Health Limited,Mainboard,Test_2026,2026-02-24,Target_B_Severe_Loss,0.0,0.3939,1.0,Model_6C_SevereLoss_Classifier,
+clean-max-enviro-energy-solutions-822e5c,Clean Max Enviro Energy Solutions Limited,Mainboard,Test_2026,2026-02-25,Target_B_Severe_Loss,0.0,0.3891,1.0,Model_6C_SevereLoss_Classifier,
+shree-ram-twistex-6be8bc,Shree Ram Twistex Limited,Mainboard,Test_2026,2026-02-25,Target_B_Severe_Loss,1.0,0.3891,1.0,Model_6C_SevereLoss_Classifier,
+pngs-reva-diamond-jewellery-021096,PNGS Reva Diamond Jewellery Limited,Mainboard,Test_2026,2026-02-26,Target_B_Severe_Loss,0.0,0.335,1.0,Model_6C_SevereLoss_Classifier,
+omnitech-engineering-a26936,Omnitech Engineering Limited,Mainboard,Test_2026,2026-02-27,Target_B_Severe_Loss,1.0,0.3888,1.0,Model_6C_SevereLoss_Classifier,
+sedemac-mechatronics-2f5b34,Sedemac Mechatronics Limited,Mainboard,Test_2026,2026-03-06,Target_B_Severe_Loss,0.0,0.5245,1.0,Model_6C_SevereLoss_Classifier,
+rajputana-stainless-250ef1,Rajputana Stainless Limited,Mainboard,Test_2026,2026-03-11,Target_B_Severe_Loss,0.0,0.524,1.0,Model_6C_SevereLoss_Classifier,
+innovision-26b7f3,Innovision Limited,Mainboard,Test_2026,2026-03-17,Target_B_Severe_Loss,0.0,0.5336,1.0,Model_6C_SevereLoss_Classifier,
+gsp-crop-science-a201ac,GSP Crop Science Limited,Mainboard,Test_2026,2026-03-18,Target_B_Severe_Loss,0.0,0.448,1.0,Model_6C_SevereLoss_Classifier,
+central-mine-planning-design-institute-02e629,Central Mine Planning & Design Institute Limited,Mainboard,Test_2026,2026-03-24,Target_B_Severe_Loss,0.0,0.6202,1.0,Model_6C_SevereLoss_Classifier,
+amir-chand-jagdish-kumar-exports-6dad4b,Amir Chand Jagdish Kumar (Exports) Limited,Mainboard,Test_2026,2026-03-27,Target_B_Severe_Loss,0.0,0.5963,1.0,Model_6C_SevereLoss_Classifier,
+powerica-e58a3e,Powerica Ltd.,Mainboard,Test_2026,2026-03-27,Target_B_Severe_Loss,0.0,0.5963,1.0,Model_6C_SevereLoss_Classifier,
+sai-parenterals-77f5fa,Sai Parenterals Limited,Mainboard,Test_2026,2026-03-27,Target_B_Severe_Loss,0.0,0.5963,1.0,Model_6C_SevereLoss_Classifier,
+om-power-transmission-37c154,Om Power Transmission Limited,Mainboard,Test_2026,2026-04-13,Target_B_Severe_Loss,0.0,0.353,1.0,Model_6C_SevereLoss_Classifier,
+onemi-technology-solutions-7627e6,OnEMI Technology Solutions Limited,Mainboard,Test_2026,2026-05-05,Target_B_Severe_Loss,0.0,0.4495,1.0,Model_6C_SevereLoss_Classifier,
+cmr-green-technologies-f059eb,CMR Green Technologies Limited,Mainboard,Test_2026,2026-06-05,Target_B_Severe_Loss,0.0,0.4072,1.0,Model_6C_SevereLoss_Classifier,
+hexagon-nutrition-06c172,Hexagon Nutrition Limited,Mainboard,Test_2026,2026-06-09,Target_B_Severe_Loss,0.0,0.4451,1.0,Model_6C_SevereLoss_Classifier,
+turtlemint-fintech-solutions-597838,Turtlemint Fintech Solutions Limited,Mainboard,Test_2026,2026-06-23,Target_B_Severe_Loss,1.0,0.4149,1.0,Model_6C_SevereLoss_Classifier,
+waterways-leisure-tourism-94055d,Waterways Leisure Tourism Limited,Mainboard,Test_2026,2026-06-25,Target_B_Severe_Loss,1.0,0.3706,1.0,Model_6C_SevereLoss_Classifier,
+advit-jewels-c81f5b,Advit Jewels Limited,Mainboard,Test_2026,2026-06-25,Target_B_Severe_Loss,0.0,0.3706,1.0,Model_6C_SevereLoss_Classifier,
+csm-technologies-afa4ea,CSM Technologies Limited,Mainboard,Test_2026,2026-06-29,Target_B_Severe_Loss,0.0,0.3946,1.0,Model_6C_SevereLoss_Classifier,
+aastha-spintex-9f20ba,Aastha Spintex Limited,Mainboard,Test_2026,2026-07-01,Target_B_Severe_Loss,0.0,0.3533,1.0,Model_6C_SevereLoss_Classifier,
+knack-packaging-c10943,Knack Packaging Limited,Mainboard,Test_2026,2026-07-03,Target_B_Severe_Loss,0.0,0.2836,0.0,Model_6C_SevereLoss_Classifier,
+kusumgar-a25d10,Kusumgar Limited,Mainboard,Test_2026,2026-07-10,Target_B_Severe_Loss,0.0,0.3797,1.0,Model_6C_SevereLoss_Classifier,
+laser-power-infra-c4e32f,Laser Power & Infra Limited,Mainboard,Test_2026,2026-07-13,Target_B_Severe_Loss,0.0,0.4429,1.0,Model_6C_SevereLoss_Classifier,
+alpine-texworld-e09061,Alpine Texworld Limited,Mainboard,Test_2026,2026-07-16,Target_B_Severe_Loss,0.0,0.4264,1.0,Model_6C_SevereLoss_Classifier,
+sbi-funds-management-a2cd28,SBI Funds Management Limited,Mainboard,Test_2026,2026-07-16,Target_B_Severe_Loss,0.0,0.4264,1.0,Model_6C_SevereLoss_Classifier,
+caliber-mining-logistics-ca99f6,Caliber Mining And Logistics Limited,Mainboard,Test_2026,2026-07-21,Target_B_Severe_Loss,0.0,0.413,1.0,Model_6C_SevereLoss_Classifier,
+xtranet-technologies-34e4ac,Xtranet Technologies Limited,Mainboard,Test_2026,2026-07-27,Target_B_Severe_Loss,0.0,0.4252,1.0,Model_6C_SevereLoss_Classifier,
+lohia-40dd01,Lohia Corp Limited,Mainboard,Test_2026,2026-07-27,Target_B_Severe_Loss,0.0,0.4252,1.0,Model_6C_SevereLoss_Classifier,
+indo-mim-e53267,INDO-MIM Limited,Mainboard,Test_2026,2026-07-27,Target_B_Severe_Loss,0.0,0.4252,1.0,Model_6C_SevereLoss_Classifier,
+manipal-health-enterprises-be53c7,Manipal Health Enterprises Limited,Mainboard,Test_2026,2026-07-31,Target_B_Severe_Loss,0.0,0.3344,1.0,Model_6C_SevereLoss_Classifier,
+juniper-green-energy-01d14f,Juniper Green Energy Limited,Mainboard,Test_2026,2026-08-03,Target_B_Severe_Loss,0.0,0.3149,1.0,Model_6C_SevereLoss_Classifier,
+mv-electrosystems-9424fa,MV Electrosystems Limited,Mainboard,Test_2026,2026-08-03,Target_B_Severe_Loss,0.0,0.3149,1.0,Model_6C_SevereLoss_Classifier,
+ardee-499b3c,Ardee Industries Limited,Mainboard,Test_2026,2026-08-07,Target_B_Severe_Loss,0.0,0.3493,1.0,Model_6C_SevereLoss_Classifier,
+technocraft-ventures-da5de7,Technocraft Ventures Limited,Mainboard,Test_2026,2026-08-11,Target_B_Severe_Loss,0.0,0.3826,1.0,Model_6C_SevereLoss_Classifier,
+molbio-diagnostics-ae0281,Molbio Diagnostics Limited,Mainboard,Test_2026,2026-08-12,Target_B_Severe_Loss,0.0,0.3896,1.0,Model_6C_SevereLoss_Classifier,
+dhoot-transmission-8a900e,Dhoot Transmission Limited,Mainboard,Test_2026,2026-08-12,Target_B_Severe_Loss,0.0,0.3896,1.0,Model_6C_SevereLoss_Classifier,
+milky-mist-dairy-food-754e4b,Milky Mist Dairy Food Limited,Mainboard,Test_2026,2026-08-13,Target_B_Severe_Loss,0.0,0.3959,1.0,Model_6C_SevereLoss_Classifier,
+behari-lal-engineering-5f390e,Behari Lal Engineering Limited,Mainboard,Test_2026,2026-08-14,Target_B_Severe_Loss,0.0,0.4081,1.0,Model_6C_SevereLoss_Classifier,
+shiprocket-ddcc51,Shiprocket Limited,Mainboard,Test_2026,2026-08-14,Target_B_Severe_Loss,0.0,0.4081,1.0,Model_6C_SevereLoss_Classifier,
+horizon-industrial-parks-f3703b,Horizon Industrial Parks Limited,Mainboard,Test_2026,2026-08-19,Target_B_Severe_Loss,0.0,0.401,1.0,Model_6C_SevereLoss_Classifier,
+lalithaa-jewellery-mart-769ac1,Lalithaa Jewellery Mart Limited,Mainboard,Test_2026,2026-08-19,Target_B_Severe_Loss,0.0,0.401,1.0,Model_6C_SevereLoss_Classifier,
+shankesh-jewellers-886d2e,Shankesh Jewellers Limited,Mainboard,Test_2026,2026-08-20,Target_B_Severe_Loss,0.0,0.3661,1.0,Model_6C_SevereLoss_Classifier,
+sunshine-pictures-caf8cd,Sunshine Pictures Limited,Mainboard,Test_2026,2026-08-20,Target_B_Severe_Loss,0.0,0.3661,1.0,Model_6C_SevereLoss_Classifier,
+gaja-alternative-asset-management-bfc07a,Gaja Alternative Asset Management Limited,Mainboard,Test_2026,2026-08-21,Target_B_Severe_Loss,0.0,0.4199,1.0,Model_6C_SevereLoss_Classifier,
+tempsens-instruments-india-6c8d0c,Tempsens Instruments (India) Limited,Mainboard,Test_2026,2026-08-24,Target_B_Severe_Loss,0.0,0.4247,1.0,Model_6C_SevereLoss_Classifier,
+augmont-enterprises-dda518,Augmont Enterprises Limited,Mainboard,Test_2026,2026-08-25,Target_B_Severe_Loss,0.0,0.3355,1.0,Model_6C_SevereLoss_Classifier,
+hy-tech-engineers-71544f,Hy-Tech Engineers Limited,Mainboard,Test_2026,2026-08-27,Target_B_Severe_Loss,0.0,0.3481,1.0,Model_6C_SevereLoss_Classifier,
+skyways-air-services-5e9e79,Skyways Air Services Limited,Mainboard,Test_2026,2026-08-27,Target_B_Severe_Loss,1.0,0.3481,1.0,Model_6C_SevereLoss_Classifier,
+symbiotec-pharmalab-519a1e,Symbiotec Pharmalab Limited,Mainboard,Test_2026,2026-08-27,Target_B_Severe_Loss,0.0,0.3481,1.0,Model_6C_SevereLoss_Classifier,
+annu-projects-6f5fa5,Annu Projects Limited,Mainboard,Test_2026,2026-08-28,Target_B_Severe_Loss,1.0,0.3357,1.0,Model_6C_SevereLoss_Classifier,
+lumino-61ba1c,Lumino Industries Limited,Mainboard,Test_2026,2026-08-31,Target_B_Severe_Loss,0.0,0.3965,1.0,Model_6C_SevereLoss_Classifier,
+esds-software-solution-168931,ESDS Software Solution Limited,Mainboard,Test_2026,2026-09-01,Target_B_Severe_Loss,0.0,0.4227,1.0,Model_6C_SevereLoss_Classifier,
+priority-jewels-ea50d2,Priority Jewels Limited,Mainboard,Test_2026,2026-09-01,Target_B_Severe_Loss,0.0,0.4227,1.0,Model_6C_SevereLoss_Classifier,
+purple-style-labs-b3f101,Purple Style Labs Limited,Mainboard,Test_2026,2026-09-02,Target_B_Severe_Loss,0.0,0.3686,1.0,Model_6C_SevereLoss_Classifier,
+rays-of-belief-2c98d7,Rays of Belief Limited,Mainboard,Test_2026,2026-09-03,Target_B_Severe_Loss,0.0,0.3315,1.0,Model_6C_SevereLoss_Classifier,
+deepa-jewellers-799f11,Deepa Jewellers Limited,Mainboard,Test_2026,2026-09-03,Target_B_Severe_Loss,0.0,0.3315,1.0,Model_6C_SevereLoss_Classifier,
+pranav-constructions-24708a,Pranav Constructions Limited,Mainboard,Test_2026,2026-09-09,Target_B_Severe_Loss,0.0,0.472,1.0,Model_6C_SevereLoss_Classifier,
+glass-wall-systems-india-92bf54,Glass Wall Systems (India) Limited,Mainboard,Test_2026,2026-09-10,Target_B_Severe_Loss,0.0,0.4599,1.0,Model_6C_SevereLoss_Classifier,
+kanohar-electricals-fee013,Kanohar Electricals Limited,Mainboard,Test_2026,2026-09-10,Target_B_Severe_Loss,0.0,0.4599,1.0,Model_6C_SevereLoss_Classifier,
+prasol-chemicals-d22d87,Prasol Chemicals Limited,Mainboard,Test_2026,2026-09-10,Target_B_Severe_Loss,0.0,0.4599,1.0,Model_6C_SevereLoss_Classifier,
+steamhouse-india-401917,Steamhouse India Limited,Mainboard,Test_2026,2026-09-11,Target_B_Severe_Loss,0.0,0.4799,1.0,Model_6C_SevereLoss_Classifier,
+rentomojo-770eb9,Rentomojo Limited,Mainboard,Test_2026,2026-09-11,Target_B_Severe_Loss,0.0,0.4799,1.0,Model_6C_SevereLoss_Classifier,
+karamtara-engineering-7f6528,Karamtara Engineering Limited,Mainboard,Test_2026,2026-09-11,Target_B_Severe_Loss,0.0,0.4799,1.0,Model_6C_SevereLoss_Classifier,
+lcc-projects-18eda4,LCC Projects Limited,Mainboard,Test_2026,2026-09-11,Target_B_Severe_Loss,0.0,0.4799,1.0,Model_6C_SevereLoss_Classifier,
+asset-reconstruction-india-86e022,Asset Reconstruction Company (India) Limited,Mainboard,Test_2026,2026-09-11,Target_B_Severe_Loss,0.0,0.4799,1.0,Model_6C_SevereLoss_Classifier,
+manipal-payment-identity-solutions-d460d3,Manipal Payment and Identity Solutions Limited,Mainboard,Test_2026,2026-09-11,Target_B_Severe_Loss,0.0,0.4799,1.0,Model_6C_SevereLoss_Classifier,
+veegaland-developers-704d3b,Veegaland Developers Limited,Mainboard,Test_2026,2026-09-15,Target_B_Severe_Loss,0.0,0.511,1.0,Model_6C_SevereLoss_Classifier,
+manika-plastech-712c3c,Manika Plastech Limited,Mainboard,Test_2026,2026-09-16,Target_B_Severe_Loss,0.0,0.4376,1.0,Model_6C_SevereLoss_Classifier,
+hero-motors-09ccf9,Hero Motors Limited,Mainboard,Test_2026,2026-09-18,Target_B_Severe_Loss,0.0,0.3646,1.0,Model_6C_SevereLoss_Classifier,
+jindal-supreme-india-4a973e,Jindal Supreme (India) Limited,Mainboard,Test_2026,2026-09-18,Target_B_Severe_Loss,0.0,0.3646,1.0,Model_6C_SevereLoss_Classifier,
+ss-retail-1bf8ce,SS Retail Limited,Mainboard,Test_2026,2026-09-18,Target_B_Severe_Loss,0.0,0.3646,1.0,Model_6C_SevereLoss_Classifier,
+sonaselection-india-eb7b6a,Sonaselection India Limited,Mainboard,Test_2026,2026-09-21,Target_B_Severe_Loss,0.0,0.3344,1.0,Model_6C_SevereLoss_Classifier,
+ipo-2026-09-29-ine0m5301040,Varmora Granito Limited,Mainboard,Test_2026,2026-09-24,Target_B_Severe_Loss,0.0,0.398,1.0,Model_6C_SevereLoss_Classifier,
+ipo-2026-09-30-ine505m01015,Adroit Industries (India) Limited,Mainboard,Test_2026,2026-09-25,Target_B_Severe_Loss,0.0,0.4243,1.0,Model_6C_SevereLoss_Classifier,
+ipo-2026-09-30-ine1qja01015,Swastika Infra Limited,Mainboard,Test_2026,2026-09-25,Target_B_Severe_Loss,0.0,0.4243,1.0,Model_6C_SevereLoss_Classifier,
+ipo-2026-09-30-ine0twe01016,ArMee Infotech Limited,Mainboard,Test_2026,2026-09-25,Target_B_Severe_Loss,0.0,0.4243,1.0,Model_6C_SevereLoss_Classifier,
+ipo-2026-09-30-ine147x01013,Elevate Campuses Limited,Mainboard,Test_2026,2026-09-25,Target_B_Severe_Loss,0.0,0.4243,1.0,Model_6C_SevereLoss_Classifier,
+ipo-2026-10-01-ine0otc01025,A-One Steels India Limited,Mainboard,Test_2026,2026-09-28,Target_B_Severe_Loss,0.0,0.4761,1.0,Model_6C_SevereLoss_Classifier,
+ipo-2026-10-01-ine0ptn01011,Moneyview Limited,Mainboard,Test_2026,2026-09-28,Target_B_Severe_Loss,0.0,0.4761,1.0,Model_6C_SevereLoss_Classifier,
+ipo-2026-10-05-ine0d4501011,German Green Steel and Power Limited,Mainboard,Test_2026,2026-09-29,Target_B_Severe_Loss,0.0,0.5156,1.0,Model_6C_SevereLoss_Classifier,
+ipo-2026-10-05-ine0j1n01028,Orient Cables (India) Limited,Mainboard,Test_2026,2026-09-29,Target_B_Severe_Loss,0.0,0.5156,1.0,Model_6C_SevereLoss_Classifier,
+ipo-2026-10-05-ine580p01029,AceVector Limited,Mainboard,Test_2026,2026-09-29,Target_B_Severe_Loss,1.0,0.5156,1.0,Model_6C_SevereLoss_Classifier,
+ipo-2026-10-05-ine804w01029,Runwal Enterprises Limited,Mainboard,Test_2026,2026-09-29,Target_B_Severe_Loss,0.0,0.5156,1.0,Model_6C_SevereLoss_Classifier,
+ipo-2026-10-06-ine029n01014,Shah Investor's Home Limited,Mainboard,Test_2026,2026-09-30,Target_B_Severe_Loss,0.0,0.5015,1.0,Model_6C_SevereLoss_Classifier,
+ipo-2026-10-06-ine307k01028,Srit India Limited,Mainboard,Test_2026,2026-09-30,Target_B_Severe_Loss,0.0,0.5015,1.0,Model_6C_SevereLoss_Classifier,
+indo-farm-equipment-a88664,Indo Farm Equipment Limited,Mainboard,Validation_2025,2025-01-02,Target_C_Return,19.07,,,Model_6D_Ridge_Return,28.29
+standard-glass-lining-technology-7de754,Standard Glass Lining Technology Limited,Mainboard,Validation_2025,2025-01-08,Target_C_Return,22.86,,,Model_6D_Ridge_Return,28.72
+quadrant-future-tek-0d0c0d,Quadrant Future Tek Limited,Mainboard,Validation_2025,2025-01-09,Target_C_Return,27.59,,,Model_6D_Ridge_Return,29.45
+laxmi-dental-61673f,Laxmi Dental Limited,Mainboard,Validation_2025,2025-01-15,Target_C_Return,26.64,,,Model_6D_Ridge_Return,27.41
+stallion-india-fluorochemicals-96bec9,Stallion India Fluorochemicals Limited,Mainboard,Validation_2025,2025-01-20,Target_C_Return,33.33,,,Model_6D_Ridge_Return,25.98
+denta-water-infra-solutions-c512ce,Denta Water and Infra Solutions Limited,Mainboard,Validation_2025,2025-01-24,Target_C_Return,10.54,,,Model_6D_Ridge_Return,25.68
+dr-agarwal-s-health-care-5038a8,Dr. Agarwal's Health Care Limited,Mainboard,Validation_2025,2025-01-31,Target_C_Return,0.0,,,Model_6D_Ridge_Return,30.22
+ajax-engineering-34ccc3,AJAX Engineering Limited,Mainboard,Validation_2025,2025-02-12,Target_C_Return,-8.43,,,Model_6D_Ridge_Return,30.35
+hexaware-technologies-03f09a,Hexaware Technologies Limited,Mainboard,Validation_2025,2025-02-14,Target_C_Return,5.3,,,Model_6D_Ridge_Return,30.44
+quality-power-electrical-equipments-2187af,Quality Power Electrical Equipments Limited,Mainboard,Validation_2025,2025-02-18,Target_C_Return,1.18,,,Model_6D_Ridge_Return,30.78
+ather-energy-2af7ad,Ather Energy Limited,Mainboard,Validation_2025,2025-04-30,Target_C_Return,2.18,,,Model_6D_Ridge_Return,29.66
+borana-weaves-b78b95,Borana Weaves Limited,Mainboard,Validation_2025,2025-05-22,Target_C_Return,12.5,,,Model_6D_Ridge_Return,28.14
+belrise-fb0efd,Belrise Industries Limited,Mainboard,Validation_2025,2025-05-23,Target_C_Return,11.11,,,Model_6D_Ridge_Return,28.24
+schloss-bangalore-a76781,Schloss Bangalore Limited,Mainboard,Validation_2025,2025-05-28,Target_C_Return,-6.67,,,Model_6D_Ridge_Return,27.75
+prostarm-info-systems-604c9a,Prostarm Info Systems Limited,Mainboard,Validation_2025,2025-05-29,Target_C_Return,14.29,,,Model_6D_Ridge_Return,30.31
+scoda-tubes-23a5e5,Scoda Tubes Limited,Mainboard,Validation_2025,2025-05-30,Target_C_Return,0.0,,,Model_6D_Ridge_Return,30.26
+oswal-pumps-7e09aa,Oswal Pumps Limited,Mainboard,Validation_2025,2025-06-17,Target_C_Return,3.26,,,Model_6D_Ridge_Return,29.71
+arisinfra-solutions-1b7f20,ArisInfra Solutions Limited,Mainboard,Validation_2025,2025-06-20,Target_C_Return,-7.66,,,Model_6D_Ridge_Return,29.72
+ellenbarrie-industrial-gases-ae7b6e,Ellenbarrie Industrial Gases Limited,Mainboard,Validation_2025,2025-06-26,Target_C_Return,21.5,,,Model_6D_Ridge_Return,29.31
+globe-civil-projects-756c8c,Globe Civil Projects Limited,Mainboard,Validation_2025,2025-06-26,Target_C_Return,26.76,,,Model_6D_Ridge_Return,29.31
+kalpataru-bf5570,Kalpataru Limited,Mainboard,Validation_2025,2025-06-26,Target_C_Return,0.0,,,Model_6D_Ridge_Return,29.31
+sambhv-steel-tubes-7d8716,Sambhv Steel Tubes Limited,Mainboard,Validation_2025,2025-06-27,Target_C_Return,34.15,,,Model_6D_Ridge_Return,29.3
+hdb-financial-services-b330ec,HDB Financial Services Limited,Mainboard,Validation_2025,2025-06-27,Target_C_Return,12.84,,,Model_6D_Ridge_Return,29.3
+indogulf-cropsciences-734e33,Indogulf Cropsciences Limited,Mainboard,Validation_2025,2025-06-30,Target_C_Return,0.0,,,Model_6D_Ridge_Return,30.81
+crizac-ffd65f,Crizac Limited,Mainboard,Validation_2025,2025-07-04,Target_C_Return,14.71,,,Model_6D_Ridge_Return,31.84
+travel-food-services-99035c,Travel Food Services Limited,Mainboard,Validation_2025,2025-07-09,Target_C_Return,2.27,,,Model_6D_Ridge_Return,33.04
+smartworks-coworking-spaces-70588c,Smartworks Coworking Spaces Limited,Mainboard,Validation_2025,2025-07-14,Target_C_Return,6.88,,,Model_6D_Ridge_Return,29.15
+anthem-biosciences-c6a0b0,Anthem Biosciences Limited,Mainboard,Validation_2025,2025-07-16,Target_C_Return,26.85,,,Model_6D_Ridge_Return,29.59
+gng-electronics-431f93,GNG Electronics Limited,Mainboard,Validation_2025,2025-07-25,Target_C_Return,49.79,,,Model_6D_Ridge_Return,30.76
+indiqube-spaces-40215a,Indiqube Spaces Limited,Mainboard,Validation_2025,2025-07-25,Target_C_Return,-8.86,,,Model_6D_Ridge_Return,30.76
+brigade-hotel-ventures-1a78cd,Brigade Hotel Ventures Limited,Mainboard,Validation_2025,2025-07-28,Target_C_Return,-9.89,,,Model_6D_Ridge_Return,30.35
+shanti-gold-international-f650c4,Shanti Gold International Limited,Mainboard,Validation_2025,2025-07-29,Target_C_Return,14.35,,,Model_6D_Ridge_Return,30.37
+aditya-infotech-8ed0aa,Aditya Infotech Limited,Mainboard,Validation_2025,2025-07-31,Target_C_Return,50.37,,,Model_6D_Ridge_Return,30.2
+laxmi-india-finance-275811,Laxmi India Finance Limited,Mainboard,Validation_2025,2025-07-31,Target_C_Return,-12.96,,,Model_6D_Ridge_Return,30.2
+m-b-engineering-4c93c2,M & B Engineering Limited,Mainboard,Validation_2025,2025-08-01,Target_C_Return,0.0,,,Model_6D_Ridge_Return,30.27
+sri-lotus-developers-realty-97c88c,Sri Lotus Developers and Realty Limited,Mainboard,Validation_2025,2025-08-01,Target_C_Return,18.67,,,Model_6D_Ridge_Return,30.27
+highway-infrastructure-de1f40,Highway Infrastructure Limited,Mainboard,Validation_2025,2025-08-07,Target_C_Return,64.29,,,Model_6D_Ridge_Return,31.3
+all-time-plastics-01e731,All Time Plastics Limited,Mainboard,Validation_2025,2025-08-11,Target_C_Return,13.2,,,Model_6D_Ridge_Return,29.58
+jsw-cement-975419,JSW Cement Limited,Mainboard,Validation_2025,2025-08-11,Target_C_Return,4.42,,,Model_6D_Ridge_Return,29.58
+bluestone-jewellery-lifestyle-3a5abd,BlueStone Jewellery and Lifestyle Limited,Mainboard,Validation_2025,2025-08-13,Target_C_Return,-1.35,,,Model_6D_Ridge_Return,30.87
+regaal-resources-c46f3b,Regaal Resources Limited,Mainboard,Validation_2025,2025-08-14,Target_C_Return,38.24,,,Model_6D_Ridge_Return,30.78
+shreeji-shipping-global-524d58,Shreeji Shipping Global Limited,Mainboard,Validation_2025,2025-08-21,Target_C_Return,7.14,,,Model_6D_Ridge_Return,32.66
+vikram-solar-f7c4d9,Vikram Solar Limited,Mainboard,Validation_2025,2025-08-21,Target_C_Return,1.81,,,Model_6D_Ridge_Return,32.66
+gem-aromatics-5ba178,Gem Aromatics Limited,Mainboard,Validation_2025,2025-08-21,Target_C_Return,2.49,,,Model_6D_Ridge_Return,32.66
+patel-retail-3ce6e2,Patel Retail Limited,Mainboard,Validation_2025,2025-08-21,Target_C_Return,17.65,,,Model_6D_Ridge_Return,32.66
+mangal-electrical-47908d,Mangal Electrical Industries Limited,Mainboard,Validation_2025,2025-08-22,Target_C_Return,-0.89,,,Model_6D_Ridge_Return,32.44
+anlon-healthcare-12cf21,Anlon Healthcare Limited,Mainboard,Validation_2025,2025-08-29,Target_C_Return,1.1,,,Model_6D_Ridge_Return,31.93
+vikran-engineering-5f2e69,Vikran Engineering Limited,Mainboard,Validation_2025,2025-08-29,Target_C_Return,2.06,,,Model_6D_Ridge_Return,31.93
+amanta-healthcare-228780,Amanta Healthcare Limited,Mainboard,Validation_2025,2025-09-03,Target_C_Return,7.14,,,Model_6D_Ridge_Return,30.98
+dev-accelerator-114447,Dev Accelerator Limited,Mainboard,Validation_2025,2025-09-12,Target_C_Return,0.0,,,Model_6D_Ridge_Return,32.63
+shringar-house-of-mangalsutra-cde434,Shringar House Of Mangalsutra Limited,Mainboard,Validation_2025,2025-09-12,Target_C_Return,14.24,,,Model_6D_Ridge_Return,32.63
+urban-8b2b23,Urban Company Limited,Mainboard,Validation_2025,2025-09-12,Target_C_Return,57.52,,,Model_6D_Ridge_Return,32.63
+euro-pratik-sales-f89506,Euro Pratik Sales Limited,Mainboard,Validation_2025,2025-09-18,Target_C_Return,10.16,,,Model_6D_Ridge_Return,31.8
+vms-tmt-c7f278,VMS TMT Limited,Mainboard,Validation_2025,2025-09-19,Target_C_Return,5.96,,,Model_6D_Ridge_Return,30.0
+ivalue-infosolutions-c89b2f,Ivalue Infosolutions Limited,Mainboard,Validation_2025,2025-09-22,Target_C_Return,-4.7,,,Model_6D_Ridge_Return,28.34
+gk-energy-eecbd5,GK Energy Limited,Mainboard,Validation_2025,2025-09-23,Target_C_Return,11.76,,,Model_6D_Ridge_Return,26.57
+atlanta-electricals-d5388e,Atlanta Electricals Limited,Mainboard,Validation_2025,2025-09-24,Target_C_Return,13.66,,,Model_6D_Ridge_Return,26.62
+ganesh-consumer-products-ed2820,Ganesh Consumer Products Limited,Mainboard,Validation_2025,2025-09-24,Target_C_Return,-8.06,,,Model_6D_Ridge_Return,26.62
+solarworld-energy-solutions-9aecd7,Solarworld Energy Solutions Limited,Mainboard,Validation_2025,2025-09-25,Target_C_Return,10.68,,,Model_6D_Ridge_Return,29.08
+seshaasai-technologies-aa4474,Seshaasai Technologies Limited,Mainboard,Validation_2025,2025-09-25,Target_C_Return,2.13,,,Model_6D_Ridge_Return,29.08
+anand-rathi-share-stock-brokers-7d93bc,Anand Rathi Share And Stock Brokers Limited,Mainboard,Validation_2025,2025-09-25,Target_C_Return,4.35,,,Model_6D_Ridge_Return,29.08
+jaro-institute-of-technology-management-research-1d78ed,Jaro Institute of Technology Management and Research Limited,Mainboard,Validation_2025,2025-09-25,Target_C_Return,0.0,,,Model_6D_Ridge_Return,29.08
+bmw-ventures-f5b14a,BMW Ventures Limited,Mainboard,Validation_2025,2025-09-26,Target_C_Return,-21.21,,,Model_6D_Ridge_Return,31.85
+epack-prefab-technologies-271657,Epack Prefab Technologies Limited,Mainboard,Validation_2025,2025-09-26,Target_C_Return,-9.88,,,Model_6D_Ridge_Return,31.85
+jain-resource-recycling-d4fd3f,Jain Resource Recycling Limited,Mainboard,Validation_2025,2025-09-26,Target_C_Return,14.25,,,Model_6D_Ridge_Return,31.85
+jinkushal-36b8b6,Jinkushal Industries Limited,Mainboard,Validation_2025,2025-09-29,Target_C_Return,3.31,,,Model_6D_Ridge_Return,32.37
+trualt-bioenergy-cef02e,Trualt Bioenergy Limited,Mainboard,Validation_2025,2025-09-29,Target_C_Return,9.96,,,Model_6D_Ridge_Return,32.37
+pace-digitek-8a9806,Pace Digitek Limited,Mainboard,Validation_2025,2025-09-30,Target_C_Return,2.74,,,Model_6D_Ridge_Return,32.66
+fabtech-technologies-89e60b,Fabtech Technologies Limited,Mainboard,Validation_2025,2025-10-01,Target_C_Return,0.52,,,Model_6D_Ridge_Return,32.54
+glottis-7290ab,Glottis Limited,Mainboard,Validation_2025,2025-10-01,Target_C_Return,-34.88,,,Model_6D_Ridge_Return,32.54
+advance-agrolife-13f5e9,Advance Agrolife Limited,Mainboard,Validation_2025,2025-10-03,Target_C_Return,14.0,,,Model_6D_Ridge_Return,32.8
+om-freight-forwarders-ba6bcb,Om Freight Forwarders Limited,Mainboard,Validation_2025,2025-10-03,Target_C_Return,-39.63,,,Model_6D_Ridge_Return,32.8
+wework-india-management-b8209c,WeWork India Management Limited,Mainboard,Validation_2025,2025-10-07,Target_C_Return,0.31,,,Model_6D_Ridge_Return,31.39
+lg-electronics-india-1aa5cb,LG Electronics India Limited,Mainboard,Validation_2025,2025-10-09,Target_C_Return,50.01,,,Model_6D_Ridge_Return,32.39
+canara-robeco-asset-management-5b8eb6,Canara Robeco Asset Management Company Limited,Mainboard,Validation_2025,2025-10-13,Target_C_Return,5.36,,,Model_6D_Ridge_Return,31.99
+rubicon-research-81a94a,Rubicon Research Limited,Mainboard,Validation_2025,2025-10-13,Target_C_Return,27.84,,,Model_6D_Ridge_Return,31.99
+midwest-4ba090,Midwest Limited,Mainboard,Validation_2025,2025-10-17,Target_C_Return,9.39,,,Model_6D_Ridge_Return,31.27
+orkla-india-eb04e9,Orkla India Limited,Mainboard,Validation_2025,2025-10-31,Target_C_Return,2.75,,,Model_6D_Ridge_Return,31.56
+studds-accessories-74db0c,Studds Accessories Limited,Mainboard,Validation_2025,2025-11-03,Target_C_Return,-3.42,,,Model_6D_Ridge_Return,31.31
+lenskart-solutions-95756e,Lenskart Solutions Limited,Mainboard,Validation_2025,2025-11-04,Target_C_Return,-1.74,,,Model_6D_Ridge_Return,31.3
+billionbrains-garage-ventures-6ce46c,Billionbrains Garage Ventures Limited,Mainboard,Validation_2025,2025-11-07,Target_C_Return,12.0,,,Model_6D_Ridge_Return,31.96
+pine-labs-eb3a50,Pine Labs Limited,Mainboard,Validation_2025,2025-11-11,Target_C_Return,9.5,,,Model_6D_Ridge_Return,32.35
+emmvee-photovoltaic-power-845b31,Emmvee Photovoltaic Power Limited,Mainboard,Validation_2025,2025-11-13,Target_C_Return,0.0,,,Model_6D_Ridge_Return,32.88
+physicswallah-5d83a0,Physicswallah Limited,Mainboard,Validation_2025,2025-11-13,Target_C_Return,33.03,,,Model_6D_Ridge_Return,32.88
+tenneco-clean-air-india-02bff4,Tenneco Clean Air India Limited,Mainboard,Validation_2025,2025-11-14,Target_C_Return,27.2,,,Model_6D_Ridge_Return,32.41
+fujiyama-power-systems-eafd71,Fujiyama Power Systems Limited,Mainboard,Validation_2025,2025-11-17,Target_C_Return,-3.51,,,Model_6D_Ridge_Return,32.32
+capillary-technologies-india-b5f6ec,Capillary Technologies India Limited,Mainboard,Validation_2025,2025-11-18,Target_C_Return,-0.88,,,Model_6D_Ridge_Return,32.12
+excelsoft-technologies-b2d070,Excelsoft Technologies Limited,Mainboard,Validation_2025,2025-11-21,Target_C_Return,12.5,,,Model_6D_Ridge_Return,28.81
+sudeep-pharma-0b7089,Sudeep Pharma Limited,Mainboard,Validation_2025,2025-11-25,Target_C_Return,23.1,,,Model_6D_Ridge_Return,29.34
+aequs-99ea09,Aequs Limited,Mainboard,Validation_2025,2025-12-05,Target_C_Return,12.9,,,Model_6D_Ridge_Return,32.51
+meesho-517d11,Meesho Limited,Mainboard,Validation_2025,2025-12-05,Target_C_Return,46.4,,,Model_6D_Ridge_Return,32.51
+vidya-wires-b2b3b9,Vidya Wires Limited,Mainboard,Validation_2025,2025-12-05,Target_C_Return,0.0,,,Model_6D_Ridge_Return,32.51
+corona-remedies-4770be,Corona Remedies Limited,Mainboard,Validation_2025,2025-12-10,Target_C_Return,38.42,,,Model_6D_Ridge_Return,30.85
+wakefit-innovations-79804a,Wakefit Innovations Limited,Mainboard,Validation_2025,2025-12-10,Target_C_Return,0.0,,,Model_6D_Ridge_Return,30.85
+nephrocare-health-services-1a5680,Nephrocare Health Services Limited,Mainboard,Validation_2025,2025-12-12,Target_C_Return,6.52,,,Model_6D_Ridge_Return,30.4
+park-medi-world-de5fdb,Park Medi World Limited,Mainboard,Validation_2025,2025-12-12,Target_C_Return,-1.98,,,Model_6D_Ridge_Return,30.4
+icici-prudential-asset-management-35c231,ICICI Prudential Asset Management Company Limited,Mainboard,Validation_2025,2025-12-16,Target_C_Return,20.09,,,Model_6D_Ridge_Return,31.89
+ksh-international-3fc1b4,KSH International Limited,Mainboard,Validation_2025,2025-12-18,Target_C_Return,-3.65,,,Model_6D_Ridge_Return,32.97
+gujarat-kidney-super-speciality-750c60,Gujarat Kidney And Super Speciality Limited,Mainboard,Validation_2025,2025-12-24,Target_C_Return,5.26,,,Model_6D_Ridge_Return,32.9
+bharat-coking-coal-7060de,Bharat Coking Coal Limited,Mainboard,Test_2026,2026-01-13,Target_C_Return,95.65,,,Model_6D_Ridge_Return,29.94
+amagi-media-labs-88941f,Amagi Media Labs Limited,Mainboard,Test_2026,2026-01-16,Target_C_Return,-11.91,,,Model_6D_Ridge_Return,30.97
+shadowfax-technologies-79b8d7,Shadowfax Technologies Limited,Mainboard,Test_2026,2026-01-22,Target_C_Return,-9.19,,,Model_6D_Ridge_Return,31.38
+aye-finance-603dea,Aye Finance Limited,Mainboard,Test_2026,2026-02-11,Target_C_Return,0.0,,,Model_6D_Ridge_Return,31.58
+fractal-analytics-cd2759,Fractal Analytics Limited,Mainboard,Test_2026,2026-02-11,Target_C_Return,-2.67,,,Model_6D_Ridge_Return,31.58
+gaudium-ivf-women-health-5519bb,Gaudium IVF and Women Health Limited,Mainboard,Test_2026,2026-02-24,Target_C_Return,5.06,,,Model_6D_Ridge_Return,31.17
+clean-max-enviro-energy-solutions-822e5c,Clean Max Enviro Energy Solutions Limited,Mainboard,Test_2026,2026-02-25,Target_C_Return,-8.83,,,Model_6D_Ridge_Return,31.36
+shree-ram-twistex-6be8bc,Shree Ram Twistex Limited,Mainboard,Test_2026,2026-02-25,Target_C_Return,-34.62,,,Model_6D_Ridge_Return,31.36
+pngs-reva-diamond-jewellery-021096,PNGS Reva Diamond Jewellery Limited,Mainboard,Test_2026,2026-02-26,Target_C_Return,-2.85,,,Model_6D_Ridge_Return,32.04
+omnitech-engineering-a26936,Omnitech Engineering Limited,Mainboard,Test_2026,2026-02-27,Target_C_Return,-11.01,,,Model_6D_Ridge_Return,31.64
+sedemac-mechatronics-2f5b34,Sedemac Mechatronics Limited,Mainboard,Test_2026,2026-03-06,Target_C_Return,13.54,,,Model_6D_Ridge_Return,30.21
+rajputana-stainless-250ef1,Rajputana Stainless Limited,Mainboard,Test_2026,2026-03-11,Target_C_Return,0.0,,,Model_6D_Ridge_Return,28.92
+innovision-26b7f3,Innovision Limited,Mainboard,Test_2026,2026-03-17,Target_C_Return,-9.88,,,Model_6D_Ridge_Return,28.6
+gsp-crop-science-a201ac,GSP Crop Science Limited,Mainboard,Test_2026,2026-03-18,Target_C_Return,2.5,,,Model_6D_Ridge_Return,29.24
+central-mine-planning-design-institute-02e629,Central Mine Planning & Design Institute Limited,Mainboard,Test_2026,2026-03-24,Target_C_Return,-6.98,,,Model_6D_Ridge_Return,26.29
+amir-chand-jagdish-kumar-exports-6dad4b,Amir Chand Jagdish Kumar (Exports) Limited,Mainboard,Test_2026,2026-03-27,Target_C_Return,-5.66,,,Model_6D_Ridge_Return,25.67
+powerica-e58a3e,Powerica Ltd.,Mainboard,Test_2026,2026-03-27,Target_C_Return,-7.34,,,Model_6D_Ridge_Return,25.67
+sai-parenterals-77f5fa,Sai Parenterals Limited,Mainboard,Test_2026,2026-03-27,Target_C_Return,2.04,,,Model_6D_Ridge_Return,25.67
+om-power-transmission-37c154,Om Power Transmission Limited,Mainboard,Test_2026,2026-04-13,Target_C_Return,6.29,,,Model_6D_Ridge_Return,29.27
+onemi-technology-solutions-7627e6,OnEMI Technology Solutions Limited,Mainboard,Test_2026,2026-05-05,Target_C_Return,11.11,,,Model_6D_Ridge_Return,28.9
+cmr-green-technologies-f059eb,CMR Green Technologies Limited,Mainboard,Test_2026,2026-06-05,Target_C_Return,39.58,,,Model_6D_Ridge_Return,30.59
+hexagon-nutrition-06c172,Hexagon Nutrition Limited,Mainboard,Test_2026,2026-06-09,Target_C_Return,7.22,,,Model_6D_Ridge_Return,29.35
+turtlemint-fintech-solutions-597838,Turtlemint Fintech Solutions Limited,Mainboard,Test_2026,2026-06-23,Target_C_Return,-11.25,,,Model_6D_Ridge_Return,29.85
+waterways-leisure-tourism-94055d,Waterways Leisure Tourism Limited,Mainboard,Test_2026,2026-06-25,Target_C_Return,-15.72,,,Model_6D_Ridge_Return,31.19
+advit-jewels-c81f5b,Advit Jewels Limited,Mainboard,Test_2026,2026-06-25,Target_C_Return,36.88,,,Model_6D_Ridge_Return,31.19
+csm-technologies-afa4ea,CSM Technologies Limited,Mainboard,Test_2026,2026-06-29,Target_C_Return,0.0,,,Model_6D_Ridge_Return,30.17
+aastha-spintex-9f20ba,Aastha Spintex Limited,Mainboard,Test_2026,2026-07-01,Target_C_Return,-4.41,,,Model_6D_Ridge_Return,30.74
+knack-packaging-c10943,Knack Packaging Limited,Mainboard,Test_2026,2026-07-03,Target_C_Return,10.59,,,Model_6D_Ridge_Return,33.34
+kusumgar-a25d10,Kusumgar Limited,Mainboard,Test_2026,2026-07-10,Target_C_Return,35.8,,,Model_6D_Ridge_Return,30.47
+laser-power-infra-c4e32f,Laser Power & Infra Limited,Mainboard,Test_2026,2026-07-13,Target_C_Return,16.82,,,Model_6D_Ridge_Return,28.85
+alpine-texworld-e09061,Alpine Texworld Limited,Mainboard,Test_2026,2026-07-16,Target_C_Return,0.0,,,Model_6D_Ridge_Return,28.08
+sbi-funds-management-a2cd28,SBI Funds Management Limited,Mainboard,Test_2026,2026-07-16,Target_C_Return,6.85,,,Model_6D_Ridge_Return,28.08
+caliber-mining-logistics-ca99f6,Caliber Mining And Logistics Limited,Mainboard,Test_2026,2026-07-21,Target_C_Return,17.98,,,Model_6D_Ridge_Return,28.44
+xtranet-technologies-34e4ac,Xtranet Technologies Limited,Mainboard,Test_2026,2026-07-27,Target_C_Return,7.09,,,Model_6D_Ridge_Return,29.49
+lohia-40dd01,Lohia Corp Limited,Mainboard,Test_2026,2026-07-27,Target_C_Return,8.47,,,Model_6D_Ridge_Return,29.49
+indo-mim-e53267,INDO-MIM Limited,Mainboard,Test_2026,2026-07-27,Target_C_Return,44.33,,,Model_6D_Ridge_Return,29.49
+manipal-health-enterprises-be53c7,Manipal Health Enterprises Limited,Mainboard,Test_2026,2026-07-31,Target_C_Return,10.51,,,Model_6D_Ridge_Return,29.45
+juniper-green-energy-01d14f,Juniper Green Energy Limited,Mainboard,Test_2026,2026-08-03,Target_C_Return,8.89,,,Model_6D_Ridge_Return,29.69
+mv-electrosystems-9424fa,MV Electrosystems Limited,Mainboard,Test_2026,2026-08-03,Target_C_Return,22.35,,,Model_6D_Ridge_Return,29.69
+ardee-499b3c,Ardee Industries Limited,Mainboard,Test_2026,2026-08-07,Target_C_Return,35.85,,,Model_6D_Ridge_Return,30.68
+technocraft-ventures-da5de7,Technocraft Ventures Limited,Mainboard,Test_2026,2026-08-11,Target_C_Return,33.96,,,Model_6D_Ridge_Return,30.58
+molbio-diagnostics-ae0281,Molbio Diagnostics Limited,Mainboard,Test_2026,2026-08-12,Target_C_Return,21.44,,,Model_6D_Ridge_Return,30.45
+dhoot-transmission-8a900e,Dhoot Transmission Limited,Mainboard,Test_2026,2026-08-12,Target_C_Return,37.77,,,Model_6D_Ridge_Return,30.45
+milky-mist-dairy-food-754e4b,Milky Mist Dairy Food Limited,Mainboard,Test_2026,2026-08-13,Target_C_Return,17.86,,,Model_6D_Ridge_Return,30.35
+behari-lal-engineering-5f390e,Behari Lal Engineering Limited,Mainboard,Test_2026,2026-08-14,Target_C_Return,63.16,,,Model_6D_Ridge_Return,29.72
+shiprocket-ddcc51,Shiprocket Limited,Mainboard,Test_2026,2026-08-14,Target_C_Return,35.05,,,Model_6D_Ridge_Return,29.72
+horizon-industrial-parks-f3703b,Horizon Industrial Parks Limited,Mainboard,Test_2026,2026-08-19,Target_C_Return,0.42,,,Model_6D_Ridge_Return,30.61
+lalithaa-jewellery-mart-769ac1,Lalithaa Jewellery Mart Limited,Mainboard,Test_2026,2026-08-19,Target_C_Return,31.84,,,Model_6D_Ridge_Return,30.61
+shankesh-jewellers-886d2e,Shankesh Jewellers Limited,Mainboard,Test_2026,2026-08-20,Target_C_Return,11.08,,,Model_6D_Ridge_Return,31.11
+sunshine-pictures-caf8cd,Sunshine Pictures Limited,Mainboard,Test_2026,2026-08-20,Target_C_Return,9.97,,,Model_6D_Ridge_Return,31.11
+gaja-alternative-asset-management-bfc07a,Gaja Alternative Asset Management Limited,Mainboard,Test_2026,2026-08-21,Target_C_Return,15.62,,,Model_6D_Ridge_Return,28.89
+tempsens-instruments-india-6c8d0c,Tempsens Instruments (India) Limited,Mainboard,Test_2026,2026-08-24,Target_C_Return,111.33,,,Model_6D_Ridge_Return,28.59
+augmont-enterprises-dda518,Augmont Enterprises Limited,Mainboard,Test_2026,2026-08-25,Target_C_Return,21.95,,,Model_6D_Ridge_Return,31.06
+hy-tech-engineers-71544f,Hy-Tech Engineers Limited,Mainboard,Test_2026,2026-08-27,Target_C_Return,41.51,,,Model_6D_Ridge_Return,31.82
+skyways-air-services-5e9e79,Skyways Air Services Limited,Mainboard,Test_2026,2026-08-27,Target_C_Return,-10.14,,,Model_6D_Ridge_Return,31.82
+symbiotec-pharmalab-519a1e,Symbiotec Pharmalab Limited,Mainboard,Test_2026,2026-08-27,Target_C_Return,0.0,,,Model_6D_Ridge_Return,31.82
+annu-projects-6f5fa5,Annu Projects Limited,Mainboard,Test_2026,2026-08-28,Target_C_Return,-27.27,,,Model_6D_Ridge_Return,32.0
+lumino-61ba1c,Lumino Industries Limited,Mainboard,Test_2026,2026-08-31,Target_C_Return,34.15,,,Model_6D_Ridge_Return,29.89
+esds-software-solution-168931,ESDS Software Solution Limited,Mainboard,Test_2026,2026-09-01,Target_C_Return,76.46,,,Model_6D_Ridge_Return,29.5
+priority-jewels-ea50d2,Priority Jewels Limited,Mainboard,Test_2026,2026-09-01,Target_C_Return,15.0,,,Model_6D_Ridge_Return,29.5
+purple-style-labs-b3f101,Purple Style Labs Limited,Mainboard,Test_2026,2026-09-02,Target_C_Return,-6.96,,,Model_6D_Ridge_Return,31.7
+rays-of-belief-2c98d7,Rays of Belief Limited,Mainboard,Test_2026,2026-09-03,Target_C_Return,0.0,,,Model_6D_Ridge_Return,32.88
+deepa-jewellers-799f11,Deepa Jewellers Limited,Mainboard,Test_2026,2026-09-03,Target_C_Return,24.86,,,Model_6D_Ridge_Return,32.88
+pranav-constructions-24708a,Pranav Constructions Limited,Mainboard,Test_2026,2026-09-09,Target_C_Return,33.06,,,Model_6D_Ridge_Return,28.56
+glass-wall-systems-india-92bf54,Glass Wall Systems (India) Limited,Mainboard,Test_2026,2026-09-10,Target_C_Return,6.59,,,Model_6D_Ridge_Return,28.64
+kanohar-electricals-fee013,Kanohar Electricals Limited,Mainboard,Test_2026,2026-09-10,Target_C_Return,8.47,,,Model_6D_Ridge_Return,28.64
+prasol-chemicals-d22d87,Prasol Chemicals Limited,Mainboard,Test_2026,2026-09-10,Target_C_Return,-9.76,,,Model_6D_Ridge_Return,28.64
+steamhouse-india-401917,Steamhouse India Limited,Mainboard,Test_2026,2026-09-11,Target_C_Return,16.67,,,Model_6D_Ridge_Return,28.4
+rentomojo-770eb9,Rentomojo Limited,Mainboard,Test_2026,2026-09-11,Target_C_Return,19.42,,,Model_6D_Ridge_Return,28.4
+karamtara-engineering-7f6528,Karamtara Engineering Limited,Mainboard,Test_2026,2026-09-11,Target_C_Return,25.98,,,Model_6D_Ridge_Return,28.4
+lcc-projects-18eda4,LCC Projects Limited,Mainboard,Test_2026,2026-09-11,Target_C_Return,29.45,,,Model_6D_Ridge_Return,28.4
+asset-reconstruction-india-86e022,Asset Reconstruction Company (India) Limited,Mainboard,Test_2026,2026-09-11,Target_C_Return,0.0,,,Model_6D_Ridge_Return,28.4
+manipal-payment-identity-solutions-d460d3,Manipal Payment and Identity Solutions Limited,Mainboard,Test_2026,2026-09-11,Target_C_Return,-2.65,,,Model_6D_Ridge_Return,28.4
+veegaland-developers-704d3b,Veegaland Developers Limited,Mainboard,Test_2026,2026-09-15,Target_C_Return,10.0,,,Model_6D_Ridge_Return,28.13
+manika-plastech-712c3c,Manika Plastech Limited,Mainboard,Test_2026,2026-09-16,Target_C_Return,0.0,,,Model_6D_Ridge_Return,29.87
+hero-motors-09ccf9,Hero Motors Limited,Mainboard,Test_2026,2026-09-18,Target_C_Return,-2.38,,,Model_6D_Ridge_Return,31.19
+jindal-supreme-india-4a973e,Jindal Supreme (India) Limited,Mainboard,Test_2026,2026-09-18,Target_C_Return,29.03,,,Model_6D_Ridge_Return,31.19
+ss-retail-1bf8ce,SS Retail Limited,Mainboard,Test_2026,2026-09-18,Target_C_Return,47.17,,,Model_6D_Ridge_Return,31.19
+sonaselection-india-eb7b6a,Sonaselection India Limited,Mainboard,Test_2026,2026-09-21,Target_C_Return,3.34,,,Model_6D_Ridge_Return,31.8
+ipo-2026-09-29-ine0m5301040,Varmora Granito Limited,Mainboard,Test_2026,2026-09-24,Target_C_Return,4.73,,,Model_6D_Ridge_Return,30.45
+ipo-2026-09-30-ine505m01015,Adroit Industries (India) Limited,Mainboard,Test_2026,2026-09-25,Target_C_Return,75.37,,,Model_6D_Ridge_Return,29.31
+ipo-2026-09-30-ine1qja01015,Swastika Infra Limited,Mainboard,Test_2026,2026-09-25,Target_C_Return,8.11,,,Model_6D_Ridge_Return,29.31
+ipo-2026-09-30-ine0twe01016,ArMee Infotech Limited,Mainboard,Test_2026,2026-09-25,Target_C_Return,0.0,,,Model_6D_Ridge_Return,29.31
+ipo-2026-09-30-ine147x01013,Elevate Campuses Limited,Mainboard,Test_2026,2026-09-25,Target_C_Return,-1.91,,,Model_6D_Ridge_Return,29.31
+ipo-2026-10-01-ine0otc01025,A-One Steels India Limited,Mainboard,Test_2026,2026-09-28,Target_C_Return,12.35,,,Model_6D_Ridge_Return,29.42
+ipo-2026-10-01-ine0ptn01011,Moneyview Limited,Mainboard,Test_2026,2026-09-28,Target_C_Return,61.76,,,Model_6D_Ridge_Return,29.42
+ipo-2026-10-05-ine0d4501011,German Green Steel and Power Limited,Mainboard,Test_2026,2026-09-29,Target_C_Return,2.16,,,Model_6D_Ridge_Return,27.81
+ipo-2026-10-05-ine0j1n01028,Orient Cables (India) Limited,Mainboard,Test_2026,2026-09-29,Target_C_Return,65.44,,,Model_6D_Ridge_Return,27.81
+ipo-2026-10-05-ine580p01029,AceVector Limited,Mainboard,Test_2026,2026-09-29,Target_C_Return,-11.5,,,Model_6D_Ridge_Return,27.81
+ipo-2026-10-05-ine804w01029,Runwal Enterprises Limited,Mainboard,Test_2026,2026-09-29,Target_C_Return,0.0,,,Model_6D_Ridge_Return,27.81
+ipo-2026-10-06-ine029n01014,Shah Investor's Home Limited,Mainboard,Test_2026,2026-09-30,Target_C_Return,2.4,,,Model_6D_Ridge_Return,29.23
+ipo-2026-10-06-ine307k01028,Srit India Limited,Mainboard,Test_2026,2026-09-30,Target_C_Return,13.85,,,Model_6D_Ridge_Return,29.23
+anya-polytech-fertilizers-448984,Anya Polytech & Fertilizers Limited,SME,Validation_2025,2024-12-30,Target_A_Positive_Open,1.0,0.8571,1.0,Model_6B_Logistic_PositiveOpen,
+delta-autocorp-b50fe2,Delta Autocorp Limited,SME,Validation_2025,2025-01-09,Target_A_Positive_Open,1.0,0.7908,1.0,Model_6B_Logistic_PositiveOpen,
+sat-kartar-shopping-57ecf6,Sat Kartar Shopping Limited,SME,Validation_2025,2025-01-14,Target_A_Positive_Open,1.0,0.8228,1.0,Model_6B_Logistic_PositiveOpen,
+barflex-polyfilms-041332,Barflex Polyfilms Limited,SME,Validation_2025,2025-01-15,Target_A_Positive_Open,0.0,0.8153,1.0,Model_6B_Logistic_PositiveOpen,
+kabra-jewels-e97616,Kabra Jewels Limited,SME,Validation_2025,2025-01-17,Target_A_Positive_Open,1.0,0.8174,1.0,Model_6B_Logistic_PositiveOpen,
+ema-partners-india-9d7b4c,EMA Partners India Limited,SME,Validation_2025,2025-01-21,Target_A_Positive_Open,1.0,0.8076,1.0,Model_6B_Logistic_PositiveOpen,
+rexpro-enterprises-2a0ec7,Rexpro Enterprises Limited,SME,Validation_2025,2025-01-24,Target_A_Positive_Open,0.0,0.8275,1.0,Model_6B_Logistic_PositiveOpen,
+chamunda-electrical-de95b8,Chamunda Electrical Limited,SME,Validation_2025,2025-02-06,Target_A_Positive_Open,1.0,0.7941,1.0,Model_6B_Logistic_PositiveOpen,
+ken-enterprises-0d8002,Ken Enterprises Limited,SME,Validation_2025,2025-02-07,Target_A_Positive_Open,0.0,0.7986,1.0,Model_6B_Logistic_PositiveOpen,
+readymix-construction-machinery-95119c,Readymix Construction Machinery Limited,SME,Validation_2025,2025-02-10,Target_A_Positive_Open,0.0,0.789,1.0,Model_6B_Logistic_PositiveOpen,
+eleganz-interiors-ddb5f9,Eleganz Interiors Limited,SME,Validation_2025,2025-02-11,Target_A_Positive_Open,0.0,0.7625,1.0,Model_6B_Logistic_PositiveOpen,
+chandan-healthcare-d20905,Chandan Healthcare Limited,SME,Validation_2025,2025-02-12,Target_A_Positive_Open,1.0,0.7735,1.0,Model_6B_Logistic_PositiveOpen,
+p-s-raj-steels-9d2249,P S Raj Steels Limited,SME,Validation_2025,2025-02-14,Target_A_Positive_Open,1.0,0.7707,1.0,Model_6B_Logistic_PositiveOpen,
+voler-car-6f5e90,Voler Car Limited,SME,Validation_2025,2025-02-14,Target_A_Positive_Open,0.0,0.7707,1.0,Model_6B_Logistic_PositiveOpen,
+maxvolt-energy-9b4409,Maxvolt Energy Industries Limited,SME,Validation_2025,2025-02-14,Target_A_Positive_Open,0.0,0.7707,1.0,Model_6B_Logistic_PositiveOpen,
+royal-arc-electrodes-15ac8c,Royal Arc Electrodes Limited,SME,Validation_2025,2025-02-18,Target_A_Positive_Open,0.0,0.7736,1.0,Model_6B_Logistic_PositiveOpen,
+tejas-cargo-india-049dbd,Tejas Cargo India Limited,SME,Validation_2025,2025-02-18,Target_A_Positive_Open,1.0,0.7736,1.0,Model_6B_Logistic_PositiveOpen,
+hp-telecom-india-051d46,HP Telecom India Limited,SME,Validation_2025,2025-02-24,Target_A_Positive_Open,1.0,0.7804,1.0,Model_6B_Logistic_PositiveOpen,
+balaji-phosphates-609526,Balaji Phosphates Limited,SME,Validation_2025,2025-03-04,Target_A_Positive_Open,1.0,0.782,1.0,Model_6B_Logistic_PositiveOpen,
+divine-hira-jewellers-a38798,Divine Hira Jewellers Limited,SME,Validation_2025,2025-03-19,Target_A_Positive_Open,0.0,0.808,1.0,Model_6B_Logistic_PositiveOpen,
+grand-continent-hotels-8bcc71,Grand Continent Hotels Limited,SME,Validation_2025,2025-03-24,Target_A_Positive_Open,0.0,0.8301,1.0,Model_6B_Logistic_PositiveOpen,
+active-infrastructures-cf4155,Active Infrastructures Limited,SME,Validation_2025,2025-03-25,Target_A_Positive_Open,0.0,0.8199,1.0,Model_6B_Logistic_PositiveOpen,
+rapid-fleet-management-services-9400f6,Rapid Fleet Management Services Limited,SME,Validation_2025,2025-03-25,Target_A_Positive_Open,1.0,0.8199,1.0,Model_6B_Logistic_PositiveOpen,
+atc-energies-system-7d7d34,ATC Energies System Limited,SME,Validation_2025,2025-03-27,Target_A_Positive_Open,0.0,0.8106,1.0,Model_6B_Logistic_PositiveOpen,
+shri-ahimsa-naturals-aa6203,Shri Ahimsa Naturals Limited,SME,Validation_2025,2025-03-27,Target_A_Positive_Open,1.0,0.8106,1.0,Model_6B_Logistic_PositiveOpen,
+tankup-engineers-bc6d33,Tankup Engineers Limited,SME,Validation_2025,2025-04-25,Target_A_Positive_Open,1.0,0.7695,1.0,Model_6B_Logistic_PositiveOpen,
+iware-supplychain-services-4d33f3,Iware Supplychain Services Limited,SME,Validation_2025,2025-04-30,Target_A_Positive_Open,0.0,0.7512,1.0,Model_6B_Logistic_PositiveOpen,
+arunaya-organics-dda090,Arunaya Organics Limited,SME,Validation_2025,2025-05-02,Target_A_Positive_Open,0.0,0.7561,1.0,Model_6B_Logistic_PositiveOpen,
+virtual-galaxy-infotech-d74a48,Virtual Galaxy Infotech Limited,SME,Validation_2025,2025-05-14,Target_A_Positive_Open,1.0,0.7786,1.0,Model_6B_Logistic_PositiveOpen,
+integrity-infrabuild-developers-b7ee39,Integrity Infrabuild Developers Limited,SME,Validation_2025,2025-05-15,Target_A_Positive_Open,1.0,0.7982,1.0,Model_6B_Logistic_PositiveOpen,
+accretion-pharmaceuticals-2d0480,Accretion Pharmaceuticals Limited,SME,Validation_2025,2025-05-16,Target_A_Positive_Open,0.0,0.8082,1.0,Model_6B_Logistic_PositiveOpen,
+blue-water-logistics-971134,Blue Water Logistics Limited,SME,Validation_2025,2025-05-29,Target_A_Positive_Open,1.0,0.7808,1.0,Model_6B_Logistic_PositiveOpen,
+nikita-papers-d98699,Nikita Papers Limited,SME,Validation_2025,2025-05-29,Target_A_Positive_Open,0.0,0.7808,1.0,Model_6B_Logistic_PositiveOpen,
+n-r-vandana-tex-cc256e,N R Vandana Tex Industries Limited,SME,Validation_2025,2025-05-30,Target_A_Positive_Open,0.0,0.7757,1.0,Model_6B_Logistic_PositiveOpen,
+neptune-petrochemicals-65e93f,Neptune Petrochemicals Limited,SME,Validation_2025,2025-05-30,Target_A_Positive_Open,1.0,0.7757,1.0,Model_6B_Logistic_PositiveOpen,
+ganga-bath-fittings-9f6ba1,Ganga Bath Fittings Limited,SME,Validation_2025,2025-06-06,Target_A_Positive_Open,1.0,0.8,1.0,Model_6B_Logistic_PositiveOpen,
+sacheerome-bf5828,Sacheerome Limited,SME,Validation_2025,2025-06-11,Target_A_Positive_Open,1.0,0.8194,1.0,Model_6B_Logistic_PositiveOpen,
+jainik-power-cables-34dfb1,Jainik Power Cables Limited,SME,Validation_2025,2025-06-12,Target_A_Positive_Open,0.0,0.8072,1.0,Model_6B_Logistic_PositiveOpen,
+monolithisch-india-161e9d,Monolithisch India Limited,SME,Validation_2025,2025-06-16,Target_A_Positive_Open,1.0,0.7906,1.0,Model_6B_Logistic_PositiveOpen,
+patil-automation-bec2b7,Patil Automation Limited,SME,Validation_2025,2025-06-18,Target_A_Positive_Open,1.0,0.7958,1.0,Model_6B_Logistic_PositiveOpen,
+samay-project-services-d3586c,Samay Project Services Limited,SME,Validation_2025,2025-06-18,Target_A_Positive_Open,1.0,0.7958,1.0,Model_6B_Logistic_PositiveOpen,
+eppeltone-engineers-f759e1,Eppeltone Engineers Limited,SME,Validation_2025,2025-06-19,Target_A_Positive_Open,1.0,0.8025,1.0,Model_6B_Logistic_PositiveOpen,
+influx-healthtech-93cb5f,Influx Healthtech Limited,SME,Validation_2025,2025-06-20,Target_A_Positive_Open,1.0,0.8356,1.0,Model_6B_Logistic_PositiveOpen,
+aakaar-medical-technologies-f43da5,Aakaar Medical Technologies Limited,SME,Validation_2025,2025-06-24,Target_A_Positive_Open,1.0,0.8286,1.0,Model_6B_Logistic_PositiveOpen,
+mayasheel-ventures-0ddf97,Mayasheel Ventures Limited,SME,Validation_2025,2025-06-24,Target_A_Positive_Open,1.0,0.8286,1.0,Model_6B_Logistic_PositiveOpen,
+safe-enterprises-retail-fixtures-edf553,Safe Enterprises Retail Fixtures Limited,SME,Validation_2025,2025-06-24,Target_A_Positive_Open,1.0,0.8286,1.0,Model_6B_Logistic_PositiveOpen,
+shri-hare-krishna-sponge-iron-e3b124,Shri Hare-Krishna Sponge Iron Limited,SME,Validation_2025,2025-06-26,Target_A_Positive_Open,1.0,0.8631,1.0,Model_6B_Logistic_PositiveOpen,
+suntech-infra-solutions-95aecc,Suntech Infra Solutions Limited,SME,Validation_2025,2025-06-27,Target_A_Positive_Open,1.0,0.8597,1.0,Model_6B_Logistic_PositiveOpen,
+rama-telecom-ce3e87,Rama Telecom Limited,SME,Validation_2025,2025-06-27,Target_A_Positive_Open,1.0,0.8597,1.0,Model_6B_Logistic_PositiveOpen,
+moving-media-entertainment-0a9b7e,Moving Media Entertainment Limited,SME,Validation_2025,2025-06-30,Target_A_Positive_Open,1.0,0.8386,1.0,Model_6B_Logistic_PositiveOpen,
+pro-fx-tech-9357eb,PRO FX Tech Limited,SME,Validation_2025,2025-06-30,Target_A_Positive_Open,1.0,0.8386,1.0,Model_6B_Logistic_PositiveOpen,
+cedaar-textile-82ef49,Cedaar Textile Limited,SME,Validation_2025,2025-07-02,Target_A_Positive_Open,0.0,0.8311,1.0,Model_6B_Logistic_PositiveOpen,
+pushpa-jewellers-a5b778,Pushpa Jewellers Limited,SME,Validation_2025,2025-07-02,Target_A_Positive_Open,0.0,0.8311,1.0,Model_6B_Logistic_PositiveOpen,
+silky-overseas-be55e4,Silky Overseas Limited,SME,Validation_2025,2025-07-02,Target_A_Positive_Open,1.0,0.8311,1.0,Model_6B_Logistic_PositiveOpen,
+happy-square-outsourcing-services-68eaa0,Happy Square Outsourcing Services Limited,SME,Validation_2025,2025-07-07,Target_A_Positive_Open,1.0,0.8298,1.0,Model_6B_Logistic_PositiveOpen,
+smarten-power-systems-a9378b,Smarten Power Systems Limited,SME,Validation_2025,2025-07-09,Target_A_Positive_Open,1.0,0.8069,1.0,Model_6B_Logistic_PositiveOpen,
+spunweb-nonwoven-1863dd,Spunweb Nonwoven Limited,SME,Validation_2025,2025-07-16,Target_A_Positive_Open,1.0,0.8505,1.0,Model_6B_Logistic_PositiveOpen,
+savy-infra-logistics-bc6d61,Savy Infra and Logistics Limited,SME,Validation_2025,2025-07-23,Target_A_Positive_Open,1.0,0.8621,1.0,Model_6B_Logistic_PositiveOpen,
+tsc-india-a0320e,TSC India Limited,SME,Validation_2025,2025-07-25,Target_A_Positive_Open,0.0,0.8403,1.0,Model_6B_Logistic_PositiveOpen,
+sellowrap-12abaa,Sellowrap Industries Limited,SME,Validation_2025,2025-07-29,Target_A_Positive_Open,1.0,0.8385,1.0,Model_6B_Logistic_PositiveOpen,
+kaytex-fabrics-2f1f1a,Kaytex Fabrics Limited,SME,Validation_2025,2025-07-31,Target_A_Positive_Open,0.0,0.839,1.0,Model_6B_Logistic_PositiveOpen,
+renol-polychem-b17dfb,Renol Polychem Limited,SME,Validation_2025,2025-08-04,Target_A_Positive_Open,0.0,0.8365,1.0,Model_6B_Logistic_PositiveOpen,
+cash-ur-drive-marketing-0dfda1,Cash Ur Drive Marketing Limited,SME,Validation_2025,2025-08-04,Target_A_Positive_Open,1.0,0.8365,1.0,Model_6B_Logistic_PositiveOpen,
+flysbs-aviation-918df2,FlySBS Aviation Limited,SME,Validation_2025,2025-08-05,Target_A_Positive_Open,1.0,0.8285,1.0,Model_6B_Logistic_PositiveOpen,
+aaradhya-disposal-1f1c4a,Aaradhya Disposal Industries Limited,SME,Validation_2025,2025-08-06,Target_A_Positive_Open,0.0,0.8135,1.0,Model_6B_Logistic_PositiveOpen,
+bhadora-b0ac6f,Bhadora Industries Limited,SME,Validation_2025,2025-08-06,Target_A_Positive_Open,0.0,0.8135,1.0,Model_6B_Logistic_PositiveOpen,
+jyoti-global-plast-725edb,Jyoti Global Plast Limited,SME,Validation_2025,2025-08-06,Target_A_Positive_Open,0.0,0.8135,1.0,Model_6B_Logistic_PositiveOpen,
+parth-electricals-engineering-0aceb3,Parth Electricals & Engineering Limited,SME,Validation_2025,2025-08-06,Target_A_Positive_Open,1.0,0.8135,1.0,Model_6B_Logistic_PositiveOpen,
+connplex-cinemas-b76af8,Connplex Cinemas Limited,SME,Validation_2025,2025-08-11,Target_A_Positive_Open,1.0,0.8415,1.0,Model_6B_Logistic_PositiveOpen,
+sawaliya-food-products-a3966b,Sawaliya Food Products Limited,SME,Validation_2025,2025-08-11,Target_A_Positive_Open,1.0,0.8415,1.0,Model_6B_Logistic_PositiveOpen,
+anb-metal-cast-5720d9,ANB Metal Cast Limited,SME,Validation_2025,2025-08-12,Target_A_Positive_Open,1.0,0.8105,1.0,Model_6B_Logistic_PositiveOpen,
+medistep-healthcare-099e1d,Medistep Healthcare Limited,SME,Validation_2025,2025-08-12,Target_A_Positive_Open,1.0,0.8105,1.0,Model_6B_Logistic_PositiveOpen,
+mahendra-realtors-infrastructure-0f2f4c,Mahendra Realtors & Infrastructure Limited,SME,Validation_2025,2025-08-14,Target_A_Positive_Open,0.0,0.8302,1.0,Model_6B_Logistic_PositiveOpen,
+studio-lsd-53b254,Studio LSD Limited,SME,Validation_2025,2025-08-20,Target_A_Positive_Open,0.0,0.8346,1.0,Model_6B_Logistic_PositiveOpen,
+arc-insulation-insulators-d37656,ARC Insulation & Insulators Limited,SME,Validation_2025,2025-08-25,Target_A_Positive_Open,1.0,0.8205,1.0,Model_6B_Logistic_PositiveOpen,
+anondita-medicare-c496ef,Anondita Medicare Limited,SME,Validation_2025,2025-08-26,Target_A_Positive_Open,1.0,0.8018,1.0,Model_6B_Logistic_PositiveOpen,
+classic-electrodes-india-bfa5e3,Classic Electrodes (India) Limited,SME,Validation_2025,2025-08-26,Target_A_Positive_Open,1.0,0.8018,1.0,Model_6B_Logistic_PositiveOpen,
+shivashrit-foods-91a5de,Shivashrit Foods Limited,SME,Validation_2025,2025-08-26,Target_A_Positive_Open,1.0,0.8018,1.0,Model_6B_Logistic_PositiveOpen,
+current-infraprojects-4be078,Current Infraprojects Limited,SME,Validation_2025,2025-08-29,Target_A_Positive_Open,1.0,0.803,1.0,Model_6B_Logistic_PositiveOpen,
+sattva-engineering-construction-4f9760,Sattva Engineering Construction Limited,SME,Validation_2025,2025-08-29,Target_A_Positive_Open,1.0,0.803,1.0,Model_6B_Logistic_PositiveOpen,
+snehaa-organics-7ac7fa,Snehaa Organics Limited,SME,Validation_2025,2025-09-02,Target_A_Positive_Open,0.0,0.8412,1.0,Model_6B_Logistic_PositiveOpen,
+optivalue-tek-consulting-445f2b,Optivalue Tek Consulting Limited,SME,Validation_2025,2025-09-04,Target_A_Positive_Open,1.0,0.858,1.0,Model_6B_Logistic_PositiveOpen,
+vigor-plast-india-667574,Vigor Plast India Limited,SME,Validation_2025,2025-09-09,Target_A_Positive_Open,1.0,0.8263,1.0,Model_6B_Logistic_PositiveOpen,
+taurian-mps-46613c,Taurian MPS Limited,SME,Validation_2025,2025-09-11,Target_A_Positive_Open,1.0,0.8433,1.0,Model_6B_Logistic_PositiveOpen,
+galaxy-medicare-a03289,Galaxy Medicare Limited,SME,Validation_2025,2025-09-12,Target_A_Positive_Open,0.0,0.8476,1.0,Model_6B_Logistic_PositiveOpen,
+techd-cybersecurity-a3159b,TechD Cybersecurity Limited,SME,Validation_2025,2025-09-17,Target_A_Positive_Open,1.0,0.8424,1.0,Model_6B_Logistic_PositiveOpen,
+siddhi-cotspin-2991a3,Siddhi Cotspin Limited,SME,Validation_2025,2025-09-23,Target_A_Positive_Open,0.0,0.8908,1.0,Model_6B_Logistic_PositiveOpen,
+prime-cable-cb409b,Prime Cable Industries Limited,SME,Validation_2025,2025-09-24,Target_A_Positive_Open,0.0,0.8874,1.0,Model_6B_Logistic_PositiveOpen,
+matrix-geo-solutions-fbbc46,Matrix Geo Solutions Limited,SME,Validation_2025,2025-09-25,Target_A_Positive_Open,0.0,0.855,1.0,Model_6B_Logistic_PositiveOpen,
+ecoline-exim-2d357e,Ecoline Exim Limited,SME,Validation_2025,2025-09-25,Target_A_Positive_Open,0.0,0.855,1.0,Model_6B_Logistic_PositiveOpen,
+gurunanak-agriculture-india-e03207,Gurunanak Agriculture India Limited,SME,Validation_2025,2025-09-26,Target_A_Positive_Open,0.0,0.8088,1.0,Model_6B_Logistic_PositiveOpen,
+manas-polymers-energies-508fc1,Manas Polymers and Energies Limited,SME,Validation_2025,2025-09-30,Target_A_Positive_Open,1.0,0.8068,1.0,Model_6B_Logistic_PositiveOpen,
+vijaypd-ceutical-b76415,Vijaypd Ceutical Limited,SME,Validation_2025,2025-10-01,Target_A_Positive_Open,0.0,0.8299,1.0,Model_6B_Logistic_PositiveOpen,
+suba-hotels-325e5e,Suba Hotels Limited,SME,Validation_2025,2025-10-01,Target_A_Positive_Open,1.0,0.8299,1.0,Model_6B_Logistic_PositiveOpen,
+b-a-g-convergence-a97b2b,B.A.G. Convergence Limited,SME,Validation_2025,2025-10-03,Target_A_Positive_Open,1.0,0.8363,1.0,Model_6B_Logistic_PositiveOpen,
+munish-forge-deda15,Munish Forge Limited,SME,Validation_2025,2025-10-03,Target_A_Positive_Open,1.0,0.8363,1.0,Model_6B_Logistic_PositiveOpen,
+sheel-biotech-ce9730,Sheel Biotech Limited,SME,Validation_2025,2025-10-03,Target_A_Positive_Open,1.0,0.8363,1.0,Model_6B_Logistic_PositiveOpen,
+greenleaf-envirotech-366b1a,Greenleaf Envirotech Limited,SME,Validation_2025,2025-10-06,Target_A_Positive_Open,0.0,0.8426,1.0,Model_6B_Logistic_PositiveOpen,
+jayesh-logistics-02a1df,Jayesh Logistics Limited,SME,Validation_2025,2025-10-29,Target_A_Positive_Open,0.0,0.8282,1.0,Model_6B_Logistic_PositiveOpen,
+shreeji-global-fmcg-7adde8,Shreeji Global FMCG Limited,SME,Validation_2025,2025-11-07,Target_A_Positive_Open,0.0,0.7993,1.0,Model_6B_Logistic_PositiveOpen,
+finbud-financial-services-b619b3,Finbud Financial Services Limited,SME,Validation_2025,2025-11-10,Target_A_Positive_Open,1.0,0.8049,1.0,Model_6B_Logistic_PositiveOpen,
+curis-lifesciences-17a6d0,Curis Lifesciences Limited,SME,Validation_2025,2025-11-11,Target_A_Positive_Open,1.0,0.8051,1.0,Model_6B_Logistic_PositiveOpen,
+invicta-diagnostic-ba0761,Invicta Diagnostic Limited,SME,Validation_2025,2025-12-03,Target_A_Positive_Open,1.0,0.8291,1.0,Model_6B_Logistic_PositiveOpen,
+speb-adhesives-cf43ed,Speb Adhesives Limited,SME,Validation_2025,2025-12-03,Target_A_Positive_Open,1.0,0.8291,1.0,Model_6B_Logistic_PositiveOpen,
+clear-secured-services-9e4eb7,Clear Secured Services Limited,SME,Validation_2025,2025-12-03,Target_A_Positive_Open,0.0,0.8291,1.0,Model_6B_Logistic_PositiveOpen,
+neochem-bio-solutions-cf15ec,Neochem Bio Solutions Limited,SME,Validation_2025,2025-12-04,Target_A_Positive_Open,1.0,0.8274,1.0,Model_6B_Logistic_PositiveOpen,
+shri-kanha-stainless-91e622,Shri Kanha Stainless Limited,SME,Validation_2025,2025-12-05,Target_A_Positive_Open,0.0,0.8357,1.0,Model_6B_Logistic_PositiveOpen,
+encompass-design-india-e78571,Encompass Design India Limited,SME,Validation_2025,2025-12-09,Target_A_Positive_Open,1.0,0.8333,1.0,Model_6B_Logistic_PositiveOpen,
+flywings-simulator-training-centre-d1a33f,Flywings Simulator Training Centre Limited,SME,Validation_2025,2025-12-09,Target_A_Positive_Open,1.0,0.8333,1.0,Model_6B_Logistic_PositiveOpen,
+ashwini-container-movers-b40ca1,Ashwini Container Movers Limited,SME,Validation_2025,2025-12-16,Target_A_Positive_Open,1.0,0.8472,1.0,Model_6B_Logistic_PositiveOpen,
+exim-routes-cc1da6,Exim Routes Limited,SME,Validation_2025,2025-12-16,Target_A_Positive_Open,1.0,0.8472,1.0,Model_6B_Logistic_PositiveOpen,
+marc-technocrats-87234e,Marc Technocrats Limited,SME,Validation_2025,2025-12-19,Target_A_Positive_Open,0.0,0.8447,1.0,Model_6B_Logistic_PositiveOpen,
+epw-india-773e72,EPW India Limited,SME,Validation_2025,2025-12-24,Target_A_Positive_Open,1.0,0.8546,1.0,Model_6B_Logistic_PositiveOpen,
+shyam-dhani-bec82f,Shyam Dhani Industries Limited,SME,Validation_2025,2025-12-24,Target_A_Positive_Open,1.0,0.8546,1.0,Model_6B_Logistic_PositiveOpen,
+sundrex-oil-930274,Sundrex Oil Company Limited,SME,Validation_2025,2025-12-24,Target_A_Positive_Open,0.0,0.8546,1.0,Model_6B_Logistic_PositiveOpen,
+dhara-rail-projects-acec11,Dhara Rail Projects Limited,SME,Validation_2025,2025-12-26,Target_A_Positive_Open,1.0,0.8395,1.0,Model_6B_Logistic_PositiveOpen,
+e-to-e-transportation-infrastructure-9a4645,E TO E Transportation Infrastructure Limited,SME,Test_2026,2025-12-30,Target_A_Positive_Open,1.0,0.824,1.0,Model_6B_Logistic_PositiveOpen,
+victory-electric-vehicles-international-aa616d,Victory Electric Vehicles International Limited,SME,Test_2026,2026-01-09,Target_A_Positive_Open,0.0,0.8407,1.0,Model_6B_Logistic_PositiveOpen,
+avana-electrosystems-1a6ff0,Avana Electrosystems Limited,SME,Test_2026,2026-01-14,Target_A_Positive_Open,1.0,0.8428,1.0,Model_6B_Logistic_PositiveOpen,
+armour-security-india-bb0bba,Armour Security (India). Ltd,SME,Test_2026,2026-01-19,Target_A_Positive_Open,0.0,0.8333,1.0,Model_6B_Logistic_PositiveOpen,
+krm-ayurveda-1ba356,KRM Ayurveda Limited,SME,Test_2026,2026-01-23,Target_A_Positive_Open,1.0,0.7638,1.0,Model_6B_Logistic_PositiveOpen,
+c-k-k-retail-mart-89ba3b,C K K Retail Mart Limited,SME,Test_2026,2026-02-03,Target_A_Positive_Open,0.0,0.8202,1.0,Model_6B_Logistic_PositiveOpen,
+grover-jewells-505e9e,Grover Jewells Limited,SME,Test_2026,2026-02-06,Target_A_Positive_Open,1.0,0.8353,1.0,Model_6B_Logistic_PositiveOpen,
+brandman-retail-215594,Brandman Retail Limited,SME,Test_2026,2026-02-06,Target_A_Positive_Open,1.0,0.8353,1.0,Model_6B_Logistic_PositiveOpen,
+biopol-chemicals-5910a1,Biopol Chemicals Limited,SME,Test_2026,2026-02-10,Target_A_Positive_Open,1.0,0.8352,1.0,Model_6B_Logistic_PositiveOpen,
+marushika-technology-852a85,Marushika Technology Limited,SME,Test_2026,2026-02-16,Target_A_Positive_Open,1.0,0.803,1.0,Model_6B_Logistic_PositiveOpen,
+manilam-india-a679ab,Manilam Industries India Limited,SME,Test_2026,2026-02-24,Target_A_Positive_Open,0.0,0.7878,1.0,Model_6B_Logistic_PositiveOpen,
+mobilise-app-lab-c70a73,Mobilise App Lab Limited,SME,Test_2026,2026-02-25,Target_A_Positive_Open,0.0,0.7946,1.0,Model_6B_Logistic_PositiveOpen,
+yaap-digital-fa201c,Yaap Digital Limited,SME,Test_2026,2026-02-27,Target_A_Positive_Open,0.0,0.7852,1.0,Model_6B_Logistic_PositiveOpen,
+striders-impex-a9c7c3,Striders Impex Limited,SME,Test_2026,2026-03-02,Target_A_Positive_Open,0.0,0.7275,1.0,Model_6B_Logistic_PositiveOpen,
+acetech-e-commerce-935832,Acetech E-Commerce Limited,SME,Test_2026,2026-03-04,Target_A_Positive_Open,0.0,0.6588,1.0,Model_6B_Logistic_PositiveOpen,
+srinibas-pradhan-constructions-77e0b6,Srinibas Pradhan Constructions Limited,SME,Test_2026,2026-03-10,Target_A_Positive_Open,1.0,0.7114,1.0,Model_6B_Logistic_PositiveOpen,
+apsis-aerocom-6c18c9,Apsis Aerocom Limited,SME,Test_2026,2026-03-13,Target_A_Positive_Open,1.0,0.6421,1.0,Model_6B_Logistic_PositiveOpen,
+vivid-electromech-f38a46,Vivid Electromech Limited,SME,Test_2026,2026-03-30,Target_A_Positive_Open,1.0,0.5958,1.0,Model_6B_Logistic_PositiveOpen,
+adisoft-technologies-72f160,Adisoft Technologies Limited,SME,Test_2026,2026-04-27,Target_A_Positive_Open,1.0,0.7487,1.0,Model_6B_Logistic_PositiveOpen,
+amba-auto-sales-services-86a58a,Amba Auto Sales and Services Limited,SME,Test_2026,2026-04-29,Target_A_Positive_Open,0.0,0.7621,1.0,Model_6B_Logistic_PositiveOpen,
+value-360-communications-f70a72,Value 360 Communications Limited,SME,Test_2026,2026-05-06,Target_A_Positive_Open,0.0,0.7892,1.0,Model_6B_Logistic_PositiveOpen,
+simca-advertising-d8641f,Simca Advertising Limited,SME,Test_2026,2026-05-12,Target_A_Positive_Open,0.0,0.7203,1.0,Model_6B_Logistic_PositiveOpen,
+rfbl-flexi-pack-b120c5,RFBL Flexi Pack Limited,SME,Test_2026,2026-05-14,Target_A_Positive_Open,1.0,0.7375,1.0,Model_6B_Logistic_PositiveOpen,
+nfp-sampoorna-foods-bcd842,NFP Sampoorna Foods Limited,SME,Test_2026,2026-05-20,Target_A_Positive_Open,0.0,0.7688,1.0,Model_6B_Logistic_PositiveOpen,
+teamtech-formwork-solutions-ed860a,Teamtech Formwork Solutions Limited,SME,Test_2026,2026-05-21,Target_A_Positive_Open,1.0,0.7666,1.0,Model_6B_Logistic_PositiveOpen,
+bio-medica-laboratories-bb714b,Bio Medica Laboratories Limited,SME,Test_2026,2026-05-25,Target_A_Positive_Open,0.0,0.7919,1.0,Model_6B_Logistic_PositiveOpen,
+q-line-biotech-3bb8f7,Q-Line Biotech Limited,SME,Test_2026,2026-05-25,Target_A_Positive_Open,1.0,0.7919,1.0,Model_6B_Logistic_PositiveOpen,
+genxai-analytics-d15667,GenXAI Analytics Limited,SME,Test_2026,2026-06-09,Target_A_Positive_Open,0.0,0.7919,1.0,Model_6B_Logistic_PositiveOpen,
+utkal-speciality-india-c17f78,Utkal Speciality Industries India Limited,SME,Test_2026,2026-06-12,Target_A_Positive_Open,0.0,0.8237,1.0,Model_6B_Logistic_PositiveOpen,
+clay-craft-india-093e9a,Clay Craft India Limited,SME,Test_2026,2026-06-19,Target_A_Positive_Open,1.0,0.83,1.0,Model_6B_Logistic_PositiveOpen,
+avience-biomedicals-c4a59a,Avience Biomedicals Limited,SME,Test_2026,2026-06-22,Target_A_Positive_Open,1.0,0.8343,1.0,Model_6B_Logistic_PositiveOpen,
+shreedhar-spinners-6e5dde,Shreedhar Spinners Limited,SME,Test_2026,2026-06-25,Target_A_Positive_Open,1.0,0.8105,1.0,Model_6B_Logistic_PositiveOpen,
+teja-engineering-bd38d1,Teja Engineering Industries Limited,SME,Test_2026,2026-07-02,Target_A_Positive_Open,1.0,0.8141,1.0,Model_6B_Logistic_PositiveOpen,
+vinit-mobile-673a43,Vinit Mobile Limited,SME,Test_2026,2026-07-02,Target_A_Positive_Open,0.0,0.8141,1.0,Model_6B_Logistic_PositiveOpen,
+ic-electricals-8f563b,IC Electricals Company Limited,SME,Test_2026,2026-07-07,Target_A_Positive_Open,1.0,0.833,1.0,Model_6B_Logistic_PositiveOpen,
+happy-steels-078bb0,Happy Steels Limited,SME,Test_2026,2026-07-13,Target_A_Positive_Open,1.0,0.8336,1.0,Model_6B_Logistic_PositiveOpen,
+metalic-technoforge-271afd,Metalic Technoforge Limited,SME,Test_2026,2026-07-23,Target_A_Positive_Open,1.0,0.8253,1.0,Model_6B_Logistic_PositiveOpen,
+propshop-events-exhibitions-87e33b,Propshop Events and Exhibitions Limited,SME,Test_2026,2026-07-29,Target_A_Positive_Open,0.0,0.8343,1.0,Model_6B_Logistic_PositiveOpen,
+anawil-wire-engineering-feb7c5,Anawil Wire and Engineering Limited,SME,Test_2026,2026-08-05,Target_A_Positive_Open,1.0,0.8355,1.0,Model_6B_Logistic_PositiveOpen,
+optimystix-entertainment-india-9c5916,Optimystix Entertainment India Limited,SME,Test_2026,2026-08-11,Target_A_Positive_Open,1.0,0.8343,1.0,Model_6B_Logistic_PositiveOpen,
+pramodini-medicare-eedf51,Pramodini Medicare Limited,SME,Test_2026,2026-08-14,Target_A_Positive_Open,1.0,0.8496,1.0,Model_6B_Logistic_PositiveOpen,
+credent-connect-n-care-fa5e79,Credent Connect N Care Limited,SME,Test_2026,2026-08-17,Target_A_Positive_Open,1.0,0.8398,1.0,Model_6B_Logistic_PositiveOpen,
+skytech-infinite-platform-ab7944,Skytech Infinite Platform Limited,SME,Test_2026,2026-08-18,Target_A_Positive_Open,0.0,0.8375,1.0,Model_6B_Logistic_PositiveOpen,
+fascinate-textiles-ad3c91,Fascinate Textiles Limited,SME,Test_2026,2026-08-19,Target_A_Positive_Open,0.0,0.835,1.0,Model_6B_Logistic_PositiveOpen,
+abh-healthcare-0d58e2,ABH Healthcare Limited,SME,Test_2026,2026-08-27,Target_A_Positive_Open,0.0,0.8301,1.0,Model_6B_Logistic_PositiveOpen,
+madhur-knit-crafts-320db3,Madhur Knit Crafts Limited,SME,Test_2026,2026-08-27,Target_A_Positive_Open,0.0,0.8301,1.0,Model_6B_Logistic_PositiveOpen,
+sumax-engineering-e1d4b1,Sumax Engineering Limited,SME,Test_2026,2026-08-28,Target_A_Positive_Open,1.0,0.8351,1.0,Model_6B_Logistic_PositiveOpen,
+ashutosh-fibre-638584,Ashutosh Fibre Limited,SME,Test_2026,2026-09-02,Target_A_Positive_Open,1.0,0.8196,1.0,Model_6B_Logistic_PositiveOpen,
+shanti-inorganics-cbd741,Shanti Inorganics Limited,SME,Test_2026,2026-09-02,Target_A_Positive_Open,1.0,0.8196,1.0,Model_6B_Logistic_PositiveOpen,
+qualiance-international-e6b994,Qualiance International Limited,SME,Test_2026,2026-09-08,Target_A_Positive_Open,1.0,0.8477,1.0,Model_6B_Logistic_PositiveOpen,
+vinod-texworld-366ce1,Vinod Texworld Limited,SME,Test_2026,2026-09-11,Target_A_Positive_Open,0.0,0.8436,1.0,Model_6B_Logistic_PositiveOpen,
+kheria-autocomp-1d40ff,Kheria Autocomp Limited,SME,Test_2026,2026-09-21,Target_A_Positive_Open,1.0,0.8326,1.0,Model_6B_Logistic_PositiveOpen,
+spectraa-technology-solutions-954ab8,SpectraA Technology Solutions Limited,SME,Test_2026,2026-09-21,Target_A_Positive_Open,1.0,0.8326,1.0,Model_6B_Logistic_PositiveOpen,
+axiom-gas-engineering-9f4a40,Axiom Gas Engineering Limited,SME,Test_2026,2026-09-22,Target_A_Positive_Open,1.0,0.8336,1.0,Model_6B_Logistic_PositiveOpen,
+ipo-2026-09-30-ine1c2q01017,Pooja Logistics Limited,SME,Test_2026,2026-09-25,Target_A_Positive_Open,1.0,0.8431,1.0,Model_6B_Logistic_PositiveOpen,
+ipo-2026-09-30-ine11es01010,Coreintegra Consulting Services Limited,SME,Test_2026,2026-09-25,Target_A_Positive_Open,1.0,0.8431,1.0,Model_6B_Logistic_PositiveOpen,
+ipo-2026-10-05-ine1b7i01014,Himalayan Solar Limited,SME,Test_2026,2026-09-29,Target_A_Positive_Open,0.0,0.8319,1.0,Model_6B_Logistic_PositiveOpen,
+ipo-2026-10-05-ine2oku01014,Bench Mark Infotech Services Limited,SME,Test_2026,2026-09-29,Target_A_Positive_Open,0.0,0.8319,1.0,Model_6B_Logistic_PositiveOpen,
+anya-polytech-fertilizers-448984,Anya Polytech & Fertilizers Limited,SME,Validation_2025,2024-12-30,Target_B_Severe_Loss,0.0,0.5025,1.0,Model_6C_SevereLoss_Classifier,
+delta-autocorp-b50fe2,Delta Autocorp Limited,SME,Validation_2025,2025-01-09,Target_B_Severe_Loss,0.0,0.4578,1.0,Model_6C_SevereLoss_Classifier,
+sat-kartar-shopping-57ecf6,Sat Kartar Shopping Limited,SME,Validation_2025,2025-01-14,Target_B_Severe_Loss,0.0,0.4558,1.0,Model_6C_SevereLoss_Classifier,
+barflex-polyfilms-041332,Barflex Polyfilms Limited,SME,Validation_2025,2025-01-15,Target_B_Severe_Loss,0.0,0.4608,1.0,Model_6C_SevereLoss_Classifier,
+kabra-jewels-e97616,Kabra Jewels Limited,SME,Validation_2025,2025-01-17,Target_B_Severe_Loss,0.0,0.4685,1.0,Model_6C_SevereLoss_Classifier,
+ema-partners-india-9d7b4c,EMA Partners India Limited,SME,Validation_2025,2025-01-21,Target_B_Severe_Loss,0.0,0.4588,1.0,Model_6C_SevereLoss_Classifier,
+rexpro-enterprises-2a0ec7,Rexpro Enterprises Limited,SME,Validation_2025,2025-01-24,Target_B_Severe_Loss,1.0,0.4644,1.0,Model_6C_SevereLoss_Classifier,
+chamunda-electrical-de95b8,Chamunda Electrical Limited,SME,Validation_2025,2025-02-06,Target_B_Severe_Loss,0.0,0.5018,1.0,Model_6C_SevereLoss_Classifier,
+ken-enterprises-0d8002,Ken Enterprises Limited,SME,Validation_2025,2025-02-07,Target_B_Severe_Loss,0.0,0.506,1.0,Model_6C_SevereLoss_Classifier,
+readymix-construction-machinery-95119c,Readymix Construction Machinery Limited,SME,Validation_2025,2025-02-10,Target_B_Severe_Loss,0.0,0.495,1.0,Model_6C_SevereLoss_Classifier,
+eleganz-interiors-ddb5f9,Eleganz Interiors Limited,SME,Validation_2025,2025-02-11,Target_B_Severe_Loss,0.0,0.4545,1.0,Model_6C_SevereLoss_Classifier,
+chandan-healthcare-d20905,Chandan Healthcare Limited,SME,Validation_2025,2025-02-12,Target_B_Severe_Loss,0.0,0.4551,1.0,Model_6C_SevereLoss_Classifier,
+p-s-raj-steels-9d2249,P S Raj Steels Limited,SME,Validation_2025,2025-02-14,Target_B_Severe_Loss,0.0,0.4547,1.0,Model_6C_SevereLoss_Classifier,
+voler-car-6f5e90,Voler Car Limited,SME,Validation_2025,2025-02-14,Target_B_Severe_Loss,0.0,0.4547,1.0,Model_6C_SevereLoss_Classifier,
+maxvolt-energy-9b4409,Maxvolt Energy Industries Limited,SME,Validation_2025,2025-02-14,Target_B_Severe_Loss,0.0,0.4547,1.0,Model_6C_SevereLoss_Classifier,
+royal-arc-electrodes-15ac8c,Royal Arc Electrodes Limited,SME,Validation_2025,2025-02-18,Target_B_Severe_Loss,0.0,0.4743,1.0,Model_6C_SevereLoss_Classifier,
+tejas-cargo-india-049dbd,Tejas Cargo India Limited,SME,Validation_2025,2025-02-18,Target_B_Severe_Loss,0.0,0.4743,1.0,Model_6C_SevereLoss_Classifier,
+hp-telecom-india-051d46,HP Telecom India Limited,SME,Validation_2025,2025-02-24,Target_B_Severe_Loss,0.0,0.472,1.0,Model_6C_SevereLoss_Classifier,
+balaji-phosphates-609526,Balaji Phosphates Limited,SME,Validation_2025,2025-03-04,Target_B_Severe_Loss,0.0,0.4744,1.0,Model_6C_SevereLoss_Classifier,
+divine-hira-jewellers-a38798,Divine Hira Jewellers Limited,SME,Validation_2025,2025-03-19,Target_B_Severe_Loss,0.0,0.5286,1.0,Model_6C_SevereLoss_Classifier,
+grand-continent-hotels-8bcc71,Grand Continent Hotels Limited,SME,Validation_2025,2025-03-24,Target_B_Severe_Loss,0.0,0.5652,1.0,Model_6C_SevereLoss_Classifier,
+active-infrastructures-cf4155,Active Infrastructures Limited,SME,Validation_2025,2025-03-25,Target_B_Severe_Loss,0.0,0.5479,1.0,Model_6C_SevereLoss_Classifier,
+rapid-fleet-management-services-9400f6,Rapid Fleet Management Services Limited,SME,Validation_2025,2025-03-25,Target_B_Severe_Loss,0.0,0.5479,1.0,Model_6C_SevereLoss_Classifier,
+atc-energies-system-7d7d34,ATC Energies System Limited,SME,Validation_2025,2025-03-27,Target_B_Severe_Loss,0.0,0.5275,1.0,Model_6C_SevereLoss_Classifier,
+shri-ahimsa-naturals-aa6203,Shri Ahimsa Naturals Limited,SME,Validation_2025,2025-03-27,Target_B_Severe_Loss,0.0,0.5275,1.0,Model_6C_SevereLoss_Classifier,
+tankup-engineers-bc6d33,Tankup Engineers Limited,SME,Validation_2025,2025-04-25,Target_B_Severe_Loss,0.0,0.4753,1.0,Model_6C_SevereLoss_Classifier,
+iware-supplychain-services-4d33f3,Iware Supplychain Services Limited,SME,Validation_2025,2025-04-30,Target_B_Severe_Loss,1.0,0.4548,1.0,Model_6C_SevereLoss_Classifier,
+arunaya-organics-dda090,Arunaya Organics Limited,SME,Validation_2025,2025-05-02,Target_B_Severe_Loss,1.0,0.4592,1.0,Model_6C_SevereLoss_Classifier,
+virtual-galaxy-infotech-d74a48,Virtual Galaxy Infotech Limited,SME,Validation_2025,2025-05-14,Target_B_Severe_Loss,0.0,0.4777,1.0,Model_6C_SevereLoss_Classifier,
+integrity-infrabuild-developers-b7ee39,Integrity Infrabuild Developers Limited,SME,Validation_2025,2025-05-15,Target_B_Severe_Loss,0.0,0.5089,1.0,Model_6C_SevereLoss_Classifier,
+accretion-pharmaceuticals-2d0480,Accretion Pharmaceuticals Limited,SME,Validation_2025,2025-05-16,Target_B_Severe_Loss,1.0,0.5245,1.0,Model_6C_SevereLoss_Classifier,
+blue-water-logistics-971134,Blue Water Logistics Limited,SME,Validation_2025,2025-05-29,Target_B_Severe_Loss,0.0,0.4846,1.0,Model_6C_SevereLoss_Classifier,
+nikita-papers-d98699,Nikita Papers Limited,SME,Validation_2025,2025-05-29,Target_B_Severe_Loss,1.0,0.4846,1.0,Model_6C_SevereLoss_Classifier,
+n-r-vandana-tex-cc256e,N R Vandana Tex Industries Limited,SME,Validation_2025,2025-05-30,Target_B_Severe_Loss,0.0,0.4717,1.0,Model_6C_SevereLoss_Classifier,
+neptune-petrochemicals-65e93f,Neptune Petrochemicals Limited,SME,Validation_2025,2025-05-30,Target_B_Severe_Loss,0.0,0.4717,1.0,Model_6C_SevereLoss_Classifier,
+ganga-bath-fittings-9f6ba1,Ganga Bath Fittings Limited,SME,Validation_2025,2025-06-06,Target_B_Severe_Loss,0.0,0.5048,1.0,Model_6C_SevereLoss_Classifier,
+sacheerome-bf5828,Sacheerome Limited,SME,Validation_2025,2025-06-11,Target_B_Severe_Loss,0.0,0.5286,1.0,Model_6C_SevereLoss_Classifier,
+jainik-power-cables-34dfb1,Jainik Power Cables Limited,SME,Validation_2025,2025-06-12,Target_B_Severe_Loss,1.0,0.5054,1.0,Model_6C_SevereLoss_Classifier,
+monolithisch-india-161e9d,Monolithisch India Limited,SME,Validation_2025,2025-06-16,Target_B_Severe_Loss,0.0,0.4821,1.0,Model_6C_SevereLoss_Classifier,
+patil-automation-bec2b7,Patil Automation Limited,SME,Validation_2025,2025-06-18,Target_B_Severe_Loss,0.0,0.4794,1.0,Model_6C_SevereLoss_Classifier,
+samay-project-services-d3586c,Samay Project Services Limited,SME,Validation_2025,2025-06-18,Target_B_Severe_Loss,0.0,0.4794,1.0,Model_6C_SevereLoss_Classifier,
+eppeltone-engineers-f759e1,Eppeltone Engineers Limited,SME,Validation_2025,2025-06-19,Target_B_Severe_Loss,0.0,0.4912,1.0,Model_6C_SevereLoss_Classifier,
+influx-healthtech-93cb5f,Influx Healthtech Limited,SME,Validation_2025,2025-06-20,Target_B_Severe_Loss,0.0,0.5222,1.0,Model_6C_SevereLoss_Classifier,
+aakaar-medical-technologies-f43da5,Aakaar Medical Technologies Limited,SME,Validation_2025,2025-06-24,Target_B_Severe_Loss,0.0,0.5122,1.0,Model_6C_SevereLoss_Classifier,
+mayasheel-ventures-0ddf97,Mayasheel Ventures Limited,SME,Validation_2025,2025-06-24,Target_B_Severe_Loss,0.0,0.5122,1.0,Model_6C_SevereLoss_Classifier,
+safe-enterprises-retail-fixtures-edf553,Safe Enterprises Retail Fixtures Limited,SME,Validation_2025,2025-06-24,Target_B_Severe_Loss,0.0,0.5122,1.0,Model_6C_SevereLoss_Classifier,
+shri-hare-krishna-sponge-iron-e3b124,Shri Hare-Krishna Sponge Iron Limited,SME,Validation_2025,2025-06-26,Target_B_Severe_Loss,0.0,0.5516,1.0,Model_6C_SevereLoss_Classifier,
+suntech-infra-solutions-95aecc,Suntech Infra Solutions Limited,SME,Validation_2025,2025-06-27,Target_B_Severe_Loss,0.0,0.5419,1.0,Model_6C_SevereLoss_Classifier,
+rama-telecom-ce3e87,Rama Telecom Limited,SME,Validation_2025,2025-06-27,Target_B_Severe_Loss,0.0,0.5419,1.0,Model_6C_SevereLoss_Classifier,
+moving-media-entertainment-0a9b7e,Moving Media Entertainment Limited,SME,Validation_2025,2025-06-30,Target_B_Severe_Loss,0.0,0.5387,1.0,Model_6C_SevereLoss_Classifier,
+pro-fx-tech-9357eb,PRO FX Tech Limited,SME,Validation_2025,2025-06-30,Target_B_Severe_Loss,0.0,0.5387,1.0,Model_6C_SevereLoss_Classifier,
+cedaar-textile-82ef49,Cedaar Textile Limited,SME,Validation_2025,2025-07-02,Target_B_Severe_Loss,1.0,0.5253,1.0,Model_6C_SevereLoss_Classifier,
+pushpa-jewellers-a5b778,Pushpa Jewellers Limited,SME,Validation_2025,2025-07-02,Target_B_Severe_Loss,1.0,0.5253,1.0,Model_6C_SevereLoss_Classifier,
+silky-overseas-be55e4,Silky Overseas Limited,SME,Validation_2025,2025-07-02,Target_B_Severe_Loss,0.0,0.5253,1.0,Model_6C_SevereLoss_Classifier,
+happy-square-outsourcing-services-68eaa0,Happy Square Outsourcing Services Limited,SME,Validation_2025,2025-07-07,Target_B_Severe_Loss,0.0,0.5112,1.0,Model_6C_SevereLoss_Classifier,
+smarten-power-systems-a9378b,Smarten Power Systems Limited,SME,Validation_2025,2025-07-09,Target_B_Severe_Loss,0.0,0.5213,1.0,Model_6C_SevereLoss_Classifier,
+spunweb-nonwoven-1863dd,Spunweb Nonwoven Limited,SME,Validation_2025,2025-07-16,Target_B_Severe_Loss,0.0,0.515,1.0,Model_6C_SevereLoss_Classifier,
+savy-infra-logistics-bc6d61,Savy Infra and Logistics Limited,SME,Validation_2025,2025-07-23,Target_B_Severe_Loss,0.0,0.5358,1.0,Model_6C_SevereLoss_Classifier,
+tsc-india-a0320e,TSC India Limited,SME,Validation_2025,2025-07-25,Target_B_Severe_Loss,0.0,0.5208,1.0,Model_6C_SevereLoss_Classifier,
+sellowrap-12abaa,Sellowrap Industries Limited,SME,Validation_2025,2025-07-29,Target_B_Severe_Loss,0.0,0.5128,1.0,Model_6C_SevereLoss_Classifier,
+kaytex-fabrics-2f1f1a,Kaytex Fabrics Limited,SME,Validation_2025,2025-07-31,Target_B_Severe_Loss,1.0,0.5101,1.0,Model_6C_SevereLoss_Classifier,
+renol-polychem-b17dfb,Renol Polychem Limited,SME,Validation_2025,2025-08-04,Target_B_Severe_Loss,0.0,0.5222,1.0,Model_6C_SevereLoss_Classifier,
+cash-ur-drive-marketing-0dfda1,Cash Ur Drive Marketing Limited,SME,Validation_2025,2025-08-04,Target_B_Severe_Loss,0.0,0.5222,1.0,Model_6C_SevereLoss_Classifier,
+flysbs-aviation-918df2,FlySBS Aviation Limited,SME,Validation_2025,2025-08-05,Target_B_Severe_Loss,0.0,0.5142,1.0,Model_6C_SevereLoss_Classifier,
+aaradhya-disposal-1f1c4a,Aaradhya Disposal Industries Limited,SME,Validation_2025,2025-08-06,Target_B_Severe_Loss,0.0,0.506,1.0,Model_6C_SevereLoss_Classifier,
+bhadora-b0ac6f,Bhadora Industries Limited,SME,Validation_2025,2025-08-06,Target_B_Severe_Loss,0.0,0.506,1.0,Model_6C_SevereLoss_Classifier,
+jyoti-global-plast-725edb,Jyoti Global Plast Limited,SME,Validation_2025,2025-08-06,Target_B_Severe_Loss,0.0,0.506,1.0,Model_6C_SevereLoss_Classifier,
+parth-electricals-engineering-0aceb3,Parth Electricals & Engineering Limited,SME,Validation_2025,2025-08-06,Target_B_Severe_Loss,0.0,0.506,1.0,Model_6C_SevereLoss_Classifier,
+connplex-cinemas-b76af8,Connplex Cinemas Limited,SME,Validation_2025,2025-08-11,Target_B_Severe_Loss,0.0,0.5106,1.0,Model_6C_SevereLoss_Classifier,
+sawaliya-food-products-a3966b,Sawaliya Food Products Limited,SME,Validation_2025,2025-08-11,Target_B_Severe_Loss,0.0,0.5106,1.0,Model_6C_SevereLoss_Classifier,
+anb-metal-cast-5720d9,ANB Metal Cast Limited,SME,Validation_2025,2025-08-12,Target_B_Severe_Loss,0.0,0.509,1.0,Model_6C_SevereLoss_Classifier,
+medistep-healthcare-099e1d,Medistep Healthcare Limited,SME,Validation_2025,2025-08-12,Target_B_Severe_Loss,0.0,0.509,1.0,Model_6C_SevereLoss_Classifier,
+mahendra-realtors-infrastructure-0f2f4c,Mahendra Realtors & Infrastructure Limited,SME,Validation_2025,2025-08-14,Target_B_Severe_Loss,1.0,0.5178,1.0,Model_6C_SevereLoss_Classifier,
+studio-lsd-53b254,Studio LSD Limited,SME,Validation_2025,2025-08-20,Target_B_Severe_Loss,1.0,0.5504,1.0,Model_6C_SevereLoss_Classifier,
+arc-insulation-insulators-d37656,ARC Insulation & Insulators Limited,SME,Validation_2025,2025-08-25,Target_B_Severe_Loss,0.0,0.5267,1.0,Model_6C_SevereLoss_Classifier,
+anondita-medicare-c496ef,Anondita Medicare Limited,SME,Validation_2025,2025-08-26,Target_B_Severe_Loss,0.0,0.5042,1.0,Model_6C_SevereLoss_Classifier,
+classic-electrodes-india-bfa5e3,Classic Electrodes (India) Limited,SME,Validation_2025,2025-08-26,Target_B_Severe_Loss,0.0,0.5042,1.0,Model_6C_SevereLoss_Classifier,
+shivashrit-foods-91a5de,Shivashrit Foods Limited,SME,Validation_2025,2025-08-26,Target_B_Severe_Loss,0.0,0.5042,1.0,Model_6C_SevereLoss_Classifier,
+current-infraprojects-4be078,Current Infraprojects Limited,SME,Validation_2025,2025-08-29,Target_B_Severe_Loss,0.0,0.4896,1.0,Model_6C_SevereLoss_Classifier,
+sattva-engineering-construction-4f9760,Sattva Engineering Construction Limited,SME,Validation_2025,2025-08-29,Target_B_Severe_Loss,0.0,0.4896,1.0,Model_6C_SevereLoss_Classifier,
+snehaa-organics-7ac7fa,Snehaa Organics Limited,SME,Validation_2025,2025-09-02,Target_B_Severe_Loss,0.0,0.5068,1.0,Model_6C_SevereLoss_Classifier,
+optivalue-tek-consulting-445f2b,Optivalue Tek Consulting Limited,SME,Validation_2025,2025-09-04,Target_B_Severe_Loss,0.0,0.5437,1.0,Model_6C_SevereLoss_Classifier,
+vigor-plast-india-667574,Vigor Plast India Limited,SME,Validation_2025,2025-09-09,Target_B_Severe_Loss,0.0,0.5478,1.0,Model_6C_SevereLoss_Classifier,
+taurian-mps-46613c,Taurian MPS Limited,SME,Validation_2025,2025-09-11,Target_B_Severe_Loss,0.0,0.5504,1.0,Model_6C_SevereLoss_Classifier,
+galaxy-medicare-a03289,Galaxy Medicare Limited,SME,Validation_2025,2025-09-12,Target_B_Severe_Loss,0.0,0.558,1.0,Model_6C_SevereLoss_Classifier,
+techd-cybersecurity-a3159b,TechD Cybersecurity Limited,SME,Validation_2025,2025-09-17,Target_B_Severe_Loss,0.0,0.5556,1.0,Model_6C_SevereLoss_Classifier,
+siddhi-cotspin-2991a3,Siddhi Cotspin Limited,SME,Validation_2025,2025-09-23,Target_B_Severe_Loss,1.0,0.5312,1.0,Model_6C_SevereLoss_Classifier,
+prime-cable-cb409b,Prime Cable Industries Limited,SME,Validation_2025,2025-09-24,Target_B_Severe_Loss,0.0,0.5223,1.0,Model_6C_SevereLoss_Classifier,
+matrix-geo-solutions-fbbc46,Matrix Geo Solutions Limited,SME,Validation_2025,2025-09-25,Target_B_Severe_Loss,0.0,0.5066,1.0,Model_6C_SevereLoss_Classifier,
+ecoline-exim-2d357e,Ecoline Exim Limited,SME,Validation_2025,2025-09-25,Target_B_Severe_Loss,0.0,0.5066,1.0,Model_6C_SevereLoss_Classifier,
+gurunanak-agriculture-india-e03207,Gurunanak Agriculture India Limited,SME,Validation_2025,2025-09-26,Target_B_Severe_Loss,1.0,0.4925,1.0,Model_6C_SevereLoss_Classifier,
+manas-polymers-energies-508fc1,Manas Polymers and Energies Limited,SME,Validation_2025,2025-09-30,Target_B_Severe_Loss,0.0,0.5017,1.0,Model_6C_SevereLoss_Classifier,
+vijaypd-ceutical-b76415,Vijaypd Ceutical Limited,SME,Validation_2025,2025-10-01,Target_B_Severe_Loss,0.0,0.5266,1.0,Model_6C_SevereLoss_Classifier,
+suba-hotels-325e5e,Suba Hotels Limited,SME,Validation_2025,2025-10-01,Target_B_Severe_Loss,0.0,0.5266,1.0,Model_6C_SevereLoss_Classifier,
+b-a-g-convergence-a97b2b,B.A.G. Convergence Limited,SME,Validation_2025,2025-10-03,Target_B_Severe_Loss,0.0,0.5401,1.0,Model_6C_SevereLoss_Classifier,
+munish-forge-deda15,Munish Forge Limited,SME,Validation_2025,2025-10-03,Target_B_Severe_Loss,0.0,0.5401,1.0,Model_6C_SevereLoss_Classifier,
+sheel-biotech-ce9730,Sheel Biotech Limited,SME,Validation_2025,2025-10-03,Target_B_Severe_Loss,0.0,0.5401,1.0,Model_6C_SevereLoss_Classifier,
+greenleaf-envirotech-366b1a,Greenleaf Envirotech Limited,SME,Validation_2025,2025-10-06,Target_B_Severe_Loss,0.0,0.5598,1.0,Model_6C_SevereLoss_Classifier,
+jayesh-logistics-02a1df,Jayesh Logistics Limited,SME,Validation_2025,2025-10-29,Target_B_Severe_Loss,0.0,0.5289,1.0,Model_6C_SevereLoss_Classifier,
+shreeji-global-fmcg-7adde8,Shreeji Global FMCG Limited,SME,Validation_2025,2025-11-07,Target_B_Severe_Loss,1.0,0.4951,1.0,Model_6C_SevereLoss_Classifier,
+finbud-financial-services-b619b3,Finbud Financial Services Limited,SME,Validation_2025,2025-11-10,Target_B_Severe_Loss,0.0,0.5093,1.0,Model_6C_SevereLoss_Classifier,
+curis-lifesciences-17a6d0,Curis Lifesciences Limited,SME,Validation_2025,2025-11-11,Target_B_Severe_Loss,0.0,0.5111,1.0,Model_6C_SevereLoss_Classifier,
+invicta-diagnostic-ba0761,Invicta Diagnostic Limited,SME,Validation_2025,2025-12-03,Target_B_Severe_Loss,0.0,0.5176,1.0,Model_6C_SevereLoss_Classifier,
+speb-adhesives-cf43ed,Speb Adhesives Limited,SME,Validation_2025,2025-12-03,Target_B_Severe_Loss,0.0,0.5176,1.0,Model_6C_SevereLoss_Classifier,
+clear-secured-services-9e4eb7,Clear Secured Services Limited,SME,Validation_2025,2025-12-03,Target_B_Severe_Loss,0.0,0.5176,1.0,Model_6C_SevereLoss_Classifier,
+neochem-bio-solutions-cf15ec,Neochem Bio Solutions Limited,SME,Validation_2025,2025-12-04,Target_B_Severe_Loss,0.0,0.5234,1.0,Model_6C_SevereLoss_Classifier,
+shri-kanha-stainless-91e622,Shri Kanha Stainless Limited,SME,Validation_2025,2025-12-05,Target_B_Severe_Loss,0.0,0.5365,1.0,Model_6C_SevereLoss_Classifier,
+encompass-design-india-e78571,Encompass Design India Limited,SME,Validation_2025,2025-12-09,Target_B_Severe_Loss,0.0,0.5215,1.0,Model_6C_SevereLoss_Classifier,
+flywings-simulator-training-centre-d1a33f,Flywings Simulator Training Centre Limited,SME,Validation_2025,2025-12-09,Target_B_Severe_Loss,0.0,0.5215,1.0,Model_6C_SevereLoss_Classifier,
+ashwini-container-movers-b40ca1,Ashwini Container Movers Limited,SME,Validation_2025,2025-12-16,Target_B_Severe_Loss,0.0,0.541,1.0,Model_6C_SevereLoss_Classifier,
+exim-routes-cc1da6,Exim Routes Limited,SME,Validation_2025,2025-12-16,Target_B_Severe_Loss,0.0,0.541,1.0,Model_6C_SevereLoss_Classifier,
+marc-technocrats-87234e,Marc Technocrats Limited,SME,Validation_2025,2025-12-19,Target_B_Severe_Loss,1.0,0.5418,1.0,Model_6C_SevereLoss_Classifier,
+epw-india-773e72,EPW India Limited,SME,Validation_2025,2025-12-24,Target_B_Severe_Loss,0.0,0.5645,1.0,Model_6C_SevereLoss_Classifier,
+shyam-dhani-bec82f,Shyam Dhani Industries Limited,SME,Validation_2025,2025-12-24,Target_B_Severe_Loss,0.0,0.5645,1.0,Model_6C_SevereLoss_Classifier,
+sundrex-oil-930274,Sundrex Oil Company Limited,SME,Validation_2025,2025-12-24,Target_B_Severe_Loss,1.0,0.5645,1.0,Model_6C_SevereLoss_Classifier,
+dhara-rail-projects-acec11,Dhara Rail Projects Limited,SME,Validation_2025,2025-12-26,Target_B_Severe_Loss,0.0,0.5602,1.0,Model_6C_SevereLoss_Classifier,
+e-to-e-transportation-infrastructure-9a4645,E TO E Transportation Infrastructure Limited,SME,Test_2026,2025-12-30,Target_B_Severe_Loss,0.0,0.5327,1.0,Model_6C_SevereLoss_Classifier,
+victory-electric-vehicles-international-aa616d,Victory Electric Vehicles International Limited,SME,Test_2026,2026-01-09,Target_B_Severe_Loss,1.0,0.5005,1.0,Model_6C_SevereLoss_Classifier,
+avana-electrosystems-1a6ff0,Avana Electrosystems Limited,SME,Test_2026,2026-01-14,Target_B_Severe_Loss,0.0,0.5044,1.0,Model_6C_SevereLoss_Classifier,
+armour-security-india-bb0bba,Armour Security (India). Ltd,SME,Test_2026,2026-01-19,Target_B_Severe_Loss,1.0,0.5168,1.0,Model_6C_SevereLoss_Classifier,
+krm-ayurveda-1ba356,KRM Ayurveda Limited,SME,Test_2026,2026-01-23,Target_B_Severe_Loss,0.0,0.4652,1.0,Model_6C_SevereLoss_Classifier,
+c-k-k-retail-mart-89ba3b,C K K Retail Mart Limited,SME,Test_2026,2026-02-03,Target_B_Severe_Loss,0.0,0.5375,1.0,Model_6C_SevereLoss_Classifier,
+grover-jewells-505e9e,Grover Jewells Limited,SME,Test_2026,2026-02-06,Target_B_Severe_Loss,0.0,0.5387,1.0,Model_6C_SevereLoss_Classifier,
+brandman-retail-215594,Brandman Retail Limited,SME,Test_2026,2026-02-06,Target_B_Severe_Loss,0.0,0.5387,1.0,Model_6C_SevereLoss_Classifier,
+biopol-chemicals-5910a1,Biopol Chemicals Limited,SME,Test_2026,2026-02-10,Target_B_Severe_Loss,0.0,0.5332,1.0,Model_6C_SevereLoss_Classifier,
+marushika-technology-852a85,Marushika Technology Limited,SME,Test_2026,2026-02-16,Target_B_Severe_Loss,0.0,0.4968,1.0,Model_6C_SevereLoss_Classifier,
+manilam-india-a679ab,Manilam Industries India Limited,SME,Test_2026,2026-02-24,Target_B_Severe_Loss,1.0,0.4825,1.0,Model_6C_SevereLoss_Classifier,
+mobilise-app-lab-c70a73,Mobilise App Lab Limited,SME,Test_2026,2026-02-25,Target_B_Severe_Loss,1.0,0.4877,1.0,Model_6C_SevereLoss_Classifier,
+yaap-digital-fa201c,Yaap Digital Limited,SME,Test_2026,2026-02-27,Target_B_Severe_Loss,1.0,0.4826,1.0,Model_6C_SevereLoss_Classifier,
+striders-impex-a9c7c3,Striders Impex Limited,SME,Test_2026,2026-03-02,Target_B_Severe_Loss,0.0,0.4252,1.0,Model_6C_SevereLoss_Classifier,
+acetech-e-commerce-935832,Acetech E-Commerce Limited,SME,Test_2026,2026-03-04,Target_B_Severe_Loss,0.0,0.3796,1.0,Model_6C_SevereLoss_Classifier,
+srinibas-pradhan-constructions-77e0b6,Srinibas Pradhan Constructions Limited,SME,Test_2026,2026-03-10,Target_B_Severe_Loss,0.0,0.4175,1.0,Model_6C_SevereLoss_Classifier,
+apsis-aerocom-6c18c9,Apsis Aerocom Limited,SME,Test_2026,2026-03-13,Target_B_Severe_Loss,0.0,0.3466,1.0,Model_6C_SevereLoss_Classifier,
+vivid-electromech-f38a46,Vivid Electromech Limited,SME,Test_2026,2026-03-30,Target_B_Severe_Loss,0.0,0.3192,1.0,Model_6C_SevereLoss_Classifier,
+adisoft-technologies-72f160,Adisoft Technologies Limited,SME,Test_2026,2026-04-27,Target_B_Severe_Loss,0.0,0.4391,1.0,Model_6C_SevereLoss_Classifier,
+amba-auto-sales-services-86a58a,Amba Auto Sales and Services Limited,SME,Test_2026,2026-04-29,Target_B_Severe_Loss,0.0,0.4525,1.0,Model_6C_SevereLoss_Classifier,
+value-360-communications-f70a72,Value 360 Communications Limited,SME,Test_2026,2026-05-06,Target_B_Severe_Loss,1.0,0.488,1.0,Model_6C_SevereLoss_Classifier,
+simca-advertising-d8641f,Simca Advertising Limited,SME,Test_2026,2026-05-12,Target_B_Severe_Loss,1.0,0.4103,1.0,Model_6C_SevereLoss_Classifier,
+rfbl-flexi-pack-b120c5,RFBL Flexi Pack Limited,SME,Test_2026,2026-05-14,Target_B_Severe_Loss,0.0,0.4184,1.0,Model_6C_SevereLoss_Classifier,
+nfp-sampoorna-foods-bcd842,NFP Sampoorna Foods Limited,SME,Test_2026,2026-05-20,Target_B_Severe_Loss,0.0,0.4653,1.0,Model_6C_SevereLoss_Classifier,
+teamtech-formwork-solutions-ed860a,Teamtech Formwork Solutions Limited,SME,Test_2026,2026-05-21,Target_B_Severe_Loss,0.0,0.4569,1.0,Model_6C_SevereLoss_Classifier,
+bio-medica-laboratories-bb714b,Bio Medica Laboratories Limited,SME,Test_2026,2026-05-25,Target_B_Severe_Loss,1.0,0.4906,1.0,Model_6C_SevereLoss_Classifier,
+q-line-biotech-3bb8f7,Q-Line Biotech Limited,SME,Test_2026,2026-05-25,Target_B_Severe_Loss,0.0,0.4906,1.0,Model_6C_SevereLoss_Classifier,
+genxai-analytics-d15667,GenXAI Analytics Limited,SME,Test_2026,2026-06-09,Target_B_Severe_Loss,1.0,0.4694,1.0,Model_6C_SevereLoss_Classifier,
+utkal-speciality-india-c17f78,Utkal Speciality Industries India Limited,SME,Test_2026,2026-06-12,Target_B_Severe_Loss,0.0,0.505,1.0,Model_6C_SevereLoss_Classifier,
+clay-craft-india-093e9a,Clay Craft India Limited,SME,Test_2026,2026-06-19,Target_B_Severe_Loss,0.0,0.5301,1.0,Model_6C_SevereLoss_Classifier,
+avience-biomedicals-c4a59a,Avience Biomedicals Limited,SME,Test_2026,2026-06-22,Target_B_Severe_Loss,0.0,0.524,1.0,Model_6C_SevereLoss_Classifier,
+shreedhar-spinners-6e5dde,Shreedhar Spinners Limited,SME,Test_2026,2026-06-25,Target_B_Severe_Loss,0.0,0.5029,1.0,Model_6C_SevereLoss_Classifier,
+teja-engineering-bd38d1,Teja Engineering Industries Limited,SME,Test_2026,2026-07-02,Target_B_Severe_Loss,0.0,0.5246,1.0,Model_6C_SevereLoss_Classifier,
+vinit-mobile-673a43,Vinit Mobile Limited,SME,Test_2026,2026-07-02,Target_B_Severe_Loss,0.0,0.5246,1.0,Model_6C_SevereLoss_Classifier,
+ic-electricals-8f563b,IC Electricals Company Limited,SME,Test_2026,2026-07-07,Target_B_Severe_Loss,0.0,0.551,1.0,Model_6C_SevereLoss_Classifier,
+happy-steels-078bb0,Happy Steels Limited,SME,Test_2026,2026-07-13,Target_B_Severe_Loss,0.0,0.4953,1.0,Model_6C_SevereLoss_Classifier,
+metalic-technoforge-271afd,Metalic Technoforge Limited,SME,Test_2026,2026-07-23,Target_B_Severe_Loss,0.0,0.4938,1.0,Model_6C_SevereLoss_Classifier,
+propshop-events-exhibitions-87e33b,Propshop Events and Exhibitions Limited,SME,Test_2026,2026-07-29,Target_B_Severe_Loss,1.0,0.5328,1.0,Model_6C_SevereLoss_Classifier,
+anawil-wire-engineering-feb7c5,Anawil Wire and Engineering Limited,SME,Test_2026,2026-08-05,Target_B_Severe_Loss,0.0,0.5383,1.0,Model_6C_SevereLoss_Classifier,
+optimystix-entertainment-india-9c5916,Optimystix Entertainment India Limited,SME,Test_2026,2026-08-11,Target_B_Severe_Loss,0.0,0.514,1.0,Model_6C_SevereLoss_Classifier,
+pramodini-medicare-eedf51,Pramodini Medicare Limited,SME,Test_2026,2026-08-14,Target_B_Severe_Loss,0.0,0.5168,1.0,Model_6C_SevereLoss_Classifier,
+credent-connect-n-care-fa5e79,Credent Connect N Care Limited,SME,Test_2026,2026-08-17,Target_B_Severe_Loss,0.0,0.5118,1.0,Model_6C_SevereLoss_Classifier,
+skytech-infinite-platform-ab7944,Skytech Infinite Platform Limited,SME,Test_2026,2026-08-18,Target_B_Severe_Loss,0.0,0.5101,1.0,Model_6C_SevereLoss_Classifier,
+fascinate-textiles-ad3c91,Fascinate Textiles Limited,SME,Test_2026,2026-08-19,Target_B_Severe_Loss,1.0,0.5087,1.0,Model_6C_SevereLoss_Classifier,
+abh-healthcare-0d58e2,ABH Healthcare Limited,SME,Test_2026,2026-08-27,Target_B_Severe_Loss,0.0,0.5222,1.0,Model_6C_SevereLoss_Classifier,
+madhur-knit-crafts-320db3,Madhur Knit Crafts Limited,SME,Test_2026,2026-08-27,Target_B_Severe_Loss,0.0,0.5222,1.0,Model_6C_SevereLoss_Classifier,
+sumax-engineering-e1d4b1,Sumax Engineering Limited,SME,Test_2026,2026-08-28,Target_B_Severe_Loss,0.0,0.5296,1.0,Model_6C_SevereLoss_Classifier,
+ashutosh-fibre-638584,Ashutosh Fibre Limited,SME,Test_2026,2026-09-02,Target_B_Severe_Loss,0.0,0.5089,1.0,Model_6C_SevereLoss_Classifier,
+shanti-inorganics-cbd741,Shanti Inorganics Limited,SME,Test_2026,2026-09-02,Target_B_Severe_Loss,0.0,0.5089,1.0,Model_6C_SevereLoss_Classifier,
+qualiance-international-e6b994,Qualiance International Limited,SME,Test_2026,2026-09-08,Target_B_Severe_Loss,0.0,0.5062,1.0,Model_6C_SevereLoss_Classifier,
+vinod-texworld-366ce1,Vinod Texworld Limited,SME,Test_2026,2026-09-11,Target_B_Severe_Loss,0.0,0.4909,1.0,Model_6C_SevereLoss_Classifier,
+kheria-autocomp-1d40ff,Kheria Autocomp Limited,SME,Test_2026,2026-09-21,Target_B_Severe_Loss,0.0,0.5284,1.0,Model_6C_SevereLoss_Classifier,
+spectraa-technology-solutions-954ab8,SpectraA Technology Solutions Limited,SME,Test_2026,2026-09-21,Target_B_Severe_Loss,0.0,0.5284,1.0,Model_6C_SevereLoss_Classifier,
+axiom-gas-engineering-9f4a40,Axiom Gas Engineering Limited,SME,Test_2026,2026-09-22,Target_B_Severe_Loss,0.0,0.5414,1.0,Model_6C_SevereLoss_Classifier,
+ipo-2026-09-30-ine1c2q01017,Pooja Logistics Limited,SME,Test_2026,2026-09-25,Target_B_Severe_Loss,0.0,0.5072,1.0,Model_6C_SevereLoss_Classifier,
+ipo-2026-09-30-ine11es01010,Coreintegra Consulting Services Limited,SME,Test_2026,2026-09-25,Target_B_Severe_Loss,0.0,0.5072,1.0,Model_6C_SevereLoss_Classifier,
+ipo-2026-10-05-ine1b7i01014,Himalayan Solar Limited,SME,Test_2026,2026-09-29,Target_B_Severe_Loss,1.0,0.4725,1.0,Model_6C_SevereLoss_Classifier,
+ipo-2026-10-05-ine2oku01014,Bench Mark Infotech Services Limited,SME,Test_2026,2026-09-29,Target_B_Severe_Loss,0.0,0.4725,1.0,Model_6C_SevereLoss_Classifier,
+anya-polytech-fertilizers-448984,Anya Polytech & Fertilizers Limited,SME,Validation_2025,2024-12-30,Target_C_Return,22.14,,,Model_6D_Ridge_Return,54.49
+delta-autocorp-b50fe2,Delta Autocorp Limited,SME,Validation_2025,2025-01-09,Target_C_Return,34.62,,,Model_6D_Ridge_Return,39.88
+sat-kartar-shopping-57ecf6,Sat Kartar Shopping Limited,SME,Validation_2025,2025-01-14,Target_C_Return,90.0,,,Model_6D_Ridge_Return,53.41
+barflex-polyfilms-041332,Barflex Polyfilms Limited,SME,Validation_2025,2025-01-15,Target_C_Return,0.0,,,Model_6D_Ridge_Return,48.73
+kabra-jewels-e97616,Kabra Jewels Limited,SME,Validation_2025,2025-01-17,Target_C_Return,90.0,,,Model_6D_Ridge_Return,47.5
+ema-partners-india-9d7b4c,EMA Partners India Limited,SME,Validation_2025,2025-01-21,Target_C_Return,26.21,,,Model_6D_Ridge_Return,47.06
+rexpro-enterprises-2a0ec7,Rexpro Enterprises Limited,SME,Validation_2025,2025-01-24,Target_C_Return,-19.31,,,Model_6D_Ridge_Return,53.4
+chamunda-electrical-de95b8,Chamunda Electrical Limited,SME,Validation_2025,2025-02-06,Target_C_Return,40.0,,,Model_6D_Ridge_Return,27.88
+ken-enterprises-0d8002,Ken Enterprises Limited,SME,Validation_2025,2025-02-07,Target_C_Return,-9.57,,,Model_6D_Ridge_Return,28.11
+readymix-construction-machinery-95119c,Readymix Construction Machinery Limited,SME,Validation_2025,2025-02-10,Target_C_Return,0.0,,,Model_6D_Ridge_Return,28.12
+eleganz-interiors-ddb5f9,Eleganz Interiors Limited,SME,Validation_2025,2025-02-11,Target_C_Return,-6.15,,,Model_6D_Ridge_Return,31.01
+chandan-healthcare-d20905,Chandan Healthcare Limited,SME,Validation_2025,2025-02-12,Target_C_Return,3.84,,,Model_6D_Ridge_Return,34.64
+p-s-raj-steels-9d2249,P S Raj Steels Limited,SME,Validation_2025,2025-02-14,Target_C_Return,3.57,,,Model_6D_Ridge_Return,33.82
+voler-car-6f5e90,Voler Car Limited,SME,Validation_2025,2025-02-14,Target_C_Return,0.0,,,Model_6D_Ridge_Return,33.82
+maxvolt-energy-9b4409,Maxvolt Energy Industries Limited,SME,Validation_2025,2025-02-14,Target_C_Return,0.0,,,Model_6D_Ridge_Return,33.82
+royal-arc-electrodes-15ac8c,Royal Arc Electrodes Limited,SME,Validation_2025,2025-02-18,Target_C_Return,0.0,,,Model_6D_Ridge_Return,29.3
+tejas-cargo-india-049dbd,Tejas Cargo India Limited,SME,Validation_2025,2025-02-18,Target_C_Return,4.17,,,Model_6D_Ridge_Return,29.3
+hp-telecom-india-051d46,HP Telecom India Limited,SME,Validation_2025,2025-02-24,Target_C_Return,6.53,,,Model_6D_Ridge_Return,31.82
+balaji-phosphates-609526,Balaji Phosphates Limited,SME,Validation_2025,2025-03-04,Target_C_Return,7.14,,,Model_6D_Ridge_Return,31.4
+divine-hira-jewellers-a38798,Divine Hira Jewellers Limited,SME,Validation_2025,2025-03-19,Target_C_Return,0.0,,,Model_6D_Ridge_Return,24.86
+grand-continent-hotels-8bcc71,Grand Continent Hotels Limited,SME,Validation_2025,2025-03-24,Target_C_Return,-0.09,,,Model_6D_Ridge_Return,23.27
+active-infrastructures-cf4155,Active Infrastructures Limited,SME,Validation_2025,2025-03-25,Target_C_Return,0.0,,,Model_6D_Ridge_Return,24.1
+rapid-fleet-management-services-9400f6,Rapid Fleet Management Services Limited,SME,Validation_2025,2025-03-25,Target_C_Return,1.56,,,Model_6D_Ridge_Return,24.1
+atc-energies-system-7d7d34,ATC Energies System Limited,SME,Validation_2025,2025-03-27,Target_C_Return,-9.32,,,Model_6D_Ridge_Return,26.21
+shri-ahimsa-naturals-aa6203,Shri Ahimsa Naturals Limited,SME,Validation_2025,2025-03-27,Target_C_Return,17.65,,,Model_6D_Ridge_Return,26.21
+tankup-engineers-bc6d33,Tankup Engineers Limited,SME,Validation_2025,2025-04-25,Target_C_Return,25.0,,,Model_6D_Ridge_Return,28.28
+iware-supplychain-services-4d33f3,Iware Supplychain Services Limited,SME,Validation_2025,2025-04-30,Target_C_Return,-10.47,,,Model_6D_Ridge_Return,28.75
+arunaya-organics-dda090,Arunaya Organics Limited,SME,Validation_2025,2025-05-02,Target_C_Return,-48.1,,,Model_6D_Ridge_Return,29.05
+virtual-galaxy-infotech-d74a48,Virtual Galaxy Infotech Limited,SME,Validation_2025,2025-05-14,Target_C_Return,26.76,,,Model_6D_Ridge_Return,30.74
+integrity-infrabuild-developers-b7ee39,Integrity Infrabuild Developers Limited,SME,Validation_2025,2025-05-15,Target_C_Return,0.8,,,Model_6D_Ridge_Return,28.54
+accretion-pharmaceuticals-2d0480,Accretion Pharmaceuticals Limited,SME,Validation_2025,2025-05-16,Target_C_Return,-21.78,,,Model_6D_Ridge_Return,27.64
+blue-water-logistics-971134,Blue Water Logistics Limited,SME,Validation_2025,2025-05-29,Target_C_Return,4.44,,,Model_6D_Ridge_Return,29.14
+nikita-papers-d98699,Nikita Papers Limited,SME,Validation_2025,2025-05-29,Target_C_Return,-13.46,,,Model_6D_Ridge_Return,29.14
+n-r-vandana-tex-cc256e,N R Vandana Tex Industries Limited,SME,Validation_2025,2025-05-30,Target_C_Return,0.0,,,Model_6D_Ridge_Return,30.98
+neptune-petrochemicals-65e93f,Neptune Petrochemicals Limited,SME,Validation_2025,2025-05-30,Target_C_Return,8.81,,,Model_6D_Ridge_Return,30.98
+ganga-bath-fittings-9f6ba1,Ganga Bath Fittings Limited,SME,Validation_2025,2025-06-06,Target_C_Return,20.41,,,Model_6D_Ridge_Return,29.44
+sacheerome-bf5828,Sacheerome Limited,SME,Validation_2025,2025-06-11,Target_C_Return,50.0,,,Model_6D_Ridge_Return,29.62
+jainik-power-cables-34dfb1,Jainik Power Cables Limited,SME,Validation_2025,2025-06-12,Target_C_Return,-25.45,,,Model_6D_Ridge_Return,31.74
+monolithisch-india-161e9d,Monolithisch India Limited,SME,Validation_2025,2025-06-16,Target_C_Return,61.92,,,Model_6D_Ridge_Return,32.71
+patil-automation-bec2b7,Patil Automation Limited,SME,Validation_2025,2025-06-18,Target_C_Return,29.17,,,Model_6D_Ridge_Return,35.15
+samay-project-services-d3586c,Samay Project Services Limited,SME,Validation_2025,2025-06-18,Target_C_Return,6.03,,,Model_6D_Ridge_Return,35.15
+eppeltone-engineers-f759e1,Eppeltone Engineers Limited,SME,Validation_2025,2025-06-19,Target_C_Return,90.0,,,Model_6D_Ridge_Return,34.19
+influx-healthtech-93cb5f,Influx Healthtech Limited,SME,Validation_2025,2025-06-20,Target_C_Return,38.02,,,Model_6D_Ridge_Return,38.42
+aakaar-medical-technologies-f43da5,Aakaar Medical Technologies Limited,SME,Validation_2025,2025-06-24,Target_C_Return,4.17,,,Model_6D_Ridge_Return,38.33
+mayasheel-ventures-0ddf97,Mayasheel Ventures Limited,SME,Validation_2025,2025-06-24,Target_C_Return,23.4,,,Model_6D_Ridge_Return,38.33
+safe-enterprises-retail-fixtures-edf553,Safe Enterprises Retail Fixtures Limited,SME,Validation_2025,2025-06-24,Target_C_Return,9.42,,,Model_6D_Ridge_Return,38.33
+shri-hare-krishna-sponge-iron-e3b124,Shri Hare-Krishna Sponge Iron Limited,SME,Validation_2025,2025-06-26,Target_C_Return,9.83,,,Model_6D_Ridge_Return,42.32
+suntech-infra-solutions-95aecc,Suntech Infra Solutions Limited,SME,Validation_2025,2025-06-27,Target_C_Return,26.86,,,Model_6D_Ridge_Return,43.38
+rama-telecom-ce3e87,Rama Telecom Limited,SME,Validation_2025,2025-06-27,Target_C_Return,5.88,,,Model_6D_Ridge_Return,43.38
+moving-media-entertainment-0a9b7e,Moving Media Entertainment Limited,SME,Validation_2025,2025-06-30,Target_C_Return,1.43,,,Model_6D_Ridge_Return,34.48
+pro-fx-tech-9357eb,PRO FX Tech Limited,SME,Validation_2025,2025-06-30,Target_C_Return,9.2,,,Model_6D_Ridge_Return,34.48
+cedaar-textile-82ef49,Cedaar Textile Limited,SME,Validation_2025,2025-07-02,Target_C_Return,-15.0,,,Model_6D_Ridge_Return,34.98
+pushpa-jewellers-a5b778,Pushpa Jewellers Limited,SME,Validation_2025,2025-07-02,Target_C_Return,-23.81,,,Model_6D_Ridge_Return,34.98
+silky-overseas-be55e4,Silky Overseas Limited,SME,Validation_2025,2025-07-02,Target_C_Return,6.21,,,Model_6D_Ridge_Return,34.98
+happy-square-outsourcing-services-68eaa0,Happy Square Outsourcing Services Limited,SME,Validation_2025,2025-07-07,Target_C_Return,1.32,,,Model_6D_Ridge_Return,38.65
+smarten-power-systems-a9378b,Smarten Power Systems Limited,SME,Validation_2025,2025-07-09,Target_C_Return,44.0,,,Model_6D_Ridge_Return,25.99
+spunweb-nonwoven-1863dd,Spunweb Nonwoven Limited,SME,Validation_2025,2025-07-16,Target_C_Return,57.29,,,Model_6D_Ridge_Return,46.33
+savy-infra-logistics-bc6d61,Savy Infra and Logistics Limited,SME,Validation_2025,2025-07-23,Target_C_Return,13.75,,,Model_6D_Ridge_Return,45.54
+tsc-india-a0320e,TSC India Limited,SME,Validation_2025,2025-07-25,Target_C_Return,-2.86,,,Model_6D_Ridge_Return,39.86
+sellowrap-12abaa,Sellowrap Industries Limited,SME,Validation_2025,2025-07-29,Target_C_Return,8.43,,,Model_6D_Ridge_Return,41.53
+kaytex-fabrics-2f1f1a,Kaytex Fabrics Limited,SME,Validation_2025,2025-07-31,Target_C_Return,-20.0,,,Model_6D_Ridge_Return,42.53
+renol-polychem-b17dfb,Renol Polychem Limited,SME,Validation_2025,2025-08-04,Target_C_Return,0.0,,,Model_6D_Ridge_Return,38.05
+cash-ur-drive-marketing-0dfda1,Cash Ur Drive Marketing Limited,SME,Validation_2025,2025-08-04,Target_C_Return,19.23,,,Model_6D_Ridge_Return,38.05
+flysbs-aviation-918df2,FlySBS Aviation Limited,SME,Validation_2025,2025-08-05,Target_C_Return,90.0,,,Model_6D_Ridge_Return,36.79
+aaradhya-disposal-1f1c4a,Aaradhya Disposal Industries Limited,SME,Validation_2025,2025-08-06,Target_C_Return,-4.31,,,Model_6D_Ridge_Return,33.11
+bhadora-b0ac6f,Bhadora Industries Limited,SME,Validation_2025,2025-08-06,Target_C_Return,-1.94,,,Model_6D_Ridge_Return,33.11
+jyoti-global-plast-725edb,Jyoti Global Plast Limited,SME,Validation_2025,2025-08-06,Target_C_Return,-0.15,,,Model_6D_Ridge_Return,33.11
+parth-electricals-engineering-0aceb3,Parth Electricals & Engineering Limited,SME,Validation_2025,2025-08-06,Target_C_Return,2.35,,,Model_6D_Ridge_Return,33.11
+connplex-cinemas-b76af8,Connplex Cinemas Limited,SME,Validation_2025,2025-08-11,Target_C_Return,10.17,,,Model_6D_Ridge_Return,43.81
+sawaliya-food-products-a3966b,Sawaliya Food Products Limited,SME,Validation_2025,2025-08-11,Target_C_Return,90.0,,,Model_6D_Ridge_Return,43.81
+anb-metal-cast-5720d9,ANB Metal Cast Limited,SME,Validation_2025,2025-08-12,Target_C_Return,5.13,,,Model_6D_Ridge_Return,31.14
+medistep-healthcare-099e1d,Medistep Healthcare Limited,SME,Validation_2025,2025-08-12,Target_C_Return,23.26,,,Model_6D_Ridge_Return,31.14
+mahendra-realtors-infrastructure-0f2f4c,Mahendra Realtors & Infrastructure Limited,SME,Validation_2025,2025-08-14,Target_C_Return,-20.0,,,Model_6D_Ridge_Return,36.78
+studio-lsd-53b254,Studio LSD Limited,SME,Validation_2025,2025-08-20,Target_C_Return,-20.0,,,Model_6D_Ridge_Return,28.74
+arc-insulation-insulators-d37656,ARC Insulation & Insulators Limited,SME,Validation_2025,2025-08-25,Target_C_Return,16.0,,,Model_6D_Ridge_Return,29.77
+anondita-medicare-c496ef,Anondita Medicare Limited,SME,Validation_2025,2025-08-26,Target_C_Return,90.0,,,Model_6D_Ridge_Return,29.17
+classic-electrodes-india-bfa5e3,Classic Electrodes (India) Limited,SME,Validation_2025,2025-08-26,Target_C_Return,14.94,,,Model_6D_Ridge_Return,29.17
+shivashrit-foods-91a5de,Shivashrit Foods Limited,SME,Validation_2025,2025-08-26,Target_C_Return,4.58,,,Model_6D_Ridge_Return,29.17
+current-infraprojects-4be078,Current Infraprojects Limited,SME,Validation_2025,2025-08-29,Target_C_Return,90.0,,,Model_6D_Ridge_Return,33.75
+sattva-engineering-construction-4f9760,Sattva Engineering Construction Limited,SME,Validation_2025,2025-08-29,Target_C_Return,26.8,,,Model_6D_Ridge_Return,33.75
+snehaa-organics-7ac7fa,Snehaa Organics Limited,SME,Validation_2025,2025-09-02,Target_C_Return,0.0,,,Model_6D_Ridge_Return,44.45
+optivalue-tek-consulting-445f2b,Optivalue Tek Consulting Limited,SME,Validation_2025,2025-09-04,Target_C_Return,23.33,,,Model_6D_Ridge_Return,41.28
+vigor-plast-india-667574,Vigor Plast India Limited,SME,Validation_2025,2025-09-09,Target_C_Return,4.94,,,Model_6D_Ridge_Return,25.41
+taurian-mps-46613c,Taurian MPS Limited,SME,Validation_2025,2025-09-11,Target_C_Return,22.81,,,Model_6D_Ridge_Return,32.01
+galaxy-medicare-a03289,Galaxy Medicare Limited,SME,Validation_2025,2025-09-12,Target_C_Return,0.0,,,Model_6D_Ridge_Return,31.66
+techd-cybersecurity-a3159b,TechD Cybersecurity Limited,SME,Validation_2025,2025-09-17,Target_C_Return,90.0,,,Model_6D_Ridge_Return,29.99
+siddhi-cotspin-2991a3,Siddhi Cotspin Limited,SME,Validation_2025,2025-09-23,Target_C_Return,-20.0,,,Model_6D_Ridge_Return,63.2
+prime-cable-cb409b,Prime Cable Industries Limited,SME,Validation_2025,2025-09-24,Target_C_Return,-2.41,,,Model_6D_Ridge_Return,63.67
+matrix-geo-solutions-fbbc46,Matrix Geo Solutions Limited,SME,Validation_2025,2025-09-25,Target_C_Return,-0.1,,,Model_6D_Ridge_Return,50.72
+ecoline-exim-2d357e,Ecoline Exim Limited,SME,Validation_2025,2025-09-25,Target_C_Return,-0.11,,,Model_6D_Ridge_Return,50.72
+gurunanak-agriculture-india-e03207,Gurunanak Agriculture India Limited,SME,Validation_2025,2025-09-26,Target_C_Return,-20.0,,,Model_6D_Ridge_Return,34.97
+manas-polymers-energies-508fc1,Manas Polymers and Energies Limited,SME,Validation_2025,2025-09-30,Target_C_Return,90.0,,,Model_6D_Ridge_Return,31.33
+vijaypd-ceutical-b76415,Vijaypd Ceutical Limited,SME,Validation_2025,2025-10-01,Target_C_Return,0.0,,,Model_6D_Ridge_Return,33.08
+suba-hotels-325e5e,Suba Hotels Limited,SME,Validation_2025,2025-10-01,Target_C_Return,38.92,,,Model_6D_Ridge_Return,33.08
+b-a-g-convergence-a97b2b,B.A.G. Convergence Limited,SME,Validation_2025,2025-10-03,Target_C_Return,16.09,,,Model_6D_Ridge_Return,31.76
+munish-forge-deda15,Munish Forge Limited,SME,Validation_2025,2025-10-03,Target_C_Return,9.38,,,Model_6D_Ridge_Return,31.76
+sheel-biotech-ce9730,Sheel Biotech Limited,SME,Validation_2025,2025-10-03,Target_C_Return,44.44,,,Model_6D_Ridge_Return,31.76
+greenleaf-envirotech-366b1a,Greenleaf Envirotech Limited,SME,Validation_2025,2025-10-06,Target_C_Return,-0.81,,,Model_6D_Ridge_Return,28.83
+jayesh-logistics-02a1df,Jayesh Logistics Limited,SME,Validation_2025,2025-10-29,Target_C_Return,-1.64,,,Model_6D_Ridge_Return,32.45
+shreeji-global-fmcg-7adde8,Shreeji Global FMCG Limited,SME,Validation_2025,2025-11-07,Target_C_Return,-20.0,,,Model_6D_Ridge_Return,31.03
+finbud-financial-services-b619b3,Finbud Financial Services Limited,SME,Validation_2025,2025-11-10,Target_C_Return,10.56,,,Model_6D_Ridge_Return,28.9
+curis-lifesciences-17a6d0,Curis Lifesciences Limited,SME,Validation_2025,2025-11-11,Target_C_Return,14.14,,,Model_6D_Ridge_Return,28.5
+invicta-diagnostic-ba0761,Invicta Diagnostic Limited,SME,Validation_2025,2025-12-03,Target_C_Return,17.65,,,Model_6D_Ridge_Return,35.81
+speb-adhesives-cf43ed,Speb Adhesives Limited,SME,Validation_2025,2025-12-03,Target_C_Return,7.14,,,Model_6D_Ridge_Return,35.81
+clear-secured-services-9e4eb7,Clear Secured Services Limited,SME,Validation_2025,2025-12-03,Target_C_Return,-9.85,,,Model_6D_Ridge_Return,35.81
+neochem-bio-solutions-cf15ec,Neochem Bio Solutions Limited,SME,Validation_2025,2025-12-04,Target_C_Return,10.2,,,Model_6D_Ridge_Return,33.2
+shri-kanha-stainless-91e622,Shri Kanha Stainless Limited,SME,Validation_2025,2025-12-05,Target_C_Return,-2.22,,,Model_6D_Ridge_Return,32.7
+encompass-design-india-e78571,Encompass Design India Limited,SME,Validation_2025,2025-12-09,Target_C_Return,90.0,,,Model_6D_Ridge_Return,36.36
+flywings-simulator-training-centre-d1a33f,Flywings Simulator Training Centre Limited,SME,Validation_2025,2025-12-09,Target_C_Return,2.09,,,Model_6D_Ridge_Return,36.36
+ashwini-container-movers-b40ca1,Ashwini Container Movers Limited,SME,Validation_2025,2025-12-16,Target_C_Return,3.52,,,Model_6D_Ridge_Return,36.48
+exim-routes-cc1da6,Exim Routes Limited,SME,Validation_2025,2025-12-16,Target_C_Return,25.0,,,Model_6D_Ridge_Return,36.48
+marc-technocrats-87234e,Marc Technocrats Limited,SME,Validation_2025,2025-12-19,Target_C_Return,-20.0,,,Model_6D_Ridge_Return,34.86
+epw-india-773e72,EPW India Limited,SME,Validation_2025,2025-12-24,Target_C_Return,14.43,,,Model_6D_Ridge_Return,32.64
+shyam-dhani-bec82f,Shyam Dhani Industries Limited,SME,Validation_2025,2025-12-24,Target_C_Return,90.0,,,Model_6D_Ridge_Return,32.64
+sundrex-oil-930274,Sundrex Oil Company Limited,SME,Validation_2025,2025-12-24,Target_C_Return,-20.0,,,Model_6D_Ridge_Return,32.64
+dhara-rail-projects-acec11,Dhara Rail Projects Limited,SME,Validation_2025,2025-12-26,Target_C_Return,19.05,,,Model_6D_Ridge_Return,26.79
+e-to-e-transportation-infrastructure-9a4645,E TO E Transportation Infrastructure Limited,SME,Test_2026,2025-12-30,Target_C_Return,90.0,,,Model_6D_Ridge_Return,28.47
+victory-electric-vehicles-international-aa616d,Victory Electric Vehicles International Limited,SME,Test_2026,2026-01-09,Target_C_Return,-15.98,,,Model_6D_Ridge_Return,45.87
+avana-electrosystems-1a6ff0,Avana Electrosystems Limited,SME,Test_2026,2026-01-14,Target_C_Return,31.36,,,Model_6D_Ridge_Return,45.85
+armour-security-india-bb0bba,Armour Security (India). Ltd,SME,Test_2026,2026-01-19,Target_C_Return,-20.0,,,Model_6D_Ridge_Return,38.15
+krm-ayurveda-1ba356,KRM Ayurveda Limited,SME,Test_2026,2026-01-23,Target_C_Return,27.48,,,Model_6D_Ridge_Return,27.94
+c-k-k-retail-mart-89ba3b,C K K Retail Mart Limited,SME,Test_2026,2026-02-03,Target_C_Return,0.0,,,Model_6D_Ridge_Return,26.94
+grover-jewells-505e9e,Grover Jewells Limited,SME,Test_2026,2026-02-06,Target_C_Return,9.09,,,Model_6D_Ridge_Return,32.6
+brandman-retail-215594,Brandman Retail Limited,SME,Test_2026,2026-02-06,Target_C_Return,3.98,,,Model_6D_Ridge_Return,32.6
+biopol-chemicals-5910a1,Biopol Chemicals Limited,SME,Test_2026,2026-02-10,Target_C_Return,2.78,,,Model_6D_Ridge_Return,34.08
+marushika-technology-852a85,Marushika Technology Limited,SME,Test_2026,2026-02-16,Target_C_Return,2.56,,,Model_6D_Ridge_Return,32.31
+manilam-india-a679ab,Manilam Industries India Limited,SME,Test_2026,2026-02-24,Target_C_Return,-20.0,,,Model_6D_Ridge_Return,31.23
+mobilise-app-lab-c70a73,Mobilise App Lab Limited,SME,Test_2026,2026-02-25,Target_C_Return,-19.88,,,Model_6D_Ridge_Return,31.89
+yaap-digital-fa201c,Yaap Digital Limited,SME,Test_2026,2026-02-27,Target_C_Return,-12.41,,,Model_6D_Ridge_Return,30.06
+striders-impex-a9c7c3,Striders Impex Limited,SME,Test_2026,2026-03-02,Target_C_Return,-2.78,,,Model_6D_Ridge_Return,29.6
+acetech-e-commerce-935832,Acetech E-Commerce Limited,SME,Test_2026,2026-03-04,Target_C_Return,0.0,,,Model_6D_Ridge_Return,25.68
+srinibas-pradhan-constructions-77e0b6,Srinibas Pradhan Constructions Limited,SME,Test_2026,2026-03-10,Target_C_Return,2.09,,,Model_6D_Ridge_Return,27.88
+apsis-aerocom-6c18c9,Apsis Aerocom Limited,SME,Test_2026,2026-03-13,Target_C_Return,39.09,,,Model_6D_Ridge_Return,32.46
+vivid-electromech-f38a46,Vivid Electromech Limited,SME,Test_2026,2026-03-30,Target_C_Return,1.8,,,Model_6D_Ridge_Return,32.02
+adisoft-technologies-72f160,Adisoft Technologies Limited,SME,Test_2026,2026-04-27,Target_C_Return,19.19,,,Model_6D_Ridge_Return,32.69
+amba-auto-sales-services-86a58a,Amba Auto Sales and Services Limited,SME,Test_2026,2026-04-29,Target_C_Return,-0.37,,,Model_6D_Ridge_Return,32.68
+value-360-communications-f70a72,Value 360 Communications Limited,SME,Test_2026,2026-05-06,Target_C_Return,-20.0,,,Model_6D_Ridge_Return,31.29
+simca-advertising-d8641f,Simca Advertising Limited,SME,Test_2026,2026-05-12,Target_C_Return,-14.75,,,Model_6D_Ridge_Return,32.9
+rfbl-flexi-pack-b120c5,RFBL Flexi Pack Limited,SME,Test_2026,2026-05-14,Target_C_Return,5.0,,,Model_6D_Ridge_Return,35.43
+nfp-sampoorna-foods-bcd842,NFP Sampoorna Foods Limited,SME,Test_2026,2026-05-20,Target_C_Return,-0.91,,,Model_6D_Ridge_Return,31.59
+teamtech-formwork-solutions-ed860a,Teamtech Formwork Solutions Limited,SME,Test_2026,2026-05-21,Target_C_Return,19.05,,,Model_6D_Ridge_Return,33.03
+bio-medica-laboratories-bb714b,Bio Medica Laboratories Limited,SME,Test_2026,2026-05-25,Target_C_Return,-20.0,,,Model_6D_Ridge_Return,31.55
+q-line-biotech-3bb8f7,Q-Line Biotech Limited,SME,Test_2026,2026-05-25,Target_C_Return,31.78,,,Model_6D_Ridge_Return,31.55
+genxai-analytics-d15667,GenXAI Analytics Limited,SME,Test_2026,2026-06-09,Target_C_Return,-20.0,,,Model_6D_Ridge_Return,37.25
+utkal-speciality-india-c17f78,Utkal Speciality Industries India Limited,SME,Test_2026,2026-06-12,Target_C_Return,0.0,,,Model_6D_Ridge_Return,38.88
+clay-craft-india-093e9a,Clay Craft India Limited,SME,Test_2026,2026-06-19,Target_C_Return,3.94,,,Model_6D_Ridge_Return,33.31
+avience-biomedicals-c4a59a,Avience Biomedicals Limited,SME,Test_2026,2026-06-22,Target_C_Return,90.0,,,Model_6D_Ridge_Return,36.93
+shreedhar-spinners-6e5dde,Shreedhar Spinners Limited,SME,Test_2026,2026-06-25,Target_C_Return,2.64,,,Model_6D_Ridge_Return,33.34
+teja-engineering-bd38d1,Teja Engineering Industries Limited,SME,Test_2026,2026-07-02,Target_C_Return,90.0,,,Model_6D_Ridge_Return,28.03
+vinit-mobile-673a43,Vinit Mobile Limited,SME,Test_2026,2026-07-02,Target_C_Return,-1.9,,,Model_6D_Ridge_Return,28.03
+ic-electricals-8f563b,IC Electricals Company Limited,SME,Test_2026,2026-07-07,Target_C_Return,67.68,,,Model_6D_Ridge_Return,27.81
+happy-steels-078bb0,Happy Steels Limited,SME,Test_2026,2026-07-13,Target_C_Return,3.03,,,Model_6D_Ridge_Return,45.31
+metalic-technoforge-271afd,Metalic Technoforge Limited,SME,Test_2026,2026-07-23,Target_C_Return,12.99,,,Model_6D_Ridge_Return,42.27
+propshop-events-exhibitions-87e33b,Propshop Events and Exhibitions Limited,SME,Test_2026,2026-07-29,Target_C_Return,-20.0,,,Model_6D_Ridge_Return,33.94
+anawil-wire-engineering-feb7c5,Anawil Wire and Engineering Limited,SME,Test_2026,2026-08-05,Target_C_Return,22.09,,,Model_6D_Ridge_Return,32.89
+optimystix-entertainment-india-9c5916,Optimystix Entertainment India Limited,SME,Test_2026,2026-08-11,Target_C_Return,2.86,,,Model_6D_Ridge_Return,39.42
+pramodini-medicare-eedf51,Pramodini Medicare Limited,SME,Test_2026,2026-08-14,Target_C_Return,1.69,,,Model_6D_Ridge_Return,45.4
+credent-connect-n-care-fa5e79,Credent Connect N Care Limited,SME,Test_2026,2026-08-17,Target_C_Return,90.0,,,Model_6D_Ridge_Return,42.3
+skytech-infinite-platform-ab7944,Skytech Infinite Platform Limited,SME,Test_2026,2026-08-18,Target_C_Return,-3.9,,,Model_6D_Ridge_Return,41.79
+fascinate-textiles-ad3c91,Fascinate Textiles Limited,SME,Test_2026,2026-08-19,Target_C_Return,-20.0,,,Model_6D_Ridge_Return,41.08
+abh-healthcare-0d58e2,ABH Healthcare Limited,SME,Test_2026,2026-08-27,Target_C_Return,-2.94,,,Model_6D_Ridge_Return,34.82
+madhur-knit-crafts-320db3,Madhur Knit Crafts Limited,SME,Test_2026,2026-08-27,Target_C_Return,0.0,,,Model_6D_Ridge_Return,34.82
+sumax-engineering-e1d4b1,Sumax Engineering Limited,SME,Test_2026,2026-08-28,Target_C_Return,9.9,,,Model_6D_Ridge_Return,34.66
+ashutosh-fibre-638584,Ashutosh Fibre Limited,SME,Test_2026,2026-09-02,Target_C_Return,52.17,,,Model_6D_Ridge_Return,34.57
+shanti-inorganics-cbd741,Shanti Inorganics Limited,SME,Test_2026,2026-09-02,Target_C_Return,90.0,,,Model_6D_Ridge_Return,34.57
+qualiance-international-e6b994,Qualiance International Limited,SME,Test_2026,2026-09-08,Target_C_Return,77.09,,,Model_6D_Ridge_Return,47.59
+vinod-texworld-366ce1,Vinod Texworld Limited,SME,Test_2026,2026-09-11,Target_C_Return,0.0,,,Model_6D_Ridge_Return,50.65
+kheria-autocomp-1d40ff,Kheria Autocomp Limited,SME,Test_2026,2026-09-21,Target_C_Return,3.86,,,Model_6D_Ridge_Return,34.16
+spectraa-technology-solutions-954ab8,SpectraA Technology Solutions Limited,SME,Test_2026,2026-09-21,Target_C_Return,90.0,,,Model_6D_Ridge_Return,34.16
+axiom-gas-engineering-9f4a40,Axiom Gas Engineering Limited,SME,Test_2026,2026-09-22,Target_C_Return,1.39,,,Model_6D_Ridge_Return,30.63
+ipo-2026-09-30-ine1c2q01017,Pooja Logistics Limited,SME,Test_2026,2026-09-25,Target_C_Return,2.61,,,Model_6D_Ridge_Return,45.53
+ipo-2026-09-30-ine11es01010,Coreintegra Consulting Services Limited,SME,Test_2026,2026-09-25,Target_C_Return,0.13,,,Model_6D_Ridge_Return,45.53
+ipo-2026-10-05-ine1b7i01014,Himalayan Solar Limited,SME,Test_2026,2026-09-29,Target_C_Return,-17.48,,,Model_6D_Ridge_Return,51.38
+ipo-2026-10-05-ine2oku01014,Bench Mark Infotech Services Limited,SME,Test_2026,2026-09-29,Target_C_Return,0.0,,,Model_6D_Ridge_Return,51.38
