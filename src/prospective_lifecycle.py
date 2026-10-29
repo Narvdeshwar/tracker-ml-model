@@ -905,7 +905,9 @@ class ProspectiveLifecycleManager:
         # Check conflicting cutoff times
         new_cutoff_ts = expected_cutoff_timestamp_ist or target_candidate.get('cutoff_timestamp_ist')
         existing_cutoff = target_candidate.get('cutoff_timestamp_ist')
+        has_cutoff_conflict = False
         if expected_cutoff_timestamp_ist and existing_cutoff and expected_cutoff_timestamp_ist != existing_cutoff:
+            has_cutoff_conflict = True
             # Conflicting cutoff detected
             self.surveillance.log_governance_event(
                 event_type="CONFLICTING_CUTOFF_TIMES_DETECTED",
@@ -916,13 +918,14 @@ class ProspectiveLifecycleManager:
                 evidence_reference=artifact_sha256
             )
 
-        # Determine validity: must be primary exchange source, relevant category, not upi only, not wrong issue
+        # Determine validity: must be primary exchange source, relevant category, not upi only, not wrong issue, no cutoff conflict
         is_verified_bidding_cutoff = bool(
             is_primary_exchange_source and
             (relevant_bidding_category == "RETAIL_INDIVIDUAL") and
             relevance_verified and
             not is_upi_only and
-            not is_wrong_issue_type
+            not is_wrong_issue_type and
+            not has_cutoff_conflict
         )
 
         # Create updated candidate record
