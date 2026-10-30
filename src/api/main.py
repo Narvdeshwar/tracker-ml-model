@@ -264,7 +264,10 @@ def list_tracked_ipos(
 
 
 @app.get("/api/ipos/{ipo_id}")
-def get_ipo_detail(ipo_id: str):
+def get_ipo_detail(
+    ipo_id: str,
+    evaluation_timestamp_ist: Optional[str] = Query(None, description="Optional evaluation timestamp in IST for point-in-time readiness")
+):
     """
     Returns full provenance, feature snapshots, cutoff timing verification, and audit hashes for an IPO.
     Provides complete traceable detail for research and audit compliance.
@@ -303,7 +306,7 @@ def get_ipo_detail(ipo_id: str):
     sme_thresholds = manifest.get("frozen_decision_hurdles", {}).get("SME", {})
 
     # Reconcile standardized lifecycle readiness state
-    prep = lifecycle_manager.audit_and_prepare_candidate(match)
+    prep = lifecycle_manager.audit_and_prepare_candidate(match, evaluation_timestamp_ist=evaluation_timestamp_ist)
     candidate_state = prep.get("candidate_lifecycle_state", "BLOCKED_CUTOFF")
 
     # Issue C: Three separate milestone statuses

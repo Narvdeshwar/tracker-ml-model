@@ -365,7 +365,7 @@ class TestPhase1015CandidateResolution(unittest.TestCase):
 
     # 21. API and dashboard consistency
     def test_21_api_dashboard_consistency(self):
-        resp = self.client.get("/api/ipos/wiscon-industries-sme-20261029")
+        resp = self.client.get("/api/ipos/wiscon-industries-sme-20261029?evaluation_timestamp_ist=2026-10-28+12:00:00+IST")
         self.assertEqual(resp.status_code, 200)
         data = resp.json()
         self.assertEqual(data.get("candidate_lifecycle_state"), "BLOCKED_CUTOFF")

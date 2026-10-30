@@ -293,7 +293,7 @@ class TestPhase1014IndependentGateVerification(unittest.TestCase):
         self.assertEqual(len(sme_cands), 2, "Must track exactly 2 SME candidates")
 
         for cand in sme_cands:
-            prep = self.lifecycle.audit_and_prepare_candidate(cand)
+            prep = self.lifecycle.audit_and_prepare_candidate(cand, evaluation_timestamp_ist="2026-10-28 12:00:00 IST")
             self.assertEqual(prep["candidate_lifecycle_state"], "BLOCKED_CUTOFF")
             self.assertFalse(prep["is_clean_eligible"])
             self.assertTrue(any("EXCHANGE_BIDDING_CUTOFF_UNVERIFIED" in r for r in prep["exclusion_reasons"]))

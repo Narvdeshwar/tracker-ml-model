@@ -413,7 +413,7 @@ class TestPhase1016IndependentEvidenceAndPersistence(unittest.TestCase):
         sme_cands = [c for c in cands if c.get("board_type") == "SME"]
         self.assertEqual(len(sme_cands), 2)
         for c in sme_cands:
-            prep = self.lifecycle.audit_and_prepare_candidate(c)
+            prep = self.lifecycle.audit_and_prepare_candidate(c, evaluation_timestamp_ist="2026-10-28 12:00:00 IST")
             self.assertEqual(prep["candidate_lifecycle_state"], "BLOCKED_CUTOFF")
             self.assertFalse(prep["is_clean_eligible"])
 

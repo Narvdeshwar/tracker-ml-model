@@ -333,7 +333,7 @@ class TestPhase1013PointInTimeEnforcement(unittest.TestCase):
             "is_bidding_cutoff_verified": False,
             "features": {"feat_nifty50_ret5s_pct": 0.5, "feat_india_vix": 14.0, "feat_recent5_sentiment": 7.7}
         }
-        prep = self.lifecycle.audit_and_prepare_candidate(cand)
+        prep = self.lifecycle.audit_and_prepare_candidate(cand, evaluation_timestamp_ist="2026-10-28 12:00:00 IST")
         self.assertEqual(prep["candidate_lifecycle_state"], "BLOCKED_CUTOFF")
 
     # 15. A cutoff verified for a different issue being rejected
@@ -467,7 +467,7 @@ class TestPhase1013PointInTimeEnforcement(unittest.TestCase):
 
     # 22. API and dashboard consistency with the readiness engine
     def test_22_api_dashboard_readiness_consistency(self):
-        res = self.client.get("/api/ipos/wiscon-industries-sme-20261029")
+        res = self.client.get("/api/ipos/wiscon-industries-sme-20261029?evaluation_timestamp_ist=2026-10-28+12:00:00+IST")
         self.assertEqual(res.status_code, 200)
         data = res.json()
         self.assertEqual(data["candidate_lifecycle_state"], "BLOCKED_CUTOFF")

@@ -86,7 +86,7 @@ class TestPhase1011Readiness(unittest.TestCase):
         - Wiscon & Carver -> BLOCKED_CUTOFF
         - Mainboard candidates -> BLOCKED_GOVERNANCE
         """
-        # SME with unverified bidding cutoff
+        # SME with unverified bidding cutoff (evaluated at pre-cutoff timestamp 2026-10-28 12:00:00 IST)
         wiscon_cand = {
             "ipo_id": "wiscon-industries-sme-20261029",
             "company_name": "Wiscon Industries Ltd",
@@ -103,7 +103,7 @@ class TestPhase1011Readiness(unittest.TestCase):
                 "feat_recent5_sentiment": 7.7
             }
         }
-        prep_sme = self.lifecycle.audit_and_prepare_candidate(wiscon_cand)
+        prep_sme = self.lifecycle.audit_and_prepare_candidate(wiscon_cand, evaluation_timestamp_ist="2026-10-28 12:00:00 IST")
         self.assertEqual(prep_sme["candidate_lifecycle_state"], "BLOCKED_CUTOFF")
         self.assertFalse(prep_sme["is_clean_eligible"])
 
@@ -206,7 +206,8 @@ class TestPhase1011Readiness(unittest.TestCase):
         2. Predictive validity
         3. Economic viability
         """
-        res = self.client.get("/api/ipos/wiscon-industries-sme-20261029")
+        # Point-in-time evaluation prior to cutoff (2026-10-28 12:00:00 IST)
+        res = self.client.get("/api/ipos/wiscon-industries-sme-20261029?evaluation_timestamp_ist=2026-10-28+12:00:00+IST")
         self.assertEqual(res.status_code, 200)
         data = res.json()
 
