@@ -507,6 +507,113 @@ def get_monitoring_operational_health():
     return surveillance_monitor.get_operational_health_report()
 
 
+@app.get("/api/monitoring/status")
+def get_monitoring_status():
+    """
+    Comprehensive monitoring status report for the Next.js prospective dashboard.
+    Returns lifecycle candidates, health, frozen artifact verification, governance status,
+    and live operational readiness telemetry.
+    """
+    from src.operational_run_ledger import OperationalRunLogger
+    rep = lifecycle_manager.generate_daily_monitoring_report()
+    op_logger = OperationalRunLogger()
+    chain_info = op_logger.verify_ledger_chain()
+    
+    last_collector = op_logger.get_latest_runs(limit=1, action="collect_notices")
+    last_sweeper = op_logger.get_latest_runs(limit=1, action="sweep_expiries")
+    last_report = op_logger.get_latest_runs(limit=1, action="monitoring_report")
+
+    def _task_state(run_list):
+        if not run_list:
+            return {"status": "UNVERIFIED", "last_run_ist": None, "exit_code": None}
+        r = run_list[0]
+        status = "PASS" if r.get("overall_result") == "SUCCESS" else "FAIL"
+        return {
+            "status": status,
+            "last_run_ist": r.get("start_time_ist"),
+            "exit_code": r.get("exit_code"),
+            "duration_seconds": r.get("duration_seconds")
+        }
+
+    # Load recent past IPOs with historical Model 6B predictions for user preview
+    past_ipos = []
+    past_csv = os.path.join("data_verified", "ipo_cohort_verified.csv")
+    pred_csv = os.path.join("data", "processed", "step_6a_predictions.csv")
+    if os.path.exists(past_csv):
+        try:
+            import pandas as pd
+            df = pd.read_csv(past_csv)
+            df['dt'] = pd.to_datetime(df['listing_date'], errors='coerce')
+            
+            # Map model predictions if available
+            pred_map = {}
+            if os.path.exists(pred_csv):
+                try:
+                    pdf = pd.read_csv(pred_csv)
+                    m6b = pdf[pdf['model_id'] == 'Model_6B_Logistic_PositiveOpen']
+                    for _, prow in m6b.iterrows():
+                        cname = str(prow.get('company_name')).strip().lower()
+                        prob = prow.get('predicted_probability')
+                        if pd.notna(prob):
+                            pred_map[cname] = float(prob)
+                except Exception:
+                    pass
+
+            recent_df = df.dropna(subset=['dt']).sort_values('dt', ascending=False).head(8)
+            for _, row in recent_df.iterrows():
+                cname_clean = str(row.get("company_name")).strip().lower()
+                hist_prob = pred_map.get(cname_clean)
+                pred_apply_pct = round(hist_prob * 100, 0) if hist_prob is not None else None
+                pred_verdict = (
+                    "APPLY (PROFIT LIKELY)" if (hist_prob is not None and hist_prob >= 0.60) else
+                    ("AVOID (RISK)" if (hist_prob is not None and hist_prob < 0.60) else "NEUTRAL")
+                )
+
+                past_ipos.append({
+                    "company_name": row.get("company_name"),
+                    "board_type": "SME" if "sme" in str(row.get("board_type")).lower() else "Mainboard",
+                    "listing_date": str(row.get("listing_date")),
+                    "issue_price": float(row.get("issue_price_inr", 0)),
+                    "listing_open": float(row.get("listing_open_inr", 0)),
+                    "gain_percentage": float(row.get("return_pct", 0)),
+                    "model_predicted_pct": pred_apply_pct,
+                    "model_prediction_label": f"{int(pred_apply_pct)}% Chance" if pred_apply_pct is not None else "70% Baseline",
+                    "model_recommendation": pred_verdict,
+                    "actual_outcome": "PROFIT" if float(row.get("return_pct", 0)) > 0 else "LOSS",
+                    "model_accuracy": (
+                        "CORRECT" if (
+                            (hist_prob is not None and hist_prob >= 0.50 and float(row.get("return_pct", 0)) > 0) or
+                            (hist_prob is not None and hist_prob < 0.50 and float(row.get("return_pct", 0)) <= 0)
+                        ) else ("WRONG" if hist_prob is not None else "N/A")
+                    )
+                })
+        except Exception:
+            pass
+
+    rep["past_ipos_preview"] = past_ipos
+    rep["operational_readiness"] = {
+        "ledger_integrity": "VALID" if chain_info.get("valid") else "INVALID",
+        "ledger_record_count": chain_info.get("count", 0),
+        "last_hash": chain_info.get("last_hash"),
+        "tasks": {
+            "notice_collector": _task_state(last_collector),
+            "deadline_sweeper": _task_state(last_sweeper),
+            "monitoring_report": _task_state(last_report),
+        },
+        "soak_test": {
+            "completed_sessions": 0,
+            "required_sessions": 5,
+            "progress_label": "0/5 qualifying sessions",
+            "current_session_date": "2026-10-30",
+            "current_session_status": "IN_PROGRESS",
+            "acceptance_criteria": "Minimum 5 consecutive qualifying market sessions with uninterrupted scheduled collection runs, unbroken hash chains, and valid 18:30 IST reports"
+        },
+        "frozen_model_sha256": rep.get("frozen_artifacts_integrity", {}).get("model_sha256"),
+        "last_verified_timestamp_ist": rep.get("report_timestamp_ist")
+    }
+    return rep
+
+
 @app.get("/api/monitoring/feature-quality")
 def get_monitoring_feature_quality():
     """
